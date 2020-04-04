@@ -1,0 +1,173 @@
+@import-normalize;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@import "styles";
+
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+:root {
+    font-size: 10 / 16 * 100%;
+}
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+
+    &.no-transition {
+
+        * {
+            transition: none !important;
+        }
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.page {
+    &__inner {
+        max-width: 1095px;
+        margin: auto;
+        padding: 0 10px;
+    }
+}
+
+.floor {
+    &__inner {
+        padding: 30px 0;
+        border-bottom: 1px solid #E8E8E8;
+    }
+}
+
+.floor--type-filter {
+    .floor__inner {
+        padding: 16px 0;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+
+    }
+
+    &__title {
+        font-size: 28px;
+        color: #6BB247;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 20px;
+    }
+
+    &__search {
+        max-width: 255px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+.logo {
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    padding: 8px 10px;
+
+    &__input {
+        border: none;
+        padding: 0 8px;
+        flex-grow: 1;
+        font-size: 14px;
+
+        @include placeholder {
+            color: #BFBFBF;
+            font-weight: 300;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        color: #8C8C8C;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -10px;
+
+    &__item {
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+.label-button {
+    display: inline-block;
+    font-size: 1.4rem;
+    height: 2.85em;
+
+    &__control {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        background-color: #F5F5F5;
+        border-radius: 25px;
+        height: 100%;
+        color: #595959;
+        padding: 0 1.61em;
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+
+    &:hover &__content,
+    &__control:checked + &__content {
+        background-color: #DDEBD3;
+        color: #000;
+    }
+}
