@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mealty-time/static/css/main.5ba2ae11.chunk.css",
+    "main.css": "/mealty-time/static/css/main.bd9e1c3b.chunk.css",
     "main.js": "/mealty-time/static/js/main.c4b528a2.chunk.js",
     "main.js.map": "/mealty-time/static/js/main.c4b528a2.chunk.js.map",
     "runtime-main.js": "/mealty-time/static/js/runtime-main.17792d70.js",
@@ -8,9 +8,9 @@
     "static/js/2.d433dcf2.chunk.js": "/mealty-time/static/js/2.d433dcf2.chunk.js",
     "static/js/2.d433dcf2.chunk.js.map": "/mealty-time/static/js/2.d433dcf2.chunk.js.map",
     "index.html": "/mealty-time/index.html",
-    "precache-manifest.cffcba4c979d5dab1d0dc4ef120e6476.js": "/mealty-time/precache-manifest.cffcba4c979d5dab1d0dc4ef120e6476.js",
+    "precache-manifest.928deeb2a78aa4f5190252de0018b3e4.js": "/mealty-time/precache-manifest.928deeb2a78aa4f5190252de0018b3e4.js",
     "service-worker.js": "/mealty-time/service-worker.js",
-    "static/css/main.5ba2ae11.chunk.css.map": "/mealty-time/static/css/main.5ba2ae11.chunk.css.map",
+    "static/css/main.bd9e1c3b.chunk.css.map": "/mealty-time/static/css/main.bd9e1c3b.chunk.css.map",
     "static/js/2.d433dcf2.chunk.js.LICENSE.txt": "/mealty-time/static/js/2.d433dcf2.chunk.js.LICENSE.txt",
     "static/media/1.png": "/mealty-time/static/media/1.1139e551.png",
     "static/media/logo.png": "/mealty-time/static/media/logo.437549c1.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.17792d70.js",
     "static/js/2.d433dcf2.chunk.js",
-    "static/css/main.5ba2ae11.chunk.css",
+    "static/css/main.bd9e1c3b.chunk.css",
     "static/js/main.c4b528a2.chunk.js"
   ]
 }
