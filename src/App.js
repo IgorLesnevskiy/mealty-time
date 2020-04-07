@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="page">
             <div className="page__inner">
-                <div className="floor floor--type-header">
+                <div className="floor" data-offset-top="medium" data-offset-bottom="medium">
                     <div className="floor__inner">
                         <header className="header">
                             <div className="header__logo">
@@ -35,7 +35,7 @@ function App() {
                     </div>
                 </div>
 
-                <div className="floor">
+                <form name="filter" className="floor">
                     <div className="floor__inner">
                         <div className={"filter"}>
                             <div className={"filter__item"}>
@@ -116,182 +116,62 @@ function App() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
 
-                <div className="floor floor--indent-none">
+                <div className="floor" data-offset-top="none" data-offset-bottom="none">
                     <div className="floor__inner">
 
                         <div className={"dishes"}>
                             <div className={"dishes__item"}>
-
                                 <div className={"dish"}>
-                                    <div className={"dish__promo"}>
-                                        <div className={"dish__price"}>
-                                            <div className={"price"}>
-                                                120 <span className={"price__currency"}>руб.</span>
-                                            </div>
-                                        </div>
-                                        <div className={"dish__title"}>
-
-                                            <div className={"dish-title"}>
-                                                <div className={"dish-title__action"}>
-                                                    <label className={"label-icon"}>
-                                                        <input className={"label-icon__control"} type={"checkbox"}
-                                                               name={"foo"}
-                                                               value={3}/>
-                                                        <span className={"label-icon__content"}>
-                                                            <FontAwesomeIcon icon={['fas', 'heart']}></FontAwesomeIcon>
-                                                        </span>
-                                                    </label>
+                                    <div className={"dish__card"}>
+                                        <div className={"dish-card"}>
+                                            <div className={"dish-card__price-line"}>
+                                                <div className={"dish-card__price"}>
+                                                    <div className={"price"}>
+                                                        120 <span className={"price__currency"}>руб.</span>
+                                                    </div>
                                                 </div>
-                                                <div className={"dish-title__text"}>
-                                                    <h3>Каша рисовая с соусом из черной смородины и кедровыми орешками</h3>
+                                                <div className={"dish-card__tip"}>
+                                                    <div className={"tip-icon"}>
+                                                        <FontAwesomeIcon
+                                                            icon={['fas', 'info-circle']}></FontAwesomeIcon>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                        </div>
-                                        <div className={"dish__image"}>
-
-                                            <div className={"image"} data-object-ratio={"16x9"}>
-                                                <div className="image__container">
-                                                    <picture className="image__picture">
-                                                        <img
-                                                            className="image__source lazyload"
-                                                            src={require('./images/dishes/1.png')}
-                                                            // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
-                                                            data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
-                                                            draggable="false"
-                                                            alt="" title=""
-                                                            data-object-fit="cover"/>
-                                                    </picture>
+                                            <div className={"dish-card__title"}>
+                                                <h3>Каша рисовая с соусом из черной смородины и кедровыми
+                                                    орешками</h3>
+                                            </div>
+                                            <div className={"dish-card__image"}>
+                                                <label className={"label-icon"}>
+                                                    <input className={"label-icon__control"} type={"checkbox"}
+                                                           name={"foo"}
+                                                           value={3}/>
+                                                    <span className={"label-icon__content"}>
+                                                                <FontAwesomeIcon
+                                                                    icon={['fas', 'heart']}></FontAwesomeIcon>
+                                                            </span>
+                                                </label>
+                                                <div className={"image"} data-object-ratio={"16x9"}>
+                                                    <div className="image__container">
+                                                        <picture className="image__picture">
+                                                            <img
+                                                                className="image__source lazyload"
+                                                                src={require('./images/dishes/1.png')}
+                                                                // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
+                                                                data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
+                                                                draggable="false"
+                                                                alt="" title=""
+                                                                data-object-fit="cover"/>
+                                                        </picture>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className={"dish__info"}>
-                                        <div className={"dish__tip"}></div>
-
-                                        <div className={"dish__description"}>
-                                            Рисовая каша — это великолепное сочетание быстрых и сложных углеводов, которое придаст вам сил и будет обеспечивать энергией на протяжении всего дня. Она содержит низкое количество калорий и отлично воспринимается организмом.
-                                        </div>
-
-                                        <div className={"dish__compound-wrapper"}>
-
-                                            <div className={"dish__compound-list"}>
-                                                <ul className={"compound-list"}>
-                                                    <li className={"compound-list__row"}>
-                                                        <div class={"compound-list__measure"}>
-                                                            350
-                                                        </div>
-                                                        <div class={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className={"compound-list__row"}>
-                                                        <div className={"compound-list__measure"}>
-                                                            350
-                                                        </div>
-                                                        <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className={"compound-list__row"}>
-                                                        <div className={"compound-list__measure"}>
-                                                            350
-                                                        </div>
-                                                        <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className={"compound-list__row"}>
-                                                        <div className={"compound-list__measure"}>
-                                                            350
-                                                        </div>
-                                                        <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className={"compound-list__row"}>
-                                                        <div className={"compound-list__measure"}>
-                                                            350
-                                                        </div>
-                                                        <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className={"compound-list__row"}>
-                                                        <div className={"compound-list__measure"}>
-                                                            350
-                                                        </div>
-                                                        <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div className={"dish__ingredients-wrapper"}>
-                                                <div className={"dish__ingredients-title"}>Состав:</div>
-                                                <div className={"dish__ingredients"}>
-                                                    мука высший сорт, сыр рикотта, шпинат свежемороженный, меланж
-                                                    яичный, масло сливочное 82% (пастеризованные сливки), масло
-                                                    оливковое, шалфей, соль.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={"dishes__item"}>
-
-                                <div className={"dish"}>
-                                    <div className={"dish__promo"}>
-                                        <div className={"dish__price"}>
-                                            <div className={"price"}>
-                                                120 <span className={"price__currency"}>руб.</span>
-                                            </div>
-                                        </div>
-                                        <div className={"dish__title"}>
-
-                                            <div className={"dish-title"}>
-                                                <div className={"dish-title__action"}>
-                                                    <label className={"label-icon"}>
-                                                        <input className={"label-icon__control"} type={"checkbox"}
-                                                               name={"foo"}
-                                                               value={3}/>
-                                                        <span className={"label-icon__content"}>
-                                                            <FontAwesomeIcon icon={['fas', 'heart']}></FontAwesomeIcon>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div className={"dish-title__text"}>
-                                                    <h3>Каша рисовая с соусом из черной смородины и кедровыми
-                                                        орешками</h3>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div className={"dish__image"}>
-
-                                            <div className={"image"} data-object-ratio={"16x9"}>
-                                                <div className="image__container">
-                                                    <picture className="image__picture">
-                                                        <img
-                                                            className="image__source lazyload"
-                                                            src={require('./images/dishes/1.png')}
-                                                            // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
-                                                            data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
-                                                            draggable="false"
-                                                            alt="" title=""
-                                                            data-object-fit="cover"/>
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={"dish__info"}>
-                                        <div className={"dish__tip"}></div>
-
                                         <div className={"dish__description"}>
                                             Рисовая каша — это великолепное сочетание быстрых и сложных углеводов,
                                             которое придаст вам сил и будет обеспечивать энергией на протяжении всего
@@ -299,8 +179,15 @@ function App() {
                                             организмом.
                                         </div>
 
-                                        <div className={"dish__compound-wrapper"}>
-
+                                        <div className={"dish__compound-line"}>
+                                            <div className={"dish__ingredients-wrapper"}>
+                                                <div className={"dish__ingredients-title"}>Состав:</div>
+                                                <div className={"dish__ingredients"}>
+                                                    мука высший сорт, сыр рикотта, шпинат свежемороженный, меланж
+                                                    яичный, масло сливочное 82% (пастеризованные сливки), масло
+                                                    оливковое, шалфей, соль.
+                                                </div>
+                                            </div>
                                             <div className={"dish__compound-list"}>
                                                 <ul className={"compound-list"}>
                                                     <li className={"compound-list__row"}>
@@ -313,109 +200,100 @@ function App() {
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            13.6
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            бекли <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            19.5
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            жиры <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            5.2
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            углеводы <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            235
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            калорийность <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            470
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            общая калорийность <span>(г)</span>
                                                         </div>
                                                     </li>
                                                 </ul>
-                                            </div>
-
-                                            <div className={"dish__ingredients-wrapper"}>
-                                                <div className={"dish__ingredients-title"}>Состав:</div>
-                                                <div className={"dish__ingredients"}>
-                                                    мука высший сорт, сыр рикотта, шпинат свежемороженный, меланж
-                                                    яичный, масло сливочное 82% (пастеризованные сливки), масло
-                                                    оливковое, шалфей, соль.
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className={"dishes__item"}>
-
                                 <div className={"dish"}>
-                                    <div className={"dish__promo"}>
-                                        <div className={"dish__price"}>
-                                            <div className={"price"}>
-                                                120 <span className={"price__currency"}>руб.</span>
-                                            </div>
-                                        </div>
-                                        <div className={"dish__title"}>
-
-                                            <div className={"dish-title"}>
-                                                <div className={"dish-title__action"}>
-                                                    <label className={"label-icon"}>
-                                                        <input className={"label-icon__control"} type={"checkbox"}
-                                                               name={"foo"}
-                                                               value={3}/>
-                                                        <span className={"label-icon__content"}>
-                                                            <FontAwesomeIcon icon={['fas', 'heart']}></FontAwesomeIcon>
-                                                        </span>
-                                                    </label>
+                                    <div className={"dish__card"}>
+                                        <div className={"dish-card"}>
+                                            <div className={"dish-card__price-line"}>
+                                                <div className={"dish-card__price"}>
+                                                    <div className={"price"}>
+                                                        120 <span className={"price__currency"}>руб.</span>
+                                                    </div>
                                                 </div>
-                                                <div className={"dish-title__text"}>
-                                                    <h3>Каша рисовая с соусом из черной смородины и кедровыми
-                                                        орешками</h3>
+                                                <div className={"dish-card__tip"}>
+                                                    <div className={"tip-icon"}>
+                                                        <FontAwesomeIcon
+                                                            icon={['fas', 'info-circle']}></FontAwesomeIcon>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                        </div>
-                                        <div className={"dish__image"}>
-
-                                            <div className={"image"} data-object-ratio={"16x9"}>
-                                                <div className="image__container">
-                                                    <picture className="image__picture">
-                                                        <img
-                                                            className="image__source lazyload"
-                                                            src={require('./images/dishes/1.png')}
-                                                            // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
-                                                            data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
-                                                            draggable="false"
-                                                            alt="" title=""
-                                                            data-object-fit="cover"/>
-                                                    </picture>
+                                            <div className={"dish-card__title"}>
+                                                <h3>Каша рисовая с соусом из черной смородины и кедровыми
+                                                    орешками</h3>
+                                            </div>
+                                            <div className={"dish-card__image"}>
+                                                <label className={"label-icon"}>
+                                                    <input className={"label-icon__control"} type={"checkbox"}
+                                                           name={"foo"}
+                                                           value={3}/>
+                                                    <span className={"label-icon__content"}>
+                                                                <FontAwesomeIcon
+                                                                    icon={['fas', 'heart']}></FontAwesomeIcon>
+                                                            </span>
+                                                </label>
+                                                <div className={"image"} data-object-ratio={"16x9"}>
+                                                    <div className="image__container">
+                                                        <picture className="image__picture">
+                                                            <img
+                                                                className="image__source lazyload"
+                                                                src={require('./images/dishes/1.png')}
+                                                                // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
+                                                                data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
+                                                                draggable="false"
+                                                                alt="" title=""
+                                                                data-object-fit="cover"/>
+                                                        </picture>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className={"dish__info"}>
-                                        <div className={"dish__tip"}></div>
 
+                                    <div className={"dish__info"}>
                                         <div className={"dish__description"}>
                                             Рисовая каша — это великолепное сочетание быстрых и сложных углеводов,
                                             которое придаст вам сил и будет обеспечивать энергией на протяжении всего
@@ -423,8 +301,15 @@ function App() {
                                             организмом.
                                         </div>
 
-                                        <div className={"dish__compound-wrapper"}>
-
+                                        <div className={"dish__compound-line"}>
+                                            <div className={"dish__ingredients-wrapper"}>
+                                                <div className={"dish__ingredients-title"}>Состав:</div>
+                                                <div className={"dish__ingredients"}>
+                                                    мука высший сорт, сыр рикотта, шпинат свежемороженный, меланж
+                                                    яичный, масло сливочное 82% (пастеризованные сливки), масло
+                                                    оливковое, шалфей, соль.
+                                                </div>
+                                            </div>
                                             <div className={"dish__compound-list"}>
                                                 <ul className={"compound-list"}>
                                                     <li className={"compound-list__row"}>
@@ -437,47 +322,108 @@ function App() {
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            13.6
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            бекли <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            19.5
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            жиры <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            5.2
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            углеводы <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            235
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            калорийность <span>(на 100 грамм)</span>
                                                         </div>
                                                     </li>
                                                     <li className={"compound-list__row"}>
                                                         <div className={"compound-list__measure"}>
-                                                            350
+                                                            470
                                                         </div>
                                                         <div className={"compound-list__description"}>
-                                                            вес/объем <span>(г/мл)</span>
+                                                            общая калорийность <span>(г)</span>
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={"dishes__item"}>
+                                <div className={"dish"}>
+                                    <div className={"dish__card"}>
+                                        <div className={"dish-card"}>
+                                            <div className={"dish-card__price-line"}>
+                                                <div className={"dish-card__price"}>
+                                                    <div className={"price"}>
+                                                        120 <span className={"price__currency"}>руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div className={"dish-card__tip"}>
+                                                    <div className={"tip-icon"}>
+                                                        <FontAwesomeIcon
+                                                            icon={['fas', 'info-circle']}></FontAwesomeIcon>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className={"dish-card__title"}>
+                                                <h3>Каша рисовая с соусом из черной смородины и кедровыми
+                                                    орешками</h3>
+                                            </div>
+                                            <div className={"dish-card__image"}>
+                                                <label className={"label-icon"}>
+                                                    <input className={"label-icon__control"} type={"checkbox"}
+                                                           name={"foo"}
+                                                           value={3}/>
+                                                    <span className={"label-icon__content"}>
+                                                                <FontAwesomeIcon
+                                                                    icon={['fas', 'heart']}></FontAwesomeIcon>
+                                                            </span>
+                                                </label>
+                                                <div className={"image"} data-object-ratio={"16x9"}>
+                                                    <div className="image__container">
+                                                        <picture className="image__picture">
+                                                            <img
+                                                                className="image__source lazyload"
+                                                                src={require('./images/dishes/1.png')}
+                                                                // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
+                                                                data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
+                                                                draggable="false"
+                                                                alt="" title=""
+                                                                data-object-fit="cover"/>
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div className={"dish__info"}>
+                                        <div className={"dish__description"}>
+                                            Рисовая каша — это великолепное сочетание быстрых и сложных углеводов,
+                                            которое придаст вам сил и будет обеспечивать энергией на протяжении всего
+                                            дня. Она содержит низкое количество калорий и отлично воспринимается
+                                            организмом.
+                                        </div>
+
+                                        <div className={"dish__compound-line"}>
                                             <div className={"dish__ingredients-wrapper"}>
                                                 <div className={"dish__ingredients-title"}>Состав:</div>
                                                 <div className={"dish__ingredients"}>
@@ -485,13 +431,308 @@ function App() {
                                                     яичный, масло сливочное 82% (пастеризованные сливки), масло
                                                     оливковое, шалфей, соль.
                                                 </div>
+                                            </div>
+                                            <div className={"dish__compound-list"}>
+                                                <ul className={"compound-list"}>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            350
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            вес/объем <span>(г/мл)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            13.6
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            бекли <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            19.5
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            жиры <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            5.2
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            углеводы <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            235
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            калорийность <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            470
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            общая калорийность <span>(г)</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={"dishes__item"}>
+                                <div className={"dish"}>
+                                    <div className={"dish__card"}>
+                                        <div className={"dish-card"}>
+                                            <div className={"dish-card__price-line"}>
+                                                <div className={"dish-card__price"}>
+                                                    <div className={"price"}>
+                                                        120 <span className={"price__currency"}>руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div className={"dish-card__tip"}>
+                                                    <div className={"tip-icon"}>
+                                                        <FontAwesomeIcon
+                                                            icon={['fas', 'info-circle']}></FontAwesomeIcon>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className={"dish-card__title"}>
+                                                <h3>Каша рисовая с соусом из черной смородины и кедровыми
+                                                    орешками</h3>
+                                            </div>
+                                            <div className={"dish-card__image"}>
+                                                <label className={"label-icon"}>
+                                                    <input className={"label-icon__control"} type={"checkbox"}
+                                                           name={"foo"}
+                                                           value={3}/>
+                                                    <span className={"label-icon__content"}>
+                                                                <FontAwesomeIcon
+                                                                    icon={['fas', 'heart']}></FontAwesomeIcon>
+                                                            </span>
+                                                </label>
+                                                <div className={"image"} data-object-ratio={"16x9"}>
+                                                    <div className="image__container">
+                                                        <picture className="image__picture">
+                                                            <img
+                                                                className="image__source lazyload"
+                                                                src={require('./images/dishes/1.png')}
+                                                                // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
+                                                                data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
+                                                                draggable="false"
+                                                                alt="" title=""
+                                                                data-object-fit="cover"/>
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className={"dish__info"}>
+                                        <div className={"dish__description"}>
+                                            Рисовая каша — это великолепное сочетание быстрых и сложных углеводов,
+                                            которое придаст вам сил и будет обеспечивать энергией на протяжении всего
+                                            дня. Она содержит низкое количество калорий и отлично воспринимается
+                                            организмом.
+                                        </div>
+
+                                        <div className={"dish__compound-line"}>
+                                            <div className={"dish__ingredients-wrapper"}>
+                                                <div className={"dish__ingredients-title"}>Состав:</div>
+                                                <div className={"dish__ingredients"}>
+                                                    мука высший сорт, сыр рикотта, шпинат свежемороженный, меланж
+                                                    яичный, масло сливочное 82% (пастеризованные сливки), масло
+                                                    оливковое, шалфей, соль.
+                                                </div>
+                                            </div>
+                                            <div className={"dish__compound-list"}>
+                                                <ul className={"compound-list"}>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            350
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            вес/объем <span>(г/мл)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            13.6
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            бекли <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            19.5
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            жиры <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            5.2
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            углеводы <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            235
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            калорийность <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            470
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            общая калорийность <span>(г)</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={"dishes__item"}>
+                                <div className={"dish"}>
+                                    <div className={"dish__card"}>
+                                        <div className={"dish-card"}>
+                                            <div className={"dish-card__price-line"}>
+                                                <div className={"dish-card__price"}>
+                                                    <div className={"price"}>
+                                                        120 <span className={"price__currency"}>руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div className={"dish-card__tip"}>
+                                                    <div className={"tip-icon"}>
+                                                        <FontAwesomeIcon
+                                                            icon={['fas', 'info-circle']}></FontAwesomeIcon>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className={"dish-card__title"}>
+                                                <h3>Каша рисовая с соусом из черной смородины и кедровыми
+                                                    орешками</h3>
+                                            </div>
+                                            <div className={"dish-card__image"}>
+                                                <label className={"label-icon"}>
+                                                    <input className={"label-icon__control"} type={"checkbox"}
+                                                           name={"foo"}
+                                                           value={3}/>
+                                                    <span className={"label-icon__content"}>
+                                                                <FontAwesomeIcon
+                                                                    icon={['fas', 'heart']}></FontAwesomeIcon>
+                                                            </span>
+                                                </label>
+                                                <div className={"image"} data-object-ratio={"16x9"}>
+                                                    <div className="image__container">
+                                                        <picture className="image__picture">
+                                                            <img
+                                                                className="image__source lazyload"
+                                                                src={require('./images/dishes/1.png')}
+                                                                // onError="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; this.classList.add('lazyerror')"
+                                                                data-src="https://cdn.kodixauto.ru/media/image/5e73524738ce19000135eae9"
+                                                                draggable="false"
+                                                                alt="" title=""
+                                                                data-object-fit="cover"/>
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className={"dish__info"}>
+                                        <div className={"dish__description"}>
+                                            Рисовая каша — это великолепное сочетание быстрых и сложных углеводов,
+                                            которое придаст вам сил и будет обеспечивать энергией на протяжении всего
+                                            дня. Она содержит низкое количество калорий и отлично воспринимается
+                                            организмом.
+                                        </div>
+
+                                        <div className={"dish__compound-line"}>
+                                            <div className={"dish__ingredients-wrapper"}>
+                                                <div className={"dish__ingredients-title"}>Состав:</div>
+                                                <div className={"dish__ingredients"}>
+                                                    мука высший сорт, сыр рикотта, шпинат свежемороженный, меланж
+                                                    яичный, масло сливочное 82% (пастеризованные сливки), масло
+                                                    оливковое, шалфей, соль.
+                                                </div>
+                                            </div>
+                                            <div className={"dish__compound-list"}>
+                                                <ul className={"compound-list"}>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            350
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            вес/объем <span>(г/мл)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            13.6
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            бекли <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            19.5
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            жиры <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            5.2
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            углеводы <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            235
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            калорийность <span>(на 100 грамм)</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className={"compound-list__row"}>
+                                                        <div className={"compound-list__measure"}>
+                                                            470
+                                                        </div>
+                                                        <div className={"compound-list__description"}>
+                                                            общая калорийность <span>(г)</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
