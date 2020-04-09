@@ -4,26 +4,42 @@
 
 @import "styles";
 
+:root {
+    --primary-color: #6BB247;
+    --secondary-color: #DDEBD3;
+    --primary-text-color: #595959;
 
-::selection {
-    background-color: #000;
-    color: #fff;
+    --color-gray1: #E8E8E8;
+    --color-gray2: #F5F5F5;
+    --color-gray3: #D9D9D9;
+    --color-gray4: #8C8C8C;
+    --color-gray5: #BFBFBF;
+
+    --selection-color: #fff;
+    --selection-background-color: #000;
+
+    --base-font-family: 'Open Sans', sans-serif;
+    --base-font-size: 1.4rem;
+    --base-line-height: 1.3;
+
+    --animation-speed: 0.2s;
+
+    --site-max-width: 109.5rem;
+    --site-min-width: 32rem;
+
+    --gutters: 1rem;
+
+    font-size: 10 / 16 * 100%;
 }
 
-:root {
-    font-size: 10 / 16 * 100%;
+::selection {
+    color: var(--selection-color);
+    background-color: var(--selection-background-color);
 }
 
 html {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
-
-    &.no-transition {
-
-        * {
-            transition: none !important;
-        }
-    }
 }
 
 *,
@@ -39,9 +55,9 @@ img {
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #595959;
-    font-size: 1.4rem;
+    font-family: var(--base-font-family);
+    color: var(--primary-text-color);
+    font-size: var(--base-font-size);
 }
 
 html,
@@ -55,17 +71,36 @@ ul, ol {
     list-style: none;
 }
 
+
+h3,
+.h3 {
+    line-height: 1.1;
+    margin: 0;
+    font-weight: 600;
+}
+
 .page {
     &__inner {
-        max-width: 1095px;
+        max-width: var(--site-max-width);
+        min-width: var(--site-min-width);
         margin: auto;
-        padding: 0 10px;
+        padding: 0 var(--gutters);
     }
 }
 
 .floor {
-    padding: 10px 0;
-    border-bottom: 1px solid #E8E8E8;
+    --offset-small: 1rem;
+    --offset-medium: 2rem;
+    --offset-large: 3rem;
+
+    @include breakpoint(desktop) {
+        --offset-small: 1.5rem;
+        --offset-medium: 3rem;
+        --offset-large: 4rem;
+    }
+
+    padding: var(--offset-small) 0;
+    border-bottom: 1px solid var(--color-gray1);
 
     &__inner {}
 
@@ -78,39 +113,27 @@ ul, ol {
     }
 
     &[data-offset-top="small"] {
-        padding-top: 10px;
+        padding-top: var(--offset-small);
     }
 
     &[data-offset-bottom="small"] {
-        padding-bottom: 10px;
+        padding-bottom: var(--offset-small);
     }
 
     &[data-offset-top="medium"] {
-        padding-top: 20px;
+        padding-top: var(--offset-medium);
     }
 
     &[data-offset-bottom="medium"] {
-        padding-bottom: 20px;
+        padding-bottom: var(--offset-medium);
     }
 
-    @include breakpoint(desktop) {
-        padding: 15px 0;
+    &[data-offset-top="large"] {
+        padding-top: var(--offset-large);
+    }
 
-        &[data-offset-top="small"] {
-            padding-top: 15px;
-        }
-
-        &[data-offset-bottom="small"] {
-            padding-bottom: 15px;
-        }
-
-        &[data-offset-top="medium"] {
-            padding-top: 30px;
-        }
-
-        &[data-offset-bottom="medium"] {
-            padding-bottom: 30px;
-        }
+    &[data-offset-bottom="large"] {
+        padding-bottom: var(--offset-large);
     }
 }
 
@@ -125,8 +148,8 @@ ul, ol {
     }
 
     &__title {
-        font-size: 28px;
-        color: #6BB247;
+        font-size: 2.8rem;
+        color: var(--primary-color);
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 1rem;
@@ -147,11 +170,11 @@ ul, ol {
         }
 
         &__title {
-            margin: 0 20px;
+            margin: 0 2rem;
         }
 
         &__search {
-            max-width: 255px;
+            max-width: 25.5rem;
         }
     }
 }
@@ -163,19 +186,19 @@ ul, ol {
 .search {
     display: flex;
     align-items: center;
-    height: 32px;
-    border: 1px solid #D9D9D9;
-    border-radius: 4px;
-    padding: 8px 10px;
+    height: 3.2rem;
+    border: 1px solid var(--color-gray3);
+    border-radius: 0.4rem;
+    padding: 0.8rem 1rem;
 
     &__input {
         border: none;
-        padding: 0 8px;
+        padding: 0 .8rem;
         flex-grow: 1;
-        font-size: 14px;
+        font-size: 1.4rem;
 
         @include placeholder {
-            color: #BFBFBF;
+            color: var(--color-gray5);
             font-weight: 300;
         }
 
@@ -185,24 +208,24 @@ ul, ol {
     }
 
     &__icon {
-        color: #8C8C8C;
-        font-size: 12px;
+        color: var(--color-gray4);
+        font-size: 1.2rem;
         flex-shrink: 0;
     }
 }
 
 .dishes {
-    &__item {
-        padding: 20px 0 15px;
-
-        &:not(:last-child) {
-            border-bottom: 1px solid #E8E8E8;
-        }
-    }
+    --offset: 2rem 0 1.5rem;
 
     @include breakpoint(desktop) {
-        &__item{
-            padding: 40px 0 30px;
+        --offset: 4rem 0 3rem;
+    }
+
+    &__item {
+        padding: var(--offset);
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--color-gray1);
         }
     }
 }
@@ -212,7 +235,7 @@ ul, ol {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
     }
 
     &__title {
@@ -234,6 +257,7 @@ ul, ol {
         }
     }
 }
+
 .dish {
     display: flex;
     flex-direction: column;
@@ -242,7 +266,7 @@ ul, ol {
         display: flex;
         flex-direction: column;
         flex-shrink: 0;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     &__info {
@@ -261,7 +285,7 @@ ul, ol {
     }
 
     &__compound-list {
-        min-width: 250px;
+        min-width: 25rem;
     }
 
     &__ingredients-wrapper {
@@ -269,7 +293,7 @@ ul, ol {
     }
 
     &__ingredients-title {
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 
     &__ingredients {
@@ -285,12 +309,13 @@ ul, ol {
        flex-direction: row;
 
         &__card {
-            flex-basis: 345px;
+            flex-basis: 34.5rem;
             margin-bottom: 0;
         }
 
         &__info {
             padding-left: 2rem;
+            margin-top: 5rem;
         }
 
         &__compound-line {
@@ -299,6 +324,7 @@ ul, ol {
 
         &__ingredients-wrapper {
             margin-bottom: 0;
+            padding-left: 2rem;
         }
     }
 }
@@ -318,6 +344,7 @@ ul, ol {
         width: 8rem;
         font-weight: 600;
         font-size: 1.6rem;
+        flex-shrink: 0;
     }
 
     &__description {
@@ -340,16 +367,15 @@ ul, ol {
     }
 }
 
-
 .filter {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -10px;
+    margin-bottom: -1rem;
 
     &__item {
-        margin-right: 8px;
-        margin-bottom: 10px;
+        margin-right: .8rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -366,48 +392,52 @@ ul, ol {
         display: flex;
         align-items: center;
         cursor: pointer;
-        transition: all 0.2s linear;
-        background-color: #F5F5F5;
-        border-radius: 25px;
+        transition: all var(--animation-speed) linear;
+        background-color: var(--color-gray2);
+        border-radius: 2.5rem;
         height: 100%;
-        color: #595959;
+        color: var(--primary-text-color);
         padding: 0 1.61em;
 
         svg {
             font-size: 2rem;
+            transition: color var(--animation-speed) linear;
         }
     }
 
     &:hover &__content,
     &__control:checked + &__content {
-        background-color: #DDEBD3;
-        color: #000;
+        background-color: var(--secondary-color);
+
+        svg {
+            color: var(--primary-color);
+        }
     }
 }
 
 .tip-icon {
     display: inline-block;
     font-size: 2rem;
-    color: #6BB247;
+    color: var(--primary-color);
     cursor: help;
 }
 
 .price {
     font-weight: bold;
     font-size: 3rem;
-    color: #6BB247;
+    color: var(--primary-color);
 
     &__currency {
         font-size: 1.4rem;
         font-weight: 400;
-        color: #595959;
+        color: var(--primary-text-color);
     }
 }
 
 .label-icon {
     display: inline-block;
     font-size: 2rem;
-    color: #595959;
+    color: var(--primary-text-color);
 
     &__control {
         display: none;
@@ -417,16 +447,14 @@ ul, ol {
         display: flex;
         align-items: center;
         cursor: pointer;
-        transition: all 0.2s linear;
+        transition: all var(--animation-speed) linear;
     }
 
     &:hover &__content,
     &__control:checked + &__content {
-        color: #6BB247;
+        color: var(--primary-color);
     }
 }
-
-
 
 .image {
     position: relative;
@@ -495,10 +523,3 @@ ul, ol {
     //}
 }
 
-
-h3,
-.h3 {
-    line-height: 1.1;
-    margin: 0;
-    font-weight: 600;
-}

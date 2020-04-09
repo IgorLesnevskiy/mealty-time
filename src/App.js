@@ -35,9 +35,9 @@ function App() {
                     </div>
                 </div>
 
-                <form name="filter" className="floor">
+                <div className="floor">
                     <div className="floor__inner">
-                        <div className={"filter"}>
+                        <form className={"filter"}>
                             <div className={"filter__item"}>
                                 <label className={"label-button"}>
                                     <input className={"label-button__control"} type={"radio"} name={"foo"}
@@ -114,9 +114,9 @@ function App() {
                                     </span>
                                 </label>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
 
                 <div className="floor" data-offset-top="none" data-offset-bottom="none">
                     <div className="floor__inner">
