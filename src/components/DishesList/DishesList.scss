@@ -1,0 +1,17 @@
+@import "../../styles";
+
+.dishes {
+    --offset: 2rem 0 1.5rem;
+
+    @include breakpoint(desktop) {
+        --offset: 4rem 0 3rem;
+    }
+
+    &__item {
+        padding: var(--offset);
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--color-gray1);
+        }
+    }
+}
