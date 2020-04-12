@@ -1,16 +1,31 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Tooltip } from "react-tippy";
 
 import "./TipIcon.scss";
 
-const TipIcon = () => {
+const TipIcon = (props) => {
+    const {
+        content = "",
+        position = "bottom",
+        trigger = "mouseenter",
+        icon = "info-circle",
+        theme = "primary",
+        arrow = true,
+    } = props;
+
     return (
-        <div>
-            <div className={"tip-icon"}>
-                <FontAwesomeIcon
-                    icon={["fas", "info-circle"]}
-                ></FontAwesomeIcon>
-            </div>
+        <div className={"tip-icon"}>
+            <Tooltip
+                className={"tip-icon__inner"}
+                title={content}
+                position={position}
+                trigger={trigger}
+                theme={theme}
+                arrow={arrow}
+            >
+                <FontAwesomeIcon icon={["fas", icon]} />
+            </Tooltip>
         </div>
     );
 };

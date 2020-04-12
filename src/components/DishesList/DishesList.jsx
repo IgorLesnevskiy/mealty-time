@@ -1,30 +1,36 @@
 import React from "react";
 
-import "./DishesList.scss";
 import Dish from "../Dish/Dish";
 
-const DishesList = () => {
-    return (
-        <div>
+import "./DishesList.scss";
+
+const DishesList = (props) => {
+    const { dishes = [] } = props;
+
+    if (!(dishes && dishes.length)) {
+        return <div>Ничего не найдено</div>;
+    } else {
+        return (
             <div className={"dishes"}>
-                <div className={"dishes__item"}>
-                    <Dish />
-                </div>
-                <div className={"dishes__item"}>
-                    <Dish />
-                </div>
-                <div className={"dishes__item"}>
-                    <Dish />
-                </div>
-                <div className={"dishes__item"}>
-                    <Dish />
-                </div>
-                <div className={"dishes__item"}>
-                    <Dish />
-                </div>
+                {dishes.map((dish) => {
+                    return (
+                        <div className={"dishes__item"} key={dish.id}>
+                            <Dish
+                                title={dish.title}
+                                image={dish.image}
+                                description={dish.description}
+                                price={dish.price}
+                                ingredients={dish.ingredients}
+                                compoundList={dish.compoundList}
+                                tip={dish.tip}
+                                inFavorite={dish.inFavorite}
+                            />
+                        </div>
+                    );
+                })}
             </div>
-        </div>
-    );
+        );
+    }
 };
 
 export default DishesList;

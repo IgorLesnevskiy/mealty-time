@@ -3,7 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./SearchBar.scss";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+    const {
+        name = "search",
+        placeholder = "Найти...",
+        onChangeHandler = Function.prototype,
+    } = props;
+
     return (
         <div className="search">
             <FontAwesomeIcon
@@ -11,9 +17,11 @@ const SearchBar = () => {
                 className={"search__icon"}
             />
             <input
-                type={"search"}
                 className="search__input"
-                placeholder={"Найти..."}
+                type={"search"}
+                name={name}
+                placeholder={placeholder}
+                onChange={onChangeHandler}
             />
         </div>
     );

@@ -5,6 +5,8 @@ import { Router } from "@reach/router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
+import "./App.scss";
+
 import MainLayout from "./layouts/MainLayout/MainLayout";
 
 import IndexPage from "./pages/IndexPage/IndexPage";

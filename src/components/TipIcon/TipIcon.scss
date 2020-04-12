@@ -1,8 +1,12 @@
-@import "../../styles";
+@import "../../styles/base";
 
 .tip-icon {
     display: inline-block;
     font-size: 2rem;
     color: var(--primary-color);
     cursor: help;
+
+    &__inner {
+        display: flex !important;
+    }
 }
