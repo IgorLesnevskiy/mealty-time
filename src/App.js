@@ -22,7 +22,7 @@ const IndexPageWithLayout = () => (
 function App() {
     return (
         <Router>
-            <IndexPageWithLayout path={"/"} />
+            <IndexPageWithLayout path={"/mealty-time/"} />
         </Router>
     );
 }
