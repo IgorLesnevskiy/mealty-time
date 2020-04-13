@@ -1,0 +1,23 @@
+@import "../../resources/styles/base";
+
+.label-icon {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--primary-text-color);
+
+    &__control {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all var(--animation-speed) linear;
+    }
+
+    &:hover &__content,
+    &__control:checked + &__content {
+        color: var(--primary-color);
+    }
+}

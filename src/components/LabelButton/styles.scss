@@ -1,0 +1,37 @@
+@import "../../resources/styles/base";
+
+.label-button {
+    display: inline-block;
+    font-size: 1.4rem;
+    height: 2.85em;
+
+    &__control {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all var(--animation-speed) linear;
+        background-color: var(--color-gray2);
+        border-radius: 2.5rem;
+        height: 100%;
+        color: var(--primary-text-color);
+        padding: 0 1.61em;
+
+        svg {
+            font-size: 2rem;
+            transition: color var(--animation-speed) linear;
+        }
+    }
+
+    &:hover &__content,
+    &__control:checked + &__content {
+        background-color: var(--secondary-color);
+
+        svg {
+            color: var(--primary-color);
+        }
+    }
+}

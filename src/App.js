@@ -1,21 +1,21 @@
 import React from "react";
-
 import { Router } from "@reach/router";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
 import "./App.scss";
 
-import MainLayout from "./layouts/MainLayout/MainLayout";
+//layouts
+import MainLayout from "./layouts/MainLayout";
 
-import IndexPage from "./pages/IndexPage/IndexPage";
+//pages
+import Index from "./pages/IndexPage";
 
 library.add(fas);
 
 const IndexPageWithLayout = () => (
     <MainLayout>
-        <IndexPage />
+        <Index />
     </MainLayout>
 );
 

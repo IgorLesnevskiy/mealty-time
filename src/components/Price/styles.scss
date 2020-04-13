@@ -1,0 +1,13 @@
+@import "../../resources/styles/base";
+
+.price {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--primary-color);
+
+    &__currency {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--primary-text-color);
+    }
+}

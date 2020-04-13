@@ -1,0 +1,40 @@
+@import "../../resources/styles/base";
+
+.compound-list {
+    line-height: 1.375;
+
+    &__row {
+        display: flex;
+        align-items: flex-start;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__measure {
+        width: 8rem;
+        font-weight: 600;
+        font-size: 1.6rem;
+        flex-shrink: 0;
+    }
+
+    &__description {
+        flex-grow: 1;
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    @include breakpoint(desktop) {
+        &__measure {
+            text-align: right;
+            width: 25%;
+        }
+
+        &__description {
+            padding-left: 2rem;
+        }
+    }
+}

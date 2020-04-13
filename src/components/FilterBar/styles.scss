@@ -1,0 +1,13 @@
+@import "../../resources/styles/base";
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -1rem;
+
+    &__item {
+        margin-right: 0.8rem;
+        margin-bottom: 1rem;
+    }
+}
