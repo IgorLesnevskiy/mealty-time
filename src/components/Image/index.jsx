@@ -5,7 +5,8 @@ import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 import "./styles.scss";
 
-// const PIXEL_SRC = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+const PIXEL_SRC =
+    "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
 
 const Image = (props) => {
     const {
@@ -36,9 +37,9 @@ const Image = (props) => {
     const sourcesMarkup = ImageSources({ sources });
 
     return (
-        <LazyLoadComponent>
-            <div className={"image"} data-object-ratio={ratio}>
-                <div className={cn(["image__container", imageStatus])}>
+        <div className={"image"} data-object-ratio={ratio}>
+            <div className={cn(["image__container", imageStatus])}>
+                <LazyLoadComponent placeholder={<ImagePlaceholder />}>
                     <picture className={"image__picture"}>
                         {sourcesMarkup}
                         <img
@@ -60,9 +61,9 @@ const Image = (props) => {
                             }
                         />
                     </picture>
-                </div>
+                </LazyLoadComponent>
             </div>
-        </LazyLoadComponent>
+        </div>
     );
 };
 
@@ -80,6 +81,14 @@ function ImageSources({ sources = [] }) {
             return <source type={type} srcSet={src} media={resolution} />;
         })
         .filter(Boolean);
+}
+
+function ImagePlaceholder({}) {
+    return (
+        <picture className={"image__picture"}>
+            <img className={"image__source"} src={PIXEL_SRC} />
+        </picture>
+    );
 }
 
 export default Image;

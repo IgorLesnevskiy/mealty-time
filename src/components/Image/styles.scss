@@ -73,7 +73,7 @@
 
     &__picture {
         transition: opacity 300ms;
-        opacity: 0;
+        //opacity: 0;
     }
 
     &__container.is-loading &__picture {
