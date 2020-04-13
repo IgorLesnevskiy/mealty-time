@@ -19,12 +19,9 @@ const IndexPageWithLayout = () => (
     </MainLayout>
 );
 
-const PUBLIC_URL =
-    process.env.NODE_ENV === "development" ? "/" : process.env.PUBLIC_URL;
-
 function App() {
     return (
-        <Router basepath={PUBLIC_URL}>
+        <Router basepath={process.env.PUBLIC_URL}>
             <IndexPageWithLayout path={"/"} />
         </Router>
     );
