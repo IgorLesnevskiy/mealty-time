@@ -11,7 +11,6 @@ const dataFetchReducer = (state, action) => {
                 isError: false,
             };
         case "FETCH_SUCCESS":
-            debugger;
             return {
                 ...state,
                 isLoading: false,

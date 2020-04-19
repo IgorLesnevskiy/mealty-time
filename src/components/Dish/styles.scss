@@ -23,7 +23,7 @@
 
     &__compound-line {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     &__compound-list {
@@ -32,6 +32,7 @@
 
     &__ingredients-wrapper {
         margin-bottom: 2rem;
+        flex-grow: 1;
     }
 
     &__ingredients-title {
@@ -61,11 +62,14 @@
         }
 
         &__compound-line {
-            flex-direction: row-reverse;
+            flex-direction: row;
         }
 
         &__ingredients-wrapper {
             margin-bottom: 0;
+        }
+
+        &__compound-list + &__ingredients-wrapper {
             padding-left: 2rem;
         }
     }
