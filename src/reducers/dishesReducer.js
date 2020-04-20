@@ -1,35 +1,44 @@
 import { dishesActions } from "../actions";
 
 const initialState = {
-    entities: [],
+    dishes: {
+        entities: {},
+        ids: [],
+    },
+    filters: {
+        entities: {},
+        ids: [],
+    },
     loading: true,
     error: null,
 };
 
-export default function dishesReducer(dishes = initialState, action) {
+export default function dishesReducer(dishesState = initialState, action) {
     if (action.type === dishesActions.DISHES_FETCH_BEGIN) {
         return {
-            ...dishes,
+            ...dishesState,
             loading: true,
         };
     }
 
     if (action.type === dishesActions.DISHES_FETCH_SUCCEED) {
         return {
-            ...dishes,
-            entities: action.payload.dishes,
-            ids: action.payload.ids,
+            ...dishesState,
+            dishes: action.payload.dishes,
+            filters: action.payload.filters,
             loading: false,
         };
     }
 
     if (action.type === dishesActions.DISHES_FETCH_FAILURE) {
+        console.error(action.payload.error);
+
         return {
-            ...dishes,
+            ...dishesState,
             loading: false,
             error: action.payload.error,
         };
     }
 
-    return dishes;
+    return dishesState;
 }

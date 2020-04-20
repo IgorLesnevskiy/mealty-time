@@ -4,7 +4,7 @@ import DishesList from "../components/DishesList";
 
 const mapStateToProps = (state) => {
     return {
-        dishes: state.dishedReducer.ids,
+        dishes: state.dishedReducer.dishes.ids,
         loading: state.dishedReducer.loading,
         error: state.dishedReducer.error,
     };

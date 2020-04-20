@@ -1,42 +1,46 @@
 import React, { useCallback } from "react";
 
 import "./FilterBar.scss";
-import LabelButton from "../LabelButton";
+
+import FilterBarItem from "../FilterBarItem";
+import FilterBarItemContainer from "../../containers/FilterBarItemContainer";
 
 const FilterBar = (props) => {
-    const { items = [] } = props;
+    const { filters = [], loading = true, error = null } = props;
 
-    const onFormInputChangeHandler = useCallback((e) => {
-        console.log(e);
-    }, []);
+    if (loading) {
+        return <MockFilterBar />;
+    }
 
-    const filterItemsMarkup = items.map((item) =>
-        FilterBarItem({
-            key: item.id,
-            itemData: item,
-            handlers: {
-                onChange: onFormInputChangeHandler,
-            },
-        })
+    if (error) {
+        return null;
+    }
+
+    return (
+        <form className={"filter"}>
+            {filters.map((filterItemId) => (
+                <div className={"filter__item"} key={filterItemId}>
+                    <FilterBarItemContainer filterItemId={filterItemId} />
+                </div>
+            ))}
+        </form>
     );
-
-    return <form className={"filter"}>{filterItemsMarkup}</form>;
 };
 
-const FilterBarItem = ({ key, itemData, handlers }) => {
+const MockFilterBar = () => {
+    const data = Array.from({ length: 3 });
+
     return (
-        <React.Fragment key={key}>
-            <div className={"filter__item"} key={itemData.id}>
-                <LabelButton
-                    id={itemData.id}
-                    type={itemData.type}
-                    name={itemData.name}
-                    content={itemData.content}
-                    value={itemData.value}
-                    {...handlers}
-                />
-            </div>
-        </React.Fragment>
+        <form className={"filter"}>
+            {data.map((_, key) => (
+                <div
+                    className={"filter__item"}
+                    key={`mock-filter-bar-item-${key}`}
+                >
+                    <FilterBarItem isMock={true} />
+                </div>
+            ))}
+        </form>
     );
 };
 

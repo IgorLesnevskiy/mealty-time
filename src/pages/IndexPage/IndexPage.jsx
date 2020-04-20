@@ -2,8 +2,8 @@ import React, { useCallback } from "react";
 
 import Floor from "../../components/Floor";
 import Header from "../../components/Header";
-import FilterBar from "../../components/FilterBar";
 import DishesListContainer from "../../containers/DishesListContainer";
+import FilterBarContainer from "../../containers/FilterBarContainer";
 
 const FilterBarProps = {};
 
@@ -68,7 +68,7 @@ const IndexPage = () => {
             </Floor>
 
             <Floor>
-                <FilterBar items={data.filter} />
+                <FilterBarContainer items={data.filter} />
             </Floor>
 
             <Floor offsetTop={"none"} offsetBottom={"none"}>

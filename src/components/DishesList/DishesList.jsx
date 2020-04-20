@@ -24,28 +24,26 @@ const DishesList = (props) => {
         return <MockDishList />;
     }
 
+    if (error) {
+        return (
+            <div className={"error-message"}>
+                Во время загрузки списка произошла ошибка
+            </div>
+        );
+    }
+
     if (!Object.values(dishes).length || error) {
         return <div className={"info-message"}>Нет блюд для отображения</div>;
     }
 
     return (
         <div className={"dishes"}>
-            {dishes.map((dishId) =>
-                DishListItem({
-                    dishId,
-                })
-            )}
+            {dishes.map((dishId) => (
+                <div className={"dishes__item"} key={dishId}>
+                    <DishContainer dishId={dishId} />
+                </div>
+            ))}
         </div>
-    );
-};
-
-const DishListItem = ({ dishId }) => {
-    return (
-        <React.Fragment key={dishId}>
-            <div className={"dishes__item"}>
-                <DishContainer dishId={dishId} />
-            </div>
-        </React.Fragment>
     );
 };
 

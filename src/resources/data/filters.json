@@ -1,1 +1,58 @@
-{}
+[
+  {
+    "id": "all",
+    "filterType": "sort-asc",
+    "title": "Все блюда",
+    "fields": ["title"]
+  },
+  {
+    "id": "a-lot-of-proteins",
+    "filterType": "sort-asc",
+    "title": "Много белков",
+    "fields": ["foodEnergy.portions_proteins.amount"]
+  },
+  {
+    "id": "a-lot-of-fats",
+    "filterType": "sort-asc",
+    "title": "Много жиров",
+    "fields": ["foodEnergy.portions_fats.amount"]
+  },
+  {
+    "id": "a-lot-of-carbs",
+    "filterType": "sort-asc",
+    "title": "Много углеводов",
+    "fields": ["foodEnergy.portions_carbs.amount"]
+  },
+  {
+    "id": "the-cheapest",
+    "filterType": "sort-asc",
+    "title": "Самые дешевые",
+    "fields": ["price.value"]
+  },
+  {
+    "id": "the-most-calorific",
+    "filterType": "sort-asc",
+    "title": "Самые калорийные",
+    "fields": ["foodEnergy.calorific.amount"]
+  },
+  {
+    "id": "the-heaviest",
+    "filterType": "sort-asc",
+    "title": "Самые объемные",
+    "fields": ["foodEnergy.weight.amount"]
+  },
+  {
+    "id": "no-onions",
+    "filterType": "exclude",
+    "filterExpression": "/лук/",
+    "title": "Без лука",
+    "fields": ["title", "description"]
+  },
+  {
+    "id": "in-favorites",
+    "filterType": "include",
+    "filterExpression": true,
+    "title": "В избранном",
+    "fields": ["favorite"]
+  }
+]

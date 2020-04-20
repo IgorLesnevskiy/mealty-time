@@ -22,7 +22,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "10.9",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -34,7 +34,7 @@
       },
       "calorific": {
         "amount": "652",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -62,7 +62,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "4",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -74,7 +74,7 @@
       },
       "calorific": {
         "amount": "414",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -102,7 +102,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "3",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -114,7 +114,7 @@
       },
       "calorific": {
         "amount": "286.2",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -142,7 +142,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "19.8",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -154,7 +154,7 @@
       },
       "calorific": {
         "amount": "367.5",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -182,7 +182,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "50.8",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -194,7 +194,7 @@
       },
       "calorific": {
         "amount": "818.4",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -222,7 +222,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "11.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -234,7 +234,7 @@
       },
       "calorific": {
         "amount": "647.5",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -262,7 +262,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "11.4",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -274,7 +274,7 @@
       },
       "calorific": {
         "amount": "383.6",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -302,7 +302,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "11.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -314,7 +314,7 @@
       },
       "calorific": {
         "amount": "504",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -342,7 +342,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "2.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -354,7 +354,7 @@
       },
       "calorific": {
         "amount": "293.8",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -382,7 +382,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "18.3",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -394,7 +394,7 @@
       },
       "calorific": {
         "amount": "604",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -422,7 +422,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "20.5",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -434,7 +434,7 @@
       },
       "calorific": {
         "amount": "773.5",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -462,7 +462,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "12.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -474,7 +474,7 @@
       },
       "calorific": {
         "amount": "396.1",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -502,7 +502,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "5.1",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -514,7 +514,7 @@
       },
       "calorific": {
         "amount": "266",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -542,7 +542,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "19.9",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -554,7 +554,7 @@
       },
       "calorific": {
         "amount": "583.2",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -582,7 +582,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "26",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -594,7 +594,7 @@
       },
       "calorific": {
         "amount": "851.4",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -622,7 +622,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "18.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -634,7 +634,7 @@
       },
       "calorific": {
         "amount": "385",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -662,7 +662,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "10.4",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -674,7 +674,7 @@
       },
       "calorific": {
         "amount": "155.1",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -702,7 +702,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "8.5",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -714,7 +714,7 @@
       },
       "calorific": {
         "amount": "357",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -742,7 +742,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "8.4",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -754,7 +754,7 @@
       },
       "calorific": {
         "amount": "295.2",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -782,7 +782,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "15.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -794,7 +794,7 @@
       },
       "calorific": {
         "amount": "759.5",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -822,7 +822,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "10.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -834,7 +834,7 @@
       },
       "calorific": {
         "amount": "504",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -862,7 +862,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "2.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -874,7 +874,7 @@
       },
       "calorific": {
         "amount": "208",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -902,7 +902,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "9.8",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -914,7 +914,7 @@
       },
       "calorific": {
         "amount": "393.7",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -942,7 +942,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "21.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -954,7 +954,7 @@
       },
       "calorific": {
         "amount": "584.1",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -982,7 +982,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "23.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -994,7 +994,7 @@
       },
       "calorific": {
         "amount": "801.8",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1022,7 +1022,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "3.9",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1034,7 +1034,7 @@
       },
       "calorific": {
         "amount": "364",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1062,7 +1062,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "8.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1074,7 +1074,7 @@
       },
       "calorific": {
         "amount": "175",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1102,7 +1102,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "10.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1114,7 +1114,7 @@
       },
       "calorific": {
         "amount": "215",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1142,7 +1142,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "8.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1154,7 +1154,7 @@
       },
       "calorific": {
         "amount": "205",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1182,7 +1182,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "10.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1194,7 +1194,7 @@
       },
       "calorific": {
         "amount": "215",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1222,7 +1222,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "5.3",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1234,7 +1234,7 @@
       },
       "calorific": {
         "amount": "391",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1262,7 +1262,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "5.9",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1274,7 +1274,7 @@
       },
       "calorific": {
         "amount": "438",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1302,7 +1302,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "18.1",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1314,7 +1314,7 @@
       },
       "calorific": {
         "amount": "331.2",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1342,7 +1342,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "20",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1354,7 +1354,7 @@
       },
       "calorific": {
         "amount": "776.1",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1382,7 +1382,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "16.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1394,7 +1394,7 @@
       },
       "calorific": {
         "amount": "657.4",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1422,7 +1422,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "21",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1434,7 +1434,7 @@
       },
       "calorific": {
         "amount": "732",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1462,7 +1462,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "24.3",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1474,7 +1474,7 @@
       },
       "calorific": {
         "amount": "933.9",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1502,7 +1502,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "16.8",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1514,7 +1514,7 @@
       },
       "calorific": {
         "amount": "649.6",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1542,7 +1542,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "9.3",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1554,7 +1554,7 @@
       },
       "calorific": {
         "amount": "414",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1582,7 +1582,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "6.5",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1594,7 +1594,7 @@
       },
       "calorific": {
         "amount": "355",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1622,7 +1622,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "5.2",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1634,7 +1634,7 @@
       },
       "calorific": {
         "amount": "470",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1662,7 +1662,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "8.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1674,7 +1674,7 @@
       },
       "calorific": {
         "amount": "532",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1702,7 +1702,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "16.3",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1714,7 +1714,7 @@
       },
       "calorific": {
         "amount": "363.3",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1742,7 +1742,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "8.1",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1754,7 +1754,7 @@
       },
       "calorific": {
         "amount": "114",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1782,7 +1782,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "20.8",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1794,7 +1794,7 @@
       },
       "calorific": {
         "amount": "1051.2",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1822,7 +1822,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "7.4",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1834,7 +1834,7 @@
       },
       "calorific": {
         "amount": "437",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1862,7 +1862,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "5",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1874,7 +1874,7 @@
       },
       "calorific": {
         "amount": "392",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1902,7 +1902,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "23.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1914,7 +1914,7 @@
       },
       "calorific": {
         "amount": "561.6",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1942,7 +1942,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "24.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1954,7 +1954,7 @@
       },
       "calorific": {
         "amount": "597.6",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -1982,7 +1982,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "33.1",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -1994,7 +1994,7 @@
       },
       "calorific": {
         "amount": "572.5",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2022,7 +2022,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "31.4",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2034,7 +2034,7 @@
       },
       "calorific": {
         "amount": "530.2",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2062,7 +2062,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "14.1",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2074,7 +2074,7 @@
       },
       "calorific": {
         "amount": "400.4",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2102,7 +2102,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "11.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2114,7 +2114,7 @@
       },
       "calorific": {
         "amount": "472",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2142,7 +2142,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "28.7",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2154,7 +2154,7 @@
       },
       "calorific": {
         "amount": "381.6",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2182,7 +2182,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "13.1",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2194,7 +2194,7 @@
       },
       "calorific": {
         "amount": "647.5",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2222,7 +2222,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "10.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2234,7 +2234,7 @@
       },
       "calorific": {
         "amount": "221.1",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2262,7 +2262,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "10.1",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2274,7 +2274,7 @@
       },
       "calorific": {
         "amount": "273.9",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2302,7 +2302,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "2.3",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2314,7 +2314,7 @@
       },
       "calorific": {
         "amount": "244",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2342,7 +2342,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "12.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2354,7 +2354,7 @@
       },
       "calorific": {
         "amount": "543.6",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2382,7 +2382,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "11.9",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2394,7 +2394,7 @@
       },
       "calorific": {
         "amount": "245",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2422,7 +2422,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "21.6",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2434,7 +2434,7 @@
       },
       "calorific": {
         "amount": "601.8",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }
@@ -2462,7 +2462,7 @@
         "measure": "на 100 грамм",
         "description": "Жиры"
       },
-      "portions_carbohydrates": {
+      "portions_carbs": {
         "amount": "7.4",
         "measure": "на 100 грамм",
         "description": "Углеводы"
@@ -2474,7 +2474,7 @@
       },
       "calorific": {
         "amount": "592",
-        "measure": "г",
+        "measure": "ккал",
         "description": "Общая калорийность"
       }
     }

@@ -1,6 +1,6 @@
 import dishesData from "../resources/data/dishes.json";
 import filtersData from "../resources/data/filters.json";
-import { dishesNormalizer } from "../tools/";
+import { dishesNormalizer, dishesFiltersNormalizer } from "../tools/";
 
 export const DISHES_FETCH_BEGIN = "DISHES_FETCH_BEGIN";
 export const DISHES_FETCH_SUCCEED = "DISHES_FETCH_SUCCEED";
@@ -11,11 +11,18 @@ export const dishesFetch = () => async (dispatch) => {
 
     try {
         const normalizedDishes = dishesNormalizer(dishesData);
+        const normalizedDishesFilters = dishesFiltersNormalizer(filtersData);
 
         dispatch(
             dishesFetchSucceed({
-                dishes: normalizedDishes.entities.dishes,
-                ids: normalizedDishes.result,
+                dishes: {
+                    entities: normalizedDishes.entities.dishes,
+                    ids: normalizedDishes.result,
+                },
+                filters: {
+                    entities: normalizedDishesFilters.entities.dishesFilters,
+                    ids: normalizedDishesFilters.result,
+                },
             })
         );
     } catch (error) {
@@ -34,12 +41,12 @@ export const dishesFetchBegin = () => {
     };
 };
 
-export const dishesFetchSucceed = ({ dishes = [], ids }) => {
+export const dishesFetchSucceed = ({ dishes = [], filters = [] }) => {
     return {
         type: DISHES_FETCH_SUCCEED,
         payload: {
             dishes,
-            ids,
+            filters,
         },
     };
 };
