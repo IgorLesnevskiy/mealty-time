@@ -1,5 +1,14 @@
 import { normalize, schema } from "normalizr";
 
+export default function dishesNormalizer(originalData) {
+    return normalize(originalData, [dishesSchema]);
+}
+
+const FAVORITE_DISHES =
+    localStorage && localStorage.favoriteDishes
+        ? localStorage.favoriteDishes
+        : [];
+
 const requireDishImage = function (id) {
     try {
         return require(`../../resources/images/dishes/${id}.jpeg`);
@@ -17,6 +26,7 @@ const dishesSchema = new schema.Entity(
         processStrategy(value, parent, key) {
             return {
                 ...value,
+                inFavorites: FAVORITE_DISHES.includes(value.id),
                 price: {
                     value: value.price,
                     currency: value.currency ? value.currency : "RUB",
@@ -30,7 +40,3 @@ const dishesSchema = new schema.Entity(
         },
     }
 );
-
-export default function dishesNormalizer(originalData) {
-    return normalize(originalData, [dishesSchema]);
-}

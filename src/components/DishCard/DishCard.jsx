@@ -16,17 +16,13 @@ const IMAGE_MODEL = {
 const DishCard = (props) => {
     const {
         isMock = false,
-        dishId,
+        id,
         price,
         title,
         image = IMAGE_MODEL,
         tip,
-        inFavorite,
+        inFavorites = false,
     } = props;
-
-    const onAddToFavoriteHandler = useCallback((e) => {
-        console.log(e);
-    }, []);
 
     if (isMock) {
         return <MockDishCard />;
@@ -55,15 +51,14 @@ const DishCard = (props) => {
                 <h3>{title}</h3>
             </div>
             <div className={"dish-card__image"}>
-                {/*<LabelIcon*/}
-                {/*    id={addToFavorite.id}*/}
-                {/*    type={addToFavorite.type}*/}
-                {/*    name={addToFavorite.name}*/}
-                {/*    icon={addToFavorite.icon}*/}
-                {/*    value={addToFavorite.value}*/}
-                {/*    isChecked={inFavorite}*/}
-                {/*    onChange={onAddToFavoriteHandler}*/}
-                {/*/>*/}
+                <LabelIcon
+                    id={`dish-${id}`}
+                    type={"checkbox"}
+                    name={`dish-${id}`}
+                    icon={"heart"}
+                    value={id}
+                    isChecked={inFavorites}
+                />
                 {image && (
                     <Image
                         src={image.src}

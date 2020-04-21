@@ -1,4 +1,5 @@
 import { dishesActions } from "../actions";
+import remove from "lodash/remove";
 
 const initialState = {
     dishes: {
@@ -8,7 +9,9 @@ const initialState = {
     filters: {
         entities: {},
         ids: [],
+        activeFiltersIds: [],
     },
+    searchQueryString: "",
     loading: true,
     error: null,
 };
@@ -37,6 +40,38 @@ export default function dishesReducer(dishesState = initialState, action) {
             ...dishesState,
             loading: false,
             error: action.payload.error,
+        };
+    }
+
+    if (action.type === dishesActions.DISHES_SEARCH_QUERY) {
+        return {
+            ...dishesState,
+            searchQueryString: action.payload.query || "",
+        };
+    }
+
+    if (action.type === dishesActions.DISHES_APPLY_FILTER) {
+        if (!action.payload.filterId) {
+            return {
+                ...dishesState,
+            };
+        }
+
+        const filters = { ...dishesState.filters };
+
+        for (let filterId of filters.ids) {
+            if (filterId === action.payload.filterId) {
+                filters.entities[filterId].isChecked = true;
+                filters.activeFiltersIds.push(action.payload.filterId);
+            } else {
+                filters.entities[filterId].isChecked = false;
+                remove(filters.activeFiltersIds, (k) => k === filterId);
+            }
+        }
+
+        return {
+            ...dishesState,
+            filters,
         };
     }
 

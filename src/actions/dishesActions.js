@@ -5,6 +5,12 @@ import { dishesNormalizer, dishesFiltersNormalizer } from "../tools/";
 export const DISHES_FETCH_BEGIN = "DISHES_FETCH_BEGIN";
 export const DISHES_FETCH_SUCCEED = "DISHES_FETCH_SUCCEED";
 export const DISHES_FETCH_FAILURE = "DISHES_FETCH_FAILURE";
+export const DISHES_SEARCH_QUERY = "DISHES_SEARCH_QUERY";
+export const DISHES_APPLY_FILTER = "DISHES_APPLY_FILTER";
+
+const getActiveFilters = (filters = {}) => {
+    return Object.keys(filters).filter((id) => filters[id].isChecked);
+};
 
 export const dishesFetch = () => async (dispatch) => {
     dispatch(dishesFetchBegin());
@@ -22,6 +28,9 @@ export const dishesFetch = () => async (dispatch) => {
                 filters: {
                     entities: normalizedDishesFilters.entities.dishesFilters,
                     ids: normalizedDishesFilters.result,
+                    activeFiltersIds: getActiveFilters(
+                        normalizedDishesFilters.entities.dishesFilters
+                    ),
                 },
             })
         );
@@ -56,6 +65,23 @@ export const dishesFetchFailure = ({ error }) => {
         type: DISHES_FETCH_FAILURE,
         payload: {
             error,
+        },
+    };
+};
+
+export const dishesSearchQuery = ({ query = "" } = {}) => {
+    return {
+        type: DISHES_SEARCH_QUERY,
+        payload: {
+            query,
+        },
+    };
+};
+export const dishesApplyFilter = ({ filterId = null } = {}) => {
+    return {
+        type: DISHES_APPLY_FILTER,
+        payload: {
+            filterId,
         },
     };
 };

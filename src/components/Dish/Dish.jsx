@@ -23,6 +23,7 @@ const Dish = ({ dish = {}, isMock }) => {
     const [uniqId] = useState(id || utils.getUniqueId());
 
     const dishCardParams = {
+        id,
         price,
         tip,
         title,

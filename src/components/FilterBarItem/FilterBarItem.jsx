@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useCallback } from "react";
 import isEmpty from "lodash/isEmpty";
 
 import "./FilterBarItem.scss";
 import LabelButton from "../LabelButton";
 
-const FilterBarItem = ({ filterItem = {}, isMock = false }) => {
+const FilterBarItem = ({
+    filterItem = {},
+    applyFilter = Function.prototype,
+    isMock = false,
+}) => {
+    const onChangeHandler = useCallback(
+        (e) => {
+            applyFilter({
+                filterId: e.target.value,
+            });
+        },
+        [applyFilter]
+    );
+
     if (isMock) {
         return <MockFilterBarItem />;
     }
@@ -20,6 +33,8 @@ const FilterBarItem = ({ filterItem = {}, isMock = false }) => {
             name={filterItem.name}
             content={filterItem.content}
             value={filterItem.value}
+            isChecked={filterItem.isChecked}
+            onChange={onChangeHandler}
         />
     );
 };

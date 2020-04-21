@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 import Dish from "../Dish";
 import DishContainer from "../../containers/DishContainer";
@@ -26,14 +25,14 @@ const DishesList = (props) => {
 
     if (error) {
         return (
-            <div className={"error-message"}>
+            <p className={"error-message"}>
                 Во время загрузки списка произошла ошибка
-            </div>
+            </p>
         );
     }
 
     if (!Object.values(dishes).length || error) {
-        return <div className={"info-message"}>Нет блюд для отображения</div>;
+        return <p className={"info-message"}>Нет блюд для отображения</p>;
     }
 
     return (
