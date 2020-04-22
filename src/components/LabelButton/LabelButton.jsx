@@ -6,7 +6,6 @@ import Skeleton from "react-loading-skeleton";
 import "./LabelButton.scss";
 
 const LabelButton = (props) => {
-    console.log(props);
     const {
         isMock = false,
         type = "radio",

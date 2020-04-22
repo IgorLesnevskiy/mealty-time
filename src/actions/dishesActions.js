@@ -9,7 +9,10 @@ export const DISHES_SEARCH_QUERY = "DISHES_SEARCH_QUERY";
 export const DISHES_APPLY_FILTER = "DISHES_APPLY_FILTER";
 
 const getActiveFilters = (filters = {}) => {
-    return Object.keys(filters).filter((id) => filters[id].isChecked);
+    return Object.keys(filters)
+        .filter((id) => filters[id].isChecked)
+        .slice(0, 1)
+        .toString();
 };
 
 export const dishesFetch = () => async (dispatch) => {
@@ -28,7 +31,7 @@ export const dishesFetch = () => async (dispatch) => {
                 filters: {
                     entities: normalizedDishesFilters.entities.dishesFilters,
                     ids: normalizedDishesFilters.result,
-                    activeFiltersIds: getActiveFilters(
+                    activeFilterId: getActiveFilters(
                         normalizedDishesFilters.entities.dishesFilters
                     ),
                 },

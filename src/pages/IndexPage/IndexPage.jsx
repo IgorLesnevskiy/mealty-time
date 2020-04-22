@@ -1,17 +1,11 @@
-import React, { useCallback } from "react";
+import React from "react";
 
 import Floor from "../../components/Floor";
 import Header from "../../components/Header";
 import DishesListContainer from "../../containers/DishesListContainer";
 import FilterBarContainer from "../../containers/FilterBarContainer";
 
-const FilterBarProps = {};
-
 const IndexPage = () => {
-    const onFilterBarChange = useCallback((e) => {
-        console.log(e);
-    }, []);
-
     return (
         <React.Fragment>
             <Floor offsetTop={"medium"} offsetBottom={"medium"}>

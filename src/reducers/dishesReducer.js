@@ -9,7 +9,7 @@ const initialState = {
     filters: {
         entities: {},
         ids: [],
-        activeFiltersIds: [],
+        activeFilterId: "all",
     },
     searchQueryString: "",
     loading: true,
@@ -62,10 +62,9 @@ export default function dishesReducer(dishesState = initialState, action) {
         for (let filterId of filters.ids) {
             if (filterId === action.payload.filterId) {
                 filters.entities[filterId].isChecked = true;
-                filters.activeFiltersIds.push(action.payload.filterId);
+                filters.activeFilterId = action.payload.filterId;
             } else {
                 filters.entities[filterId].isChecked = false;
-                remove(filters.activeFiltersIds, (k) => k === filterId);
             }
         }
 

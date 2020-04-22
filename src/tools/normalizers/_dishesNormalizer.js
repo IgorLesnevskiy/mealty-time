@@ -28,7 +28,7 @@ const dishesSchema = new schema.Entity(
                 ...value,
                 inFavorites: FAVORITE_DISHES.includes(value.id),
                 price: {
-                    value: value.price,
+                    value: Number(value.price),
                     currency: value.currency ? value.currency : "RUB",
                 },
                 image: {
