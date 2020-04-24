@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import Dish from "../Dish";
-import DishContainer from "../../containers/DishContainer";
+import DishContainer from "../../containers/dishes/DishContainer";
 
 import "./DishesList.scss";
 

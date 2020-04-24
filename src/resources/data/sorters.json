@@ -1,0 +1,44 @@
+[
+  {
+    "id": "by-title-asc",
+    "sorterType": "asc",
+    "title": "По названию",
+    "fields": ["title"]
+  },
+  {
+    "id": "by-proteins-desc",
+    "sorterType": "desc",
+    "title": "Много белков",
+    "fields": ["foodEnergy.portion_proteins.amount"]
+  },
+  {
+    "id": "by-fats-desc",
+    "sorterType": "desc",
+    "title": "Много жиров",
+    "fields": ["foodEnergy.portion_fats.amount"]
+  },
+  {
+    "id": "by-carbs-desc",
+    "sorterType": "desc",
+    "title": "Много углеводов",
+    "fields": ["foodEnergy.portion_carbs.amount"]
+  },
+  {
+    "id": "by-price-desc",
+    "sorterType": "desc",
+    "title": "Самые дешевые",
+    "fields": ["price.value"]
+  },
+  {
+    "id": "by-calories-desc",
+    "sorterType": "desc",
+    "title": "Самые калорийные",
+    "fields": ["foodEnergy.calorific.amount"]
+  },
+  {
+    "id": "by-weight-desc",
+    "sorterType": "desc",
+    "title": "Самые объемные",
+    "fields": ["foodEnergy.weight.amount"]
+  }
+]

@@ -48,4 +48,12 @@
     &[data-offset-bottom="large"] {
         padding-bottom: var(--offset-large);
     }
+
+    &[data-disable-top-border="true"] {
+        border-top: none;
+    }
+
+    &[data-disable-bottom-border="true"] {
+        border-bottom: none;
+    }
 }

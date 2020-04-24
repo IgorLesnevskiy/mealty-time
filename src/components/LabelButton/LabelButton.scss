@@ -4,6 +4,7 @@
     display: inline-block;
     font-size: 1.4rem;
     height: 2.85em;
+    cursor: pointer;
 
     &__control {
         display: none;
@@ -13,6 +14,7 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        border: 1px solid transparent;
         transition: all var(--animation-speed) linear;
         background-color: var(--color-gray2);
         border-radius: 2.5rem;
@@ -37,5 +39,19 @@
 
     .react-loading-skeleton {
         border-radius: 2.5rem;
+    }
+}
+
+.label-button.is-checkbox {
+    .label-button__content {
+        border: 1px solid var(--primary-text-color);
+        color: var(--primary-text-color);
+        background: transparent;
+    }
+
+    &:hover .label-button__content,
+    .label-button__control:checked + .label-button__content {
+        border-color: var(--primary-color);
+        color: var(--selection-background-color);
     }
 }

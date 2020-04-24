@@ -1,58 +1,32 @@
 [
   {
-    "id": "all",
-    "filterType": "sort-desc",
-    "filterExpression": null,
-    "title": "Все блюда",
-    "fields": ["title"]
+    "id": "with-beef",
+    "filterType": "include",
+    "filterExpression": "говядина|говядиной|говядину|говядины",
+    "exclude": ["with-chicken"],
+    "title": "С говядиной",
+    "fields": ["title", "description", "ingredients"]
   },
   {
-    "id": "lots-of-proteins",
-    "filterType": "sort-asc",
-    "filterExpression": null,
-    "title": "Много белков",
-    "fields": ["foodEnergy.portion_proteins.amount"]
+    "id": "with-chicken",
+    "filterType": "include",
+    "filterExpression": "курица|курицы|курицей|курицу|куриное|куриным",
+    "exclude": ["with-beef"],
+    "title": "С курочкой",
+    "fields": ["title", "description", "ingredients"]
   },
   {
-    "id": "lots-of-fats",
-    "filterType": "sort-asc",
-    "filterExpression": null,
-    "title": "Много жиров",
-    "fields": ["foodEnergy.portion_fats.amount"]
-  },
-  {
-    "id": "lots-of-carbs",
-    "filterType": "sort-asc",
-    "filterExpression": null,
-    "title": "Много углеводов",
-    "fields": ["foodEnergy.portion_carbs.amount"]
-  },
-  {
-    "id": "the-cheapest",
-    "filterType": "sort-desc",
-    "filterExpression": null,
-    "title": "Самые дешевые",
-    "fields": ["price.value"]
-  },
-  {
-    "id": "the-most-calorific",
-    "filterType": "sort-asc",
-    "filterExpression": null,
-    "title": "Самые калорийные",
-    "fields": ["foodEnergy.calorific.amount"]
-  },
-  {
-    "id": "the-heaviest",
-    "filterType": "sort-asc",
-    "filterExpression": null,
-    "title": "Самые объемные",
-    "fields": ["foodEnergy.weight.amount"]
-  },
-  {
-    "id": "no-onions",
+    "id": "no-onion",
     "filterType": "exclude",
     "filterExpression": "лук",
     "title": "Без лука",
     "fields": ["title", "description", "ingredients"]
+  },
+  {
+    "id": "in-favorites",
+    "filterType": "include",
+    "filterExpression": true,
+    "title": "В избранном",
+    "fields": ["favorite"]
   }
 ]

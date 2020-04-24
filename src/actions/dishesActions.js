@@ -1,18 +1,25 @@
 import dishesData from "../resources/data/dishes.json";
 import filtersData from "../resources/data/filters.json";
-import { dishesNormalizer, dishesFiltersNormalizer } from "../tools/";
+import sortersData from "../resources/data/sorters.json";
+import {
+    dishesNormalizer,
+    dishesFiltersNormalizer,
+    dishesSortersNormalizer,
+} from "../tools/";
 
 export const DISHES_FETCH_BEGIN = "DISHES_FETCH_BEGIN";
 export const DISHES_FETCH_SUCCEED = "DISHES_FETCH_SUCCEED";
 export const DISHES_FETCH_FAILURE = "DISHES_FETCH_FAILURE";
 export const DISHES_SEARCH_QUERY = "DISHES_SEARCH_QUERY";
 export const DISHES_APPLY_FILTER = "DISHES_APPLY_FILTER";
+export const DISHES_APPLY_SORTER = "DISHES_APPLY_SORTER";
 
 const getActiveFilters = (filters = {}) => {
-    return Object.keys(filters)
-        .filter((id) => filters[id].isChecked)
-        .slice(0, 1)
-        .toString();
+    return Object.keys(filters).filter((id) => filters[id].isChecked);
+};
+
+const getActiveSorter = (filters = {}) => {
+    return Object.keys(filters).filter((id) => filters[id].isChecked);
 };
 
 export const dishesFetch = () => async (dispatch) => {
@@ -21,6 +28,7 @@ export const dishesFetch = () => async (dispatch) => {
     try {
         const normalizedDishes = dishesNormalizer(dishesData);
         const normalizedDishesFilters = dishesFiltersNormalizer(filtersData);
+        const normalizedDishesSorters = dishesSortersNormalizer(sortersData);
 
         dispatch(
             dishesFetchSucceed({
@@ -31,8 +39,15 @@ export const dishesFetch = () => async (dispatch) => {
                 filters: {
                     entities: normalizedDishesFilters.entities.dishesFilters,
                     ids: normalizedDishesFilters.result,
-                    activeFilterId: getActiveFilters(
+                    activeFiltersIds: getActiveFilters(
                         normalizedDishesFilters.entities.dishesFilters
+                    ),
+                },
+                sorters: {
+                    entities: normalizedDishesSorters.entities.dishesSorters,
+                    ids: normalizedDishesSorters.result,
+                    activeSortersIds: getActiveSorter(
+                        normalizedDishesSorters.entities.dishesSorters
                     ),
                 },
             })
@@ -53,17 +68,22 @@ export const dishesFetchBegin = () => {
     };
 };
 
-export const dishesFetchSucceed = ({ dishes = [], filters = [] }) => {
+export const dishesFetchSucceed = (params) => {
+    const { dishes = [], filters = [], sorters = [] } = params;
+
     return {
         type: DISHES_FETCH_SUCCEED,
         payload: {
             dishes,
             filters,
+            sorters,
         },
     };
 };
 
-export const dishesFetchFailure = ({ error }) => {
+export const dishesFetchFailure = (params) => {
+    const { error } = params;
+
     return {
         type: DISHES_FETCH_FAILURE,
         payload: {
@@ -72,7 +92,9 @@ export const dishesFetchFailure = ({ error }) => {
     };
 };
 
-export const dishesSearchQuery = ({ query = "" } = {}) => {
+export const dishesSearchQuery = (params = {}) => {
+    const { query = "" } = params;
+
     return {
         type: DISHES_SEARCH_QUERY,
         payload: {
@@ -80,11 +102,27 @@ export const dishesSearchQuery = ({ query = "" } = {}) => {
         },
     };
 };
-export const dishesApplyFilter = ({ filterId = null } = {}) => {
+
+export const dishesApplyFilter = (params = {}) => {
+    const { id = null, isChecked } = params;
+
     return {
         type: DISHES_APPLY_FILTER,
         payload: {
-            filterId,
+            id,
+            isChecked,
+        },
+    };
+};
+
+export const dishesApplySorter = (params = {}, ...rest) => {
+    const { id = null, isChecked } = params;
+
+    return {
+        type: DISHES_APPLY_SORTER,
+        payload: {
+            id,
+            isChecked,
         },
     };
 };

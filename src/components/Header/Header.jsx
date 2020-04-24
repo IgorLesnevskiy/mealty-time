@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 
 import "./Header.scss";
 import Logo from "../Logo";
-import SearchBarContainer from "../../containers/SearchBarContainer";
+import SearchBarContainer from "../../containers/dishes/DishesSearchBarContainer";
 
 const logoParams = {
     imageSrc: require("../../resources/images/logo.png"),

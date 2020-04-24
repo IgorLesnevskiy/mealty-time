@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import { dishesActions } from "../actions";
-import SearchBar from "../components/SearchBar";
+import { dishesActions } from "../../actions";
+import SearchBar from "../../components/SearchBar";
 
 const mapDispatchToProps = {
     searchDishes: dishesActions.dishesSearchQuery,

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { utils } from "../../tools/";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Skeleton from "react-loading-skeleton";
+import cn from "classnames";
+
+import { utils } from "../../tools/";
 
 import "./LabelButton.scss";
 
@@ -24,7 +26,7 @@ const LabelButton = (props) => {
     }
 
     return (
-        <label className={"label-button"} htmlFor={uniqId}>
+        <label className={cn(["label-button", `is-${type}`])} htmlFor={uniqId}>
             <input
                 id={uniqId}
                 className={"label-button__control"}

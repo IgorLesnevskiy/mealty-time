@@ -7,6 +7,8 @@ const Floor = (props) => {
     const {
         offsetTop = "small",
         offsetBottom = "small",
+        disableTopBorder = false,
+        disableBottomBorder = false,
         extraClasses = [],
         children,
     } = props;
@@ -16,6 +18,8 @@ const Floor = (props) => {
             className={cn("floor", extraClasses)}
             data-offset-top={offsetTop}
             data-offset-bottom={offsetBottom}
+            {...(disableTopBorder && { "data-disable-top-border": true })}
+            {...(disableBottomBorder && { "data-disable-bottom-border": true })}
         >
             <div className="floor__inner">{children}</div>
         </div>

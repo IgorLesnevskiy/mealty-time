@@ -16,7 +16,7 @@ const dishesFiltersSchema = new schema.Entity(
         processStrategy(value, parent, key) {
             return {
                 ...value,
-                type: "radio",
+                type: "checkbox",
                 name: "filterDish",
                 isChecked: value.id === LAST_FILTER_ID,
                 value: value.id,
