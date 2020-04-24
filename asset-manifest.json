@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mealty-time/static/css/main.aade9926.chunk.css",
-    "main.js": "/mealty-time/static/js/main.66dd969a.chunk.js",
-    "main.js.map": "/mealty-time/static/js/main.66dd969a.chunk.js.map",
+    "main.css": "/mealty-time/static/css/main.d1ca5a04.chunk.css",
+    "main.js": "/mealty-time/static/js/main.c13acc83.chunk.js",
+    "main.js.map": "/mealty-time/static/js/main.c13acc83.chunk.js.map",
     "runtime-main.js": "/mealty-time/static/js/runtime-main.65e12b3b.js",
     "runtime-main.js.map": "/mealty-time/static/js/runtime-main.65e12b3b.js.map",
     "static/css/2.6766ff5c.chunk.css": "/mealty-time/static/css/2.6766ff5c.chunk.css",
-    "static/js/2.1913b5d0.chunk.js": "/mealty-time/static/js/2.1913b5d0.chunk.js",
-    "static/js/2.1913b5d0.chunk.js.map": "/mealty-time/static/js/2.1913b5d0.chunk.js.map",
+    "static/js/2.2c1ca97c.chunk.js": "/mealty-time/static/js/2.2c1ca97c.chunk.js",
+    "static/js/2.2c1ca97c.chunk.js.map": "/mealty-time/static/js/2.2c1ca97c.chunk.js.map",
     "index.html": "/mealty-time/index.html",
-    "precache-manifest.f38139664d2c885349e814c18d881a30.js": "/mealty-time/precache-manifest.f38139664d2c885349e814c18d881a30.js",
+    "precache-manifest.a2e8bf662ee48a36b012d96a7ceae12c.js": "/mealty-time/precache-manifest.a2e8bf662ee48a36b012d96a7ceae12c.js",
     "service-worker.js": "/mealty-time/service-worker.js",
     "static/css/2.6766ff5c.chunk.css.map": "/mealty-time/static/css/2.6766ff5c.chunk.css.map",
-    "static/css/main.aade9926.chunk.css.map": "/mealty-time/static/css/main.aade9926.chunk.css.map",
-    "static/js/2.1913b5d0.chunk.js.LICENSE.txt": "/mealty-time/static/js/2.1913b5d0.chunk.js.LICENSE.txt",
+    "static/css/main.d1ca5a04.chunk.css.map": "/mealty-time/static/css/main.d1ca5a04.chunk.css.map",
+    "static/js/2.2c1ca97c.chunk.js.LICENSE.txt": "/mealty-time/static/js/2.2c1ca97c.chunk.js.LICENSE.txt",
     "static/media/03248c630b42c285.jpeg": "/mealty-time/static/media/03248c630b42c285.06018bd3.jpeg",
     "static/media/1098b2ff289b7545.jpeg": "/mealty-time/static/media/1098b2ff289b7545.89d9f3f7.jpeg",
     "static/media/167ffc92eec89416.jpeg": "/mealty-time/static/media/167ffc92eec89416.567c17d1.jpeg",
@@ -81,8 +81,8 @@
   "entrypoints": [
     "static/js/runtime-main.65e12b3b.js",
     "static/css/2.6766ff5c.chunk.css",
-    "static/js/2.1913b5d0.chunk.js",
-    "static/css/main.aade9926.chunk.css",
-    "static/js/main.66dd969a.chunk.js"
+    "static/js/2.2c1ca97c.chunk.js",
+    "static/css/main.d1ca5a04.chunk.css",
+    "static/js/main.c13acc83.chunk.js"
   ]
 }
