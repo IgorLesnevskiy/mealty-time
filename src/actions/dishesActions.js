@@ -13,14 +13,8 @@ export const DISHES_FETCH_FAILURE = "DISHES_FETCH_FAILURE";
 export const DISHES_SEARCH_QUERY = "DISHES_SEARCH_QUERY";
 export const DISHES_APPLY_FILTER = "DISHES_APPLY_FILTER";
 export const DISHES_APPLY_SORTER = "DISHES_APPLY_SORTER";
-
-const getActiveFilters = (filters = {}) => {
-    return Object.keys(filters).filter((id) => filters[id].isChecked);
-};
-
-const getActiveSorter = (filters = {}) => {
-    return Object.keys(filters).filter((id) => filters[id].isChecked);
-};
+export const DISHES_ADD_TO_FAVORITES = "DISHES_ADD_TO_FAVORITES";
+export const DISHES_REMOVE_FROM_FAVORITES = "DISHES_REMOVE_FROM_FAVORITES";
 
 export const dishesFetch = () => async (dispatch) => {
     dispatch(dishesFetchBegin());
@@ -35,6 +29,9 @@ export const dishesFetch = () => async (dispatch) => {
                 dishes: {
                     entities: normalizedDishes.entities.dishes,
                     ids: normalizedDishes.result,
+                    favoriteDishesIds: getFavoriteDishesIds(
+                        normalizedDishes.entities.dishes
+                    ),
                 },
                 filters: {
                     entities: normalizedDishesFilters.entities.dishesFilters,
@@ -115,7 +112,7 @@ export const dishesApplyFilter = (params = {}) => {
     };
 };
 
-export const dishesApplySorter = (params = {}, ...rest) => {
+export const dishesApplySorter = (params = {}) => {
     const { id = null, isChecked } = params;
 
     return {
@@ -125,4 +122,36 @@ export const dishesApplySorter = (params = {}, ...rest) => {
             isChecked,
         },
     };
+};
+
+export const dishesToggleFavorite = (params = {}) => {
+    const { id = null, isChecked } = params;
+
+    if (isChecked) {
+        return {
+            type: DISHES_ADD_TO_FAVORITES,
+            payload: {
+                id,
+            },
+        };
+    } else {
+        return {
+            type: DISHES_REMOVE_FROM_FAVORITES,
+            payload: {
+                id,
+            },
+        };
+    }
+};
+
+const getActiveFilters = (filters = {}) => {
+    return Object.keys(filters).filter((id) => filters[id].isChecked);
+};
+
+const getActiveSorter = (filters = {}) => {
+    return Object.keys(filters).filter((id) => filters[id].isChecked);
+};
+
+const getFavoriteDishesIds = (dishes = []) => {
+    return Object.keys(dishes).filter((id) => dishes[id].favorite);
 };

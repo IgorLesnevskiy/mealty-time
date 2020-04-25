@@ -1,3 +1,4 @@
+import constants from "./_constants.js";
 import utils from "./_utils.js";
 import dishesNormalizer from "./normalizers/_dishesNormalizer.js";
 import dishesFiltersNormalizer from "./normalizers/_dishesFiltersNormalizer.js";
@@ -7,6 +8,7 @@ import applySortersToDishesList from "./_applySortersToDishesList";
 
 export {
     utils,
+    constants,
     dishesNormalizer,
     dishesFiltersNormalizer,
     dishesSortersNormalizer,

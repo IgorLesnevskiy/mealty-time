@@ -17,7 +17,7 @@ const DishesList = (props) => {
         dishesFetch();
 
         return () => {};
-    }, []);
+    }, [dishesFetch]);
 
     if (loading) {
         return <MockDishList />;

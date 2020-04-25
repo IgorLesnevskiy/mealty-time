@@ -1,0 +1,49 @@
+.up-button {
+    --base-font-size: 1.2rem;
+
+    --bottomOffset: 1.5em;
+    --sideOffset: 1.5em;
+    --buttonWidth: 4.2em;
+    --buttonHieght: 4.2em;
+    --iconSize: 1.6em;
+
+    --button-background-color: var(--secondary-color);
+    --button-icon-color: var(--primary-text-color);
+
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--base-font-size);
+    width: var(--buttonWidth);
+    height: var(--buttonHieght);
+    right: var(--sideOffset);
+    bottom: var(--bottomOffset);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s linear;
+    cursor: pointer;
+    z-index: 9999;
+    background: var(--button-background-color);
+    border-radius: 1rem;
+    border: none;
+
+    &__icon {
+        display: flex;
+        font-size: var(--iconSize);
+        color: var(--button-icon-color);
+    }
+
+    &.is-visible {
+        opacity: 1;
+        pointer-events: all;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

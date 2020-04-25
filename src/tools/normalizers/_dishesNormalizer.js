@@ -1,12 +1,14 @@
 import { normalize, schema } from "normalizr";
 
+import constants from "../_constants";
+
 export default function dishesNormalizer(originalData) {
     return normalize(originalData, [dishesSchema]);
 }
 
 const FAVORITE_DISHES =
-    localStorage && localStorage.favoriteDishes
-        ? localStorage.favoriteDishes
+    localStorage && localStorage[constants.storage.FAVORITE_DISHES]
+        ? localStorage[constants.storage.FAVORITE_DISHES]
         : [];
 
 const requireDishImage = function (id) {
@@ -26,7 +28,7 @@ const dishesSchema = new schema.Entity(
         processStrategy(value, parent, key) {
             return {
                 ...value,
-                inFavorites: FAVORITE_DISHES.includes(value.id),
+                favorite: FAVORITE_DISHES.includes(value.id),
                 price: {
                     value: Number(value.price),
                     currency: value.currency ? value.currency : "RUB",

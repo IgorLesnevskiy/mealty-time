@@ -83,10 +83,10 @@ function ImageSources({ sources = [] }) {
         .filter(Boolean);
 }
 
-function ImagePlaceholder({}) {
+function ImagePlaceholder() {
     return (
         <picture className={"image__picture"}>
-            <img className={"image__source"} src={PIXEL_SRC} />
+            <img className={"image__source"} src={PIXEL_SRC} alt={""} />
         </picture>
     );
 }

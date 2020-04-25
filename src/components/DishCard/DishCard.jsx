@@ -21,8 +21,21 @@ const DishCard = (props) => {
         title,
         image = IMAGE_MODEL,
         tip,
-        inFavorites = false,
+        favorite = false,
+        onFavoriteCallback = Function.prototype,
     } = props;
+
+    const onFavoriteButtonChangeHandler = useCallback(
+        (e) => {
+            const isChecked = e.target.checked;
+
+            onFavoriteCallback({
+                id,
+                isChecked,
+            });
+        },
+        [onFavoriteCallback, id]
+    );
 
     if (isMock) {
         return <MockDishCard />;
@@ -57,7 +70,8 @@ const DishCard = (props) => {
                     name={`dish-${id}`}
                     icon={"heart"}
                     value={id}
-                    isChecked={inFavorites}
+                    isChecked={favorite}
+                    onChange={onFavoriteButtonChangeHandler}
                 />
                 {image && (
                     <Image

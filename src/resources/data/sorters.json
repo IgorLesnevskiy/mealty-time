@@ -24,8 +24,8 @@
     "fields": ["foodEnergy.portion_carbs.amount"]
   },
   {
-    "id": "by-price-desc",
-    "sorterType": "desc",
+    "id": "by-price-acs",
+    "sorterType": "asc",
     "title": "Самые дешевые",
     "fields": ["price.value"]
   },

@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
 import { createSelector } from "reselect";
 import isEmpty from "lodash/isEmpty";
-import get from "lodash/get";
 
 import { dishesActions } from "../../actions";
 import DishesList from "../../components/DishesList";

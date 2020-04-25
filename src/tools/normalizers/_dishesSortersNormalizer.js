@@ -1,13 +1,14 @@
 import { normalize, schema } from "normalizr";
+import constants from "../_constants";
 
 export default function dishesSortersNormalizer(originalData) {
     return normalize(originalData, [dishesSortersSchema]);
 }
 
-const LAST_SORTER_ID =
-    localStorage && localStorage.lastSorterId
-        ? localStorage.lastSorterId
-        : "by-title-asc";
+const LAST_SORTERS_IDS =
+    localStorage && localStorage[constants.storage.LAST_SORTERS_IDS]
+        ? localStorage[constants.storage.LAST_SORTERS_IDS]
+        : ["by-title-asc"];
 
 const dishesSortersSchema = new schema.Entity(
     "dishesSorters",
@@ -18,7 +19,7 @@ const dishesSortersSchema = new schema.Entity(
                 ...value,
                 type: "radio",
                 name: "sorterDish",
-                isChecked: value.id === LAST_SORTER_ID,
+                isChecked: LAST_SORTERS_IDS.includes(value.id),
                 value: value.id,
                 content: getContent(value),
             };

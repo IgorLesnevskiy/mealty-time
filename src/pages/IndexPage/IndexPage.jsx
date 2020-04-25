@@ -17,14 +17,18 @@ const IndexPage = () => {
                 <Header />
             </Floor>
 
-            <Floor offsetTop={"small"} offsetBottom={"small"}>
+            <Floor
+                offsetTop={"small"}
+                offsetBottom={"small"}
+                disableBottomBorder={true}
+            >
                 <DishesControlBarContainer type={"filters"} title={"Фильтры"} />
             </Floor>
 
             <Floor offsetTop={"small"} offsetBottom={"small"}>
                 <DishesControlBarContainer
                     type={"sorters"}
-                    title={"Сортировка"}
+                    title={"Сортировки"}
                 />
             </Floor>
 

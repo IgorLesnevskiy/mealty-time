@@ -1,13 +1,15 @@
 import { normalize, schema } from "normalizr";
 
+import constants from "../_constants";
+
 export default function dishesFiltersNormalizer(originalData) {
     return normalize(originalData, [dishesFiltersSchema]);
 }
 
-const LAST_FILTER_ID =
-    localStorage && localStorage.lastFilterId
-        ? localStorage.lastFilterId
-        : "all";
+const LAST_FILTERS_IDS =
+    localStorage && localStorage[constants.storage.LAST_FILTERS_IDS]
+        ? localStorage[constants.storage.LAST_FILTERS_IDS]
+        : ["all"];
 
 const dishesFiltersSchema = new schema.Entity(
     "dishesFilters",
@@ -18,7 +20,7 @@ const dishesFiltersSchema = new schema.Entity(
                 ...value,
                 type: "checkbox",
                 name: "filterDish",
-                isChecked: value.id === LAST_FILTER_ID,
+                isChecked: LAST_FILTERS_IDS.includes(value.id),
                 value: value.id,
                 content: getContent(value),
             };
