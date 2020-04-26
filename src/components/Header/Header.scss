@@ -5,17 +5,11 @@
     align-items: center;
     flex-direction: column;
 
-    &__logo {
-        min-width: 16.5rem;
-        margin-bottom: 1rem;
-    }
-
     &__title {
         font-size: 2.8rem;
         color: var(--primary-color);
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 1rem;
     }
 
     &__search {
@@ -27,14 +21,6 @@
     @include breakpoint(desktop) {
         flex-direction: row;
         justify-content: space-between;
-
-        &__logo {
-            margin-bottom: 0;
-        }
-
-        //&__title {
-        //    margin: 0 2rem;
-        //}
 
         &__search {
             max-width: 25.5rem;

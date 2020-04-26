@@ -1,5 +1,5 @@
 ## A simple dishes aggregator
 
-Made just for convenience for me and my friends. Feel free to use it too if you like it :-)
+Made just for convenience for me and my friends.
 
 https://igorlesnevskiy.github.io/mealty-time/
