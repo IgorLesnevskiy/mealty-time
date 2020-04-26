@@ -51,8 +51,10 @@
     ]
   },
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "cross-env": "^7.0.2",
     "gh-pages": "^2.2.0",
+    "md5": "^2.2.1",
     "prettier": "^2.0.4"
   }
 }

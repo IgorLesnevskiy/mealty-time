@@ -11,16 +11,6 @@ const FAVORITE_DISHES =
         ? localStorage[constants.storage.FAVORITE_DISHES]
         : [];
 
-const requireDishImage = function (id) {
-    try {
-        return require(`../../resources/images/dishes/${id}.jpeg`);
-    } catch (e) {
-        console.log(e.message);
-
-        return "";
-    }
-};
-
 const dishesSchema = new schema.Entity(
     "dishes",
     {},
@@ -34,7 +24,7 @@ const dishesSchema = new schema.Entity(
                     currency: value.currency ? value.currency : "RUB",
                 },
                 image: {
-                    src: value.image ? value.image : requireDishImage(value.id),
+                    src: value.image,
                     alt: value.title,
                     title: value.title,
                 },

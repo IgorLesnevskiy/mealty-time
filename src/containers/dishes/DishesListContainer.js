@@ -48,9 +48,7 @@ const getProcessedDishesList = createSelector(
         {
             if (!isEmpty(filters.entities) && !isEmpty(resultDishesIds)) {
                 const currentDishes = resultDishesIds.map(getDishEntity);
-                const filtersEntities = filters.activeFiltersIds.map(
-                    getFilterEntity
-                );
+                const filtersEntities = filters.activeIds.map(getFilterEntity);
 
                 resultDishesIds = applyFiltersToDishesList(
                     currentDishes,
@@ -62,7 +60,7 @@ const getProcessedDishesList = createSelector(
         {
             if (!isEmpty(sorters.entities) && !isEmpty(resultDishesIds)) {
                 const currentDishes = resultDishesIds.map(getDishEntity);
-                const sortersEntities = sorters.activeSortersIds.map(
+                const sortersEntities = sorters.activeIds.map(
                     getSortersEntities
                 );
 

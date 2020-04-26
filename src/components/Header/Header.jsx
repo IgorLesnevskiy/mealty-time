@@ -9,6 +9,7 @@ const logoParams = {
     alt: "Mealty Time",
     title: "Mealty Time",
     width: "165px",
+    url: "https://www.mealty.ru/",
 };
 
 const searchBarParams = {

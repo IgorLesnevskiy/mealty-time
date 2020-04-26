@@ -2,23 +2,24 @@ import { dishesActions } from "../actions";
 import { constants } from "../tools";
 
 import isEmpty from "lodash/isEmpty";
+import get from "lodash/get";
 import remove from "lodash/remove";
 
 const initialState = {
     dishes: {
         entities: {},
         ids: [],
-        favoriteDishesIds: [],
+        favoriteIds: [],
     },
     filters: {
         entities: {},
         ids: [],
-        activeFiltersIds: [],
+        activeIds: [],
     },
     sorters: {
         entities: {},
         ids: [],
-        activeSortersIds: ["by-title-asc"],
+        activeIds: ["by-title-asc"],
     },
     searchQueryString: "",
     loading: true,
@@ -79,10 +80,6 @@ export default function dishesReducer(dishesState = initialState, action) {
         const { id, isChecked } = action.payload;
         const filters = { ...dishesState.filters };
         const filter = filters.entities[id];
-        const removeFromActiveIds = (id) =>
-            remove(filters.activeFiltersIds, (i) => i === id);
-        const addToActiveIds = (id) => filters.activeFiltersIds.push(id);
-        const setFilterStatus = (id, v) => (filters.entities[id].isChecked = v);
 
         if (isEmpty(filter)) {
             return {
@@ -90,23 +87,23 @@ export default function dishesReducer(dishesState = initialState, action) {
             };
         }
 
-        setFilterStatus(id, isChecked);
+        filters.entities[id].isChecked = isChecked;
 
         if (isChecked) {
-            addToActiveIds(id);
+            filters.activeIds.push(id);
 
             if (!isEmpty(filter.exclude)) {
                 filter.exclude.forEach(function (excludeId) {
-                    setFilterStatus(excludeId, false);
-                    removeFromActiveIds(excludeId);
+                    filters.entities[excludeId].isChecked = false;
+                    remove(filters.activeIds, (i) => i === excludeId);
                 });
             }
         } else {
-            removeFromActiveIds(id);
+            remove(filters.activeIds, (i) => i === id);
         }
 
         localStorage[constants.storage.LAST_FILTERS_IDS] = JSON.stringify([
-            ...filters.activeFiltersIds,
+            ...filters.activeIds,
         ]);
 
         return {
@@ -131,15 +128,15 @@ export default function dishesReducer(dishesState = initialState, action) {
         for (let sorterId of sorters.ids) {
             if (sorterId === id) {
                 sorters.entities[sorterId].isChecked = true;
-                sorters.activeSortersIds.push(sorterId);
+                sorters.activeIds.push(sorterId);
             } else {
                 sorters.entities[sorterId].isChecked = false;
-                remove(sorters.activeSortersIds, (i) => i === sorterId);
+                remove(sorters.activeIds, (i) => i === sorterId);
             }
         }
 
         localStorage[constants.storage.LAST_SORTERS_IDS] = JSON.stringify([
-            ...sorters.activeSortersIds,
+            ...sorters.activeIds,
         ]);
 
         return {
@@ -155,17 +152,17 @@ export default function dishesReducer(dishesState = initialState, action) {
         const { id } = action.payload;
         const dishes = { ...dishesState.dishes };
 
-        if (!id || dishes.favoriteDishesIds.includes(id)) {
+        if (!id || dishes.favoriteIds.includes(id)) {
             return {
                 ...dishesState,
             };
         }
 
-        dishes.favoriteDishesIds.push(id);
+        dishes.favoriteIds.push(id);
         dishes.entities[id].favorite = true;
 
         localStorage[constants.storage.FAVORITE_DISHES] = JSON.stringify([
-            ...dishes.favoriteDishesIds,
+            ...dishes.favoriteIds,
             id,
         ]);
 
@@ -182,17 +179,17 @@ export default function dishesReducer(dishesState = initialState, action) {
         const { id } = action.payload;
         const dishes = { ...dishesState.dishes };
 
-        if (!id || !dishes.favoriteDishesIds.includes(id)) {
+        if (!id || !dishes.favoriteIds.includes(id)) {
             return {
                 ...dishesState,
             };
         }
 
         dishes.entities[id].favorite = false;
-        dishes.favoriteDishesIds = remove(dishes.favoriteDishesIds, id);
+        dishes.favoriteIds = remove(dishes.favoriteIds, id);
 
         localStorage[constants.storage.FAVORITE_DISHES] = JSON.stringify([
-            ...dishes.favoriteDishesIds,
+            ...dishes.favoriteIds,
         ]);
 
         return {

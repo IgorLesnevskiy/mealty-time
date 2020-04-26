@@ -29,21 +29,21 @@ export const dishesFetch = () => async (dispatch) => {
                 dishes: {
                     entities: normalizedDishes.entities.dishes,
                     ids: normalizedDishes.result,
-                    favoriteDishesIds: getFavoriteDishesIds(
+                    favoriteIds: getfavoriteIds(
                         normalizedDishes.entities.dishes
                     ),
                 },
                 filters: {
                     entities: normalizedDishesFilters.entities.dishesFilters,
                     ids: normalizedDishesFilters.result,
-                    activeFiltersIds: getActiveFilters(
+                    activeIds: getActiveFilters(
                         normalizedDishesFilters.entities.dishesFilters
                     ),
                 },
                 sorters: {
                     entities: normalizedDishesSorters.entities.dishesSorters,
                     ids: normalizedDishesSorters.result,
-                    activeSortersIds: getActiveSorter(
+                    activeIds: getActiveSorter(
                         normalizedDishesSorters.entities.dishesSorters
                     ),
                 },
@@ -152,6 +152,6 @@ const getActiveSorter = (filters = {}) => {
     return Object.keys(filters).filter((id) => filters[id].isChecked);
 };
 
-const getFavoriteDishesIds = (dishes = []) => {
+const getfavoriteIds = (dishes = []) => {
     return Object.keys(dishes).filter((id) => dishes[id].favorite);
 };

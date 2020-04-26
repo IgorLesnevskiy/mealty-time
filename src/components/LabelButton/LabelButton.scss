@@ -52,6 +52,6 @@
     &:hover .label-button__content,
     .label-button__control:checked + .label-button__content {
         border-color: var(--primary-color);
-        color: var(--selection-background-color);
+        color: var(--primary-color);
     }
 }
