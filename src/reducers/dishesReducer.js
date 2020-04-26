@@ -2,7 +2,6 @@ import { dishesActions } from "../actions";
 import { constants } from "../tools";
 
 import isEmpty from "lodash/isEmpty";
-import get from "lodash/get";
 import remove from "lodash/remove";
 
 const initialState = {

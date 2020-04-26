@@ -1,4 +1,4 @@
-## A simple dishes aggregator for https://mealty.ru
+## A simple dishes aggregator
 
 Made just for convenience for me and my friends. Feel free to use it too if you like it :-)
 

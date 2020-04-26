@@ -1,16 +1,7 @@
 import React from "react";
 
 import "./Header.scss";
-import Logo from "../Logo";
 import SearchBarContainer from "../../containers/dishes/DishesSearchBarContainer";
-
-const logoParams = {
-    imageSrc: require("../../resources/images/logo.png"),
-    alt: "Mealty Time",
-    title: "Mealty Time",
-    width: "165px",
-    url: "https://www.mealty.ru/",
-};
 
 const searchBarParams = {
     name: "search",
@@ -22,9 +13,6 @@ const Header = (props) => {
 
     return (
         <header className="header">
-            <div className="header__logo">
-                <Logo {...logoParams} />
-            </div>
             <div className="header__title">{title}</div>
             <div className="header__search">
                 <SearchBarContainer {...searchBarParams} />
