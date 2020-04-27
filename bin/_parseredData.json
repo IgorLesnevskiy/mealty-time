@@ -1,0 +1,3740 @@
+[
+  {
+    "id": "631a563a036138dbf6bf70c371381fac",
+    "title": "Сырники с бельгийским шоколадом",
+    "description": "Нежные сырники отлично гармонируют с бельгийским шоколадом. Прекрасное начало дня или сытный полдник.",
+    "ingredients": "творог 9% (молоко пастеризованное, закваска), творожный сыр cremette (творог, загуститель крахмал кукурузный, соль, стабилизаторы камедь рожкового дерева и гуаровая камедь, регулятор кислотности лимонная кислота, вода питьевая), мука пшеничная, яичный меланж пастеризованный, соль, сахар, бельгийский черный шоколад.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/92/fa/92fa094e0dc68b1a.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 240,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 10.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 23.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 234,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "562",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "68a13b9a03cecc840e93747d2f9697f1",
+    "title": "Сырники с клюквой",
+    "description": "Вкусные сырники с клюквой это необычно вкусное блюдо. Они прекрасно подойдут для завтрака или полдника!",
+    "ingredients": "творог 9%, творожный сыр cremette (творог, загуститель крахмал кукурузный, соль, стабилизаторы камедь рожкового дерева и гуаровая камедь, регулятор кислотности лимонная кислота, вода питьевая), мука пшеничная, яичный меланж, соль, сахар, клюква сушеная (ягоды клюквы резаные, сахар, масло растительное).",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/1a/3c/1a3c529378c6c4b0.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 240,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 10.6,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 24.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 249,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "598",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "63304f9cb0be3cfd35e448e01fd5f892",
+    "title": "Блинчики с мясом",
+    "description": "Блинчики с мясом одни из самых сытных, подойдут и для завтрака, и для ужина. Их можно как закуску поставить на праздничный стол или просто взять с собой для перекуса.",
+    "ingredients": "блинчики (сливки 22%, вода питьевая, меланж яичный, мука блинная, сахар, соль, масло растительное, лимонный сок); начинка (говядина, лук репчатый, морковь, гвоздика, черный перец, тмин, соль, масло растительное).",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/55/01/550183b275a59583.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 180,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 11.4,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11.2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 159,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "286",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "5b7a88b8ebacb98d6dbce500a1898b03",
+    "title": "Блинчики с яблоками и корицей",
+    "description": "Нежнейшие блинчики с яблоками и корицей станут отличным началом нового дня или прекрасным завершением ужина. А дети просто обожают их!",
+    "ingredients": "блинчики (сливки 22%, вода питьевая, меланж яичный, мука блинная, сахар, соль, масло растительное, лимонный сок); начинка (яблоки свежие, изюм, сахар, корица молотая, масло сливочное, мука миндальная, мука пшеничная, соль, цедра лимона, ваниль).",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/49/52/49528f110fcf0196.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 210,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 3.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 8.8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 19.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 175,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "368",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "c4c19c95807755a29b36fb37c1e6ec56",
+    "title": "Сладкие блинчики со шпинатом и рикоттой",
+    "description": "Сладкие блинчики со шпинатом просто восхитительны. Вкусный, нежный и питательный завтрак или десерт с итальянским сыром рикотта и цукатами из апельсинов.",
+    "ingredients": "блинчики (сливки 22%, вода питьевая, меланж яичный, мука блинная, масло растительное, шпинат свежемороженный, лимонный сок, сахар, соль); начинка (сыр рикотта, мед, манная крупа, цедра апельсина).",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/d8/ff/d8ffcccf14dc73ce.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 210,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.5,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 16.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 173,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "363",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "86937b4e75fe6ded6228a5bf1b017d60",
+    "title": "Омлет с ветчиной из индейки, сыром чеддер и хашбрауном",
+    "description": "Что может быть лучше, чем свежий, румяный, нежный омлет с ветчиной из индейки и сыром чеддер на завтрак! А классический хашбраун, который дополняет блюдо, сделает ваш завтрак неповторимым.",
+    "ingredients": "яйцо куриное, ветчина из индейки, сыр чеддер, масло растительное, сливки 22%, петрушка, картофель, сливочное масло, соль.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/20/b7/20b7954c3b3efb46.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 230,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 9.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 12,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 5.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 170,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "391",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "f2bcee95c7b3465b6c25929cf3b74951",
+    "title": "Омлет со свежими овощами и хашбрауном",
+    "description": "Омлет со свежими овощами и хашбрауном может стать отличным вариантом для вкусного, сытного и полезного завтрака.",
+    "ingredients": "меланж яичный, сливки 22%, петрушка, перец болгарский, морковь, спаржа, лук порей, стручок гороха, брокколи, оливковое масло, картофель, соль.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/b1/1d/b11d42f1dc7ed3b2.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 300,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 10.8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 5.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 146,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "438",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "efabe24ce869e9d67b095c3db852b288",
+    "title": "Белковый омлет с грибами и печеной тыквой",
+    "description": "Белковый омлет не отягощён желтками и не нагружает работу поджелудочной железы. А у грибов есть шуточное название «лесное мясо». И это не напрасно, поскольку они имеют высокие питательные качества и дают много пользы организму.",
+    "ingredients": "меланж белок, шампиньоны, тыква баттернат, лук порей, молоко кокосовое, масло оливковое, вода, соль.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/8a/96/8a961083584de4e2.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 240,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 5.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 4.4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 2.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 69,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "166",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "93c31fd9b61eb0b833ea3aeae9c23bdc",
+    "title": "Творожная запеканка с персиковым конфитюром",
+    "description": "Очень вкусная и нежная творожная запеканка. Это отличный вариант плотного и вкусного дополнения к утренней чашечке чая или кофе.",
+    "ingredients": "творог 9%, сливки 22%, персик свежемороженный, ананасовое пюре, сахар, соль, ваниль, меланж яичный, манная крупа.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/16/7f/167ffc92eec89416.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 220,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 9.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 14.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 182,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "400",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "ae6159e6cbd7b2fc135b1e5669378a47",
+    "title": "Каша рисовая с соусом из черной смородины и кедровыми орешками",
+    "description": "Рисовая каша - это великолепное сочетание быстрых и сложных углеводов, которое придаст вам сил и будет обеспечивать энергией на протяжении всего дня. Она содержит низкое количество калорий и отлично воспринимается организмом.",
+    "ingredients": "рис, сливки 22%, киноа, изюм, ваниль, сахар, черная смородина, миндальные лепестки, кедровые орехи, соль, вода питьевая.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/ea/1c/ea1c553c7cea31b4.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 1.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 18.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 110,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "385",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "c1b24cfb363025285f4373847967980e",
+    "title": "Круассан с красной рыбкой и сливочным сыром",
+    "description": "Воздушный и ароматный круассан с красной рыбкой и сливочным сыром хорош на завтрак и в качестве перекуса в течение дня.",
+    "ingredients": "мука из мягких сортов пшеницы, масло сливочное 82,5%, филе кижуча с/с, сыр творожный (нормализованное молоко, соль пищевая, хлорид кальция, с использованием закваски и фермента микробного происхождения), огурец, салат романо, вода, сливки 22 %, сахар, дрожжи сухие, укроп, соль.",
+    "price": 150,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/59/74/59747d70facc0a59.jpeg",
+    "category": "breakfast",
+    "foodEnergy": {
+      "weight": {
+        "amount": 180,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 16.5,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 18.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 254,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "457",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "be09a3efa1d4528a8b365fda68a495ea",
+    "title": "Греческий салат",
+    "description": "Греческий салат - самый популярный во всём мире овощной салат, который любят и часто готовят в Греции. Он легкий, но сытный.",
+    "ingredients": "помидоры черри, сыр сиртаки, огурцы, салат айсберг, перец болгарский, маслины, оливки, оливковое масло.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/70/14/7014d3f9eeeed0ff.jpeg",
+    "category": "salad",
+    "foodEnergy": {
+      "weight": {
+        "amount": 260,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 4.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 2.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 113,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "294",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "cbd39af391eb951ecfb6cbabbbe09c2d",
+    "title": "Салат Нисуаз с тунцом",
+    "description": "Салат Нисуаз очень популярен во всем мире и является одним из самых известных блюд прованской кухни. Это хороший салат на все случаи жизни!",
+    "ingredients": "тунец консервированный, салат айсберг, салат романо, томаты, яйцо куриное, картофель, огурцы, оливки консервированные, фасоль, маслины консервированные, перец болгарский, соус (майонез, каперсы консервированные, анчоусы в масле, соус табаско красный, соус вустерский).",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/81/2d/812d34caa53146dd.jpeg",
+    "category": "salad",
+    "foodEnergy": {
+      "weight": {
+        "amount": 250,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 7.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 6.5,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 142,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "355",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "6a474f63160ac5d6d038caebf4ba1e67",
+    "title": "Салат Цезарь с курицей",
+    "description": "Салат Цезарь с курицей является одним из самых любимых и популярных салатов во всем мире. Этот салат весьма изысканный – румяные сухарики из белого хлеба, яркие половинки помидоров черри и нежное мясо курицы смотрятся очень живописно среди пышных листьев салата. Тертый пармезан завершает картину.",
+    "ingredients": "филе куриное, салат романо, салат айсберг, сыр пармезан, томаты, соус (анчоусы в масле, каперсы консервированные, маслины консервированные, чеснок свежий, масло оливковое, соевый соус, майонез).",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/3e/25/3e25f645f5862188.jpeg",
+    "category": "salad",
+    "foodEnergy": {
+      "weight": {
+        "amount": 200,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 13.6,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 19.5,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 5.2,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 235,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "470",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "3f90e235113304e8b5abe09777278161",
+    "title": "Салат Оливье",
+    "description": "Сытный и необыкновенно вкусный Оливье - считается одним из самых популярных салатов в России. «Русский салат», как называют его во всем мире.",
+    "ingredients": "Картофель отварной, морковь отварная, меланж яичный, говядина отварная, огурец свежий, огурец маринованный, горошек зеленый консервированный, майонез, соль.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/2d/5d/2d5d8ab6eea47454.jpeg",
+    "category": "salad",
+    "foodEnergy": {
+      "weight": {
+        "amount": 300,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 14.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 5.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 177,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "531",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "f39f716371c3ca129ccd348618e5753e",
+    "title": "Салат с языком и рукколой в ореховом соусе",
+    "description": "Салат с языком и рукколой в ореховом соусе — это нежный мясной салат, который удовлетворит настоящих гурманов оригинальным сочетанием вкусов.",
+    "ingredients": "говяжий язык, салат руккола, салат романо, салат айсберг, авокадо, морковь, томаты черри, кедровые орехи, соус ((майонез (масло растительное, вода, яичный желток, уксус столовый, сахар, соль, ароматизаторы: горчицы идентичный натуральному, паприки натуральной; сок лимонный концентрированный, краситель бета-каротин), ореховый соус (рапсовое масло, кунжутное семя соль, вода, сахар, чеснок сухой), соус табаско красный)), соль, перец черный горошек, лавровый лист, гвоздика.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/4b/60/4b60cbef8493e46e.jpeg",
+    "category": "salad",
+    "foodEnergy": {
+      "weight": {
+        "amount": 180,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 16.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 3.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 195,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "351",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "715ea5e8d64fcf9335f334ffea2df12a",
+    "title": "Куриный суп с домашней лапшой",
+    "description": "Горячий наваристый куриный суп с домашней лапшой – что может быть вкуснее? Он отлично насыщает, подходит для любого времени года, дарит необходимые микроэлементы и даже помогает справляться с простудой и болезнями, укрепляя организм.",
+    "ingredients": "куриное филе, курица, лапша удон, лук репчатый, морковь, имбирь свежий, лавровый лист, корень сельдерея, масло растительное, перец черный, соль, вода питьевая.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/c4/b1/c4b1cf1a2da7eae5.jpeg",
+    "category": "soup",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 2.8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 3.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 2.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 52,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "208",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "6d1248368fe7087577f99a75ba23b24f",
+    "title": "Зеленый суп-пюре с брокколи, шпинатом и базиликом",
+    "description": "Зеленый суп-пюре с броколли, шпинатом и базиликом - нежный, легкий, очень вкусный, несомненно порадует любителей овощных супов. Он входит в базовые варианта обеда во многих детокс-программах. Так что, если хотите очищения, то и оно тут присутствует.",
+    "ingredients": "брокколи, шпинат, базилик, фасоль, кабачки, картофель, чеснок, сливки 22%, масло растительное, вода питьевая, соль.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/31/5c/315ce77605f0ae9b.jpeg",
+    "category": "soup",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 1.4,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 5.8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 5.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 76,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "266",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "d5b87baa68b534d21e54e21670f4d272",
+    "title": "Суп-пюре из шампиньонов со сливками",
+    "description": "Суп-пюре из шампиньонов со сливками очень вкусный, а его кремовая текстура сведет с ума не одного гурмана. Его польза просто неоценима, как для детского питания, так и для диетического.",
+    "ingredients": "грибы шампиньоны, масло растительное, картофель, лук репчатый, сливки 22%, масло сливочное, вода питьевая, соль.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/3c/6a/3c6a58870c01c5fc.jpeg",
+    "category": "soup",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 5,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 112,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "392",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "9900593cf9b69cd2404f96e71b4c671c",
+    "title": "Тыквенный крем-суп с кокосовым молоком",
+    "description": "Ярко-оранжевый, горячий, нежный тыквенный крем суп с бархатистым вкусом и приятной текстурой преподнесет вам настоящее блаженство! Легко усваивается, насыщая организм витаминами, минеральными солями, клетчаткой и органическими кислотами.",
+    "ingredients": "тыква баттернат, молоко кокосовое, тыквенные семечки, вода питьевая, морковь, масло растительное, лук репчатый, корень сельдерея, рис, корень имбиря, зира, соль.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/e5/eb/e5ebd9b9ad3bd7ab.jpeg",
+    "category": "soup",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 1.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 4.2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 10.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 83,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "274",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "107c4413771697563176010fbb930d74",
+    "title": "Уха с лососем",
+    "description": "Уха из лосося настолько ароматна и аппетитна, что даже те, кто не любит такой суп, не устоят перед этим блюдом! Мясо изысканной рыбы вызывает особенный восторг, в бульоне оно становится очень сочным, нежным и вкусным.",
+    "ingredients": "филе лосося, картофель, морковь, стебель сельдерея, лук порей, бульон рыбный (вода, лосось, морковь, лук репчатый, масло подсолнечное, соль, сельдерей корень, фенхель, лавровый лист, перец черный горошек, петрушка, укроп).",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/94/83/948368a91da8176e.jpeg",
+    "category": "soup",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 3.8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 2.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 61,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "244",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "c8d8ac2bf56b310ed30b4b46806db859",
+    "title": "Суп Том Ям",
+    "description": "Традиционный тайский суп Том Ям полюбился всему миру за фантастическое и неповторимое сплетение вкусов — ароматную пряность, приятную кислинку и слегка обжигающую остроту.",
+    "ingredients": "кокосовое молоко (переработанная мякоть кокосового ореха 60%, вода 40%), вода, томаты пронто (томаты, томатная паста, растительное масло, соль, сахар, лук, лимонная кислота), паста том ям (лемонграсс, соевое масло, сахар, лук-шалот, галангал, красный перец чили сушеный, чеснок, мякоть тамаринда, соль, регулятор кислотности лимонная кислота, усилитель вкуса и аромата глутамат натрия, рыбный соус (анчоус, соль, вода)), фасоль стручковая свежемороженая, шампиньоны королевские, куриное филе, креветки свежемороженые, лук репчатый, кинза, сахар, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/c9/66/c966886a422abdad.jpeg",
+    "category": "soup",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 2,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 39,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "137",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "48dbaa54b1168fd0c894fd0ddb3245f5",
+    "title": "Лазанья аль форно",
+    "description": "Сказать, что это вкусно, - значит ничего не сказать. Попробовав лазанью, вы сразу же влюбитесь в это необыкновенное сочетание продуктов.",
+    "ingredients": "говядина, свиная вырезка, масло сливочное, масло оливковое, сливки 22%, макаронные изделия листы для лазаньи, сыр пармезан, лук репчатый, морковь, корень сельдерея, томатная паста, соус мутти томатный, вода, виноградный сок, соль, сахар, перец черный молотый, тимьян сушеный, чеснок сушеный, мука, мускатный орех, базилик свежий.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/8a/ef/8aef66d0764fb1c4.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 310,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 5.7,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 7.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 9.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 127,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "394",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "ee044050064b83991a75bc0e01e2d49a",
+    "title": "Бифштекс из говядины с овощами гриль",
+    "description": "Сочный бифштекс из рубленной говядины не оставит вас равнодушными. А классическое сочетание мяса и овощей – всегда беспроигрышный вариант на обед или на ужин.",
+    "ingredients": "говядина, лук репчатый, кабачок, перец болгарский, томаты черри, картофель мини, сливки 22%, масло сливочное, масло растительное, перец черный, соус ворчестер, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/52/70/527023de0c72686f.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 300,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 10,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 138,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "414",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "71ae2686ae29f46a2e6f2cd8b3cd629b",
+    "title": "Рыбные котлетки с тыквенно-картофельным пюре",
+    "description": "Внезапно захотелось съесть рыбу? Эти нежные и вкусные рыбные котлетки с тыквенно-картофельным пюре точно понравятся всем!",
+    "ingredients": "филе кеты, филе трески, тыква, морковь, картофель, зира, лук репчатый, манная крупа, петрушка, сливки, масло сливочное, лимон, вода, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/c7/2f/c72f7702c42958b0.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 360,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 5.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 9.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 115,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "414",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "9101448c8f3b9e22c70cad9604acbb17",
+    "title": "Гречка в томатном соусе с киноа и свиной вырезкой",
+    "description": "Гречка — кладезь витаминов и один из продуктов здорового, правильного и диетического питания. Это очень сытное и вкусное блюдо. Гречка в блюде рассыпчатая с ощутимой томатной кислинкой, а мясо мягкое и нежное.",
+    "ingredients": "вырезка свиная, гречка ядрица, киноа, куркума, имбирь корень, лук репчатый, томаты, чеснок, горчица, тимьян, масло растительное, перец черный, сахар, вода, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/a3/f7/a3f70a128ee1ce1f.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 4.7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 18.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 151,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "604",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "c88dc84dd615db8d2686d58b38409f3f",
+    "title": "Пенне болоньезе",
+    "description": "Классика итальянской кухни, без которой не воспринимается паста, – мясной соус болоньезе. Соус болоньезе готовится с фаршем и свежими вкусными и ароматными овощами. Попробуйте, это очень вкусно!",
+    "ingredients": "макароны пенне, говядина, свинина, морковь, лук, сельдерей, сок виноградный, масло сливочное, масло оливковое, томатная паста, чеснок, тимьян, вода, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/3d/34/3d34408aa7b832d6.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.7,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 21,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 183,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "732",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "53b108d58ac7946e33c9ac87d8b4a4d5",
+    "title": "Тефтели с ягодным соусом и картофельным пюре со шпинатом",
+    "description": "Очень вкусные, нежные мясные тефтельки. Мясо с клюквенным соусом представляет собой отличное сочетание. Детям очень понравится, да и взрослых не оставит равнодушными.",
+    "ingredients": "говядина, картофель, сливки 22%, шпинат свежемороженный, лук репчатый, перец болгарский, масло растительное, уксус винный, мёд натуральный, крупа манная, сахар, клюква свежемороженная, пектин, вода питьевая, соль, бадьян, гвоздика.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/7b/18/7b18eb814863bf69.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 7.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 5,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 11.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 118,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "472",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "959d5c02e9b079b1b68a7a5818640e86",
+    "title": "Фузилли с креветками в томатно-сливочном соусе",
+    "description": "Фузилли с креветками в томатно-сливочном соусе восхитительны! Томатно-сливочный соус делает пасту более нежной и он отлично сочетается с креветками. Это невероятно утонченное, можно сказать изысканное, блюдо.",
+    "ingredients": "макароны фузилли, креветки, сливки 22%, базилик, томаты, лук репчатый, чеснок, масло оливковое, маслины, масло растительное, вода, сахар, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/9a/f0/9af0a6a71e7fc01b.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 340,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.1,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 21.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 177,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "602",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "72ea3badac8dd934a57e2f88fbbc5f96",
+    "title": "Цыпленок запеченный с картофелем",
+    "description": "Цыпленок запеченный с картофелем - очень вкусное блюдо для всей семьи. Сочетание нежных ароматов и запекание делают цыпленка потрясающе вкусным, сочным, с хрустящей корочкой.",
+    "ingredients": "цыпленок, картофель, масло растительное, паприка, чеснок сушенный, аджика абхазская, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/84/c0/84c0f6f4024dae32.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 7.4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 148,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "592",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "991ad3c5eb1d73c5f3a8f54bf498a860",
+    "title": "Плов с бараниной",
+    "description": "Каждый мечтает порадовать себя и и своих близких блюдом, которое все с удовольствием и аппетитом будут кушать. Таким вкусным и сытным угощением может стать плов из баранины.",
+    "ingredients": "баранина, рис, масло растительное, лук репчатый, морковь, барбарис, зира, тмин, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/41/f2/41f254fcbbf0c46d.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 18.2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 24.3,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 283,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "934",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "bd6bb72973e5df593712a022b2f73a3b",
+    "title": "Гречневая лапша с вешенками и курицей",
+    "description": "Гречневая лапша с вешенками и курицей необычна, полезна, обладает чудесным вкусом. Коричневая ароматная лапша с ярко выраженным вкусом в сопровождении нежной курятины и грибов вешенок, просто восхитительна.",
+    "ingredients": "лапша гречневая, филе куриное, грибы вешенки, перец красный, чеснок, соус соевый, соус терияки, кунжут белый, кунжут черный, вода, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/26/8b/268b0d732c95e20b.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 11,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11.4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 20.5,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 221,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "774",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "2abf6c5ed0f0ca2a1ec634b49be31b3c",
+    "title": "Бефстроганов с картофельным пюре",
+    "description": "Бефстроганов, или \"говядина по-строгановски\" - это блюдо русской кухни. Бефстроганов – это определенный способ приготовления говядины. И дело тут не в истории, а в том, как это вкусно!",
+    "ingredients": "говядина мякоть, шампиньоны консервированные, картофель, лук репчатый, мука высший сорт, сливки, масло растительное, масло сливочное, вода, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/f7/07/f707ac69e217af06.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 10.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 163,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "652",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "1bdc9c3e00244d09203e42b859a0538e",
+    "title": "Свинина с овощами в соусе из черного перца",
+    "description": "Свинина с овощами может стать сытным ужином или обедом. Овощи и мясо – хорошее сочетание продуктов. Свинина нежная и сочная с очень приятным сладковатым вкусом.",
+    "ingredients": "вырезка свиная, фасоль стручковая, капуста брокколи, морковь, лук красный, перец красный, масло растительное, сахар, соус BBQ, кетчуп, соус устричный, соус терияки, соус соевый, черный перец, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/32/7b/327bf3efde1e4bcf.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 7.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 2.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 8.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 152,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "532",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "a01f92f42dc668f15888f93f304b0180",
+    "title": "Красная рыбка в соусе терияки, с овощами гриль и отварным картофелем",
+    "description": "Красная рыбка с соусом терияки - блюдо не только вкусное, но и очень нарядное. Оно великолепно сочетается с гарниром из овощей гриль и отварного картофеля.",
+    "ingredients": "филе кеты дикой, соус терияки, кунжут черный, перец сладкий, кабачок, брокколи, куркума, морковь, лук репчатый, фасоль стручковая, картофель, масло оливковое, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/a9/4a/a94a58023ae34444.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 360,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 7.7,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 8.4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 82,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "295",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "e47eca2e8bc9b8cbdf35423fe6059252",
+    "title": "Треска в беконе с киноа и булгуром",
+    "description": "Неожиданное сочетание - рыба и бекон. Треска при таком способе приготовления получается нежной и сочной. Мы добавляем к ней киноа и булгур, в итоге у вас будет прекрасное легкое блюдо на обед или ужин.",
+    "ingredients": "филе трески, бекон, вода питьевая, масло растительное, фасоль стручковая, лук репчатый, морковь, булгур, киноа, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/54/15/5415247f94a7bd51.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 11.8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 8.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 13.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 185,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "648",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "f865f6f1512c8126fabdecfbb8cdf2dc",
+    "title": "Котлетки из куриного филе в сливочно-грибном соусе с запеченным картофелем",
+    "description": "Котлетки из куриного филе действительно очень нежные и вкусные. Это отличная идея для домашнего ужина или обеда.",
+    "ingredients": "филе куриное, лук репчатый, сливки 22%, шампиньоны консервированные, масло растительное, картофель, масло оливковое, крупа манная, перец черный, розмарин, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/90/0f/900fac11da4ba67b.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 9.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 3.1,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 8.5,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 102,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "357",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "5648f7760b3bd4ac597f1f83bcb2c0b3",
+    "title": "Паста в сливочном соусе со шпинатом и красной рыбкой",
+    "description": "Паста в сливочном соусе со шпинатом – это очень нежное и изысканное блюдо. Мы добавляем в него красную рыбку и оно получается насыщенным, с ярким вкусом. Такую пасту можно подавать хоть на простой обед, хоть на званый семейный ужин.",
+    "ingredients": "филе кеты дикой, пенне, шпинат, сливки 22%, сыр пармезан, масло оливковое, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/b2/4d/b24d7be257c072ca.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 390,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 20,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 199,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "776",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "898b82d8351d035e1250ee5bfa7d2a4a",
+    "title": "Паста с соусом арабьята и свиной вырезкой",
+    "description": "Свинина – нежный и питательный сорт мяса, который превосходно сочетается с макаронными изделиями. Паста со свининой – блюдо, которое точно покорит вас.",
+    "ingredients": "вырезка свиная, пенне, томатный соус, чеснок, масло растительное, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/10/98/1098b2ff289b7545.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 380,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 10.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 16.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 173,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "657",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "c8e7e75a6195d2fc53eb9fb4456cb158",
+    "title": "Индейка запеченная в итальянских травах с кус-кусом",
+    "description": "Кус-кус и запеченная индейка – это очень вкусное сочетание, которое послужит и основным блюдом, и гарниром одновременно. Такое блюдо станет сытным и полезным обедом или ужином для всей семьи.",
+    "ingredients": "филе индейки, итальянские травы, кус-кус, перец сладкий, лук репчатый, горошек зеленый, кукуруза, масло растительное, масло оливковое, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/f3/ec/f3ecc6fc9f4a4315.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 360,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 12.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 3.7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 19.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 162,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "583",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "a9d819d1a88613e864de43058c80f018",
+    "title": "Спагетти карбонара",
+    "description": "Знаменитая итальянская паста карбонара идеально подходит для России. Она сытная, вкусная и согревает лучше любого одеяла.",
+    "ingredients": "спагетти, бекон, сливки 22%, лук репчатый, сыр твердый, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/8b/2b/8b2b2b7f6ba5d8dd.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 360,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 19.4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 20.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 292,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "1051",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "c3c0c76972a3e6e4489be429bfc86957",
+    "title": "Говядина по-провански",
+    "description": "Говядина - самое полезное мясо. Нежнейшая говядина в деревенском стиле с прованскими травами станет отличным ужином или обедом для всей семьи.",
+    "ingredients": "говядина, картофель, томатный соус, масло сливочное, лук репчатый, морковь, перец болгарский, специи для говядины, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/37/2a/372af953b9b5e7ac.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6.6,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 11.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 126,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "504",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "fadcddf3b5e2d1a9c5280a77d1a62c62",
+    "title": "Куриная грудка на гриле с тыквенным рисом",
+    "description": "Куриная грудка – один из самых вкусных и нежных мясных продуктов. Подается с рисом и запеченной тыквой. Вкусная и простая идея для сбалансированного обеда или ужина.",
+    "ingredients": "филе куриное, рис арборио, шафран, тыква, лук репчатый, масло оливковое, масло сливочное, перец черный, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/94/b2/94b20d57d1d15453.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 13,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 15.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 217,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "760",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "fbba63303a4654202c93f2eca5222f11",
+    "title": "Лингвини со свекольным соусом мягким сыром и кедровыми орешками",
+    "description": "Оригинальное сочетание лингвини с ароматным свекольным соусом, мягким сыром и добавлением подрумяненных кедровых орешек создаст незабываемое впечатление от этого блюда.",
+    "ingredients": "паста лингвини (мука из твердых сортов пшеницы, вода), свекла, томаты пронто (томаты, томатная паста, растительное масло, соль, сахар, лук, лимонная кислота), сыр сиртаки (обезжиренное пастеризованное молоко, растительные жиры, соль, молокосвертывающий фермент микробного происхождения, лимонная кислота), масло оливковое, чеснок, базилик свежий, лимонный сок, сахар, соль, кедровые орешки, маслины.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/54/0f/540f010f8e22af32.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 380,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 7.8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 23.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 211,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "802",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "cd9d785eff468ee0b730daf4dac13b67",
+    "title": "Лапша удон с курицей и овощами",
+    "description": "Лапша удон с курицей и овощами - вкусное и сытное блюдо из лапши, кусочков курицы, обжаренных овощей и специй. Это блюдо с богатым вкусовым букетом и оно отлично подойдет на обед или ужин.",
+    "ingredients": "лапша удон, куриное бедро, морковь, лук порей, перец болгарский, стручок горошка зеленого, масло оливковое, соус терияки, груша свежемороженная, апельсиновый сок свежеотжатый, банан, соус соевый, мед, масло кунжутное, соус устричный, сахар, соль, вода.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/03/24/03248c630b42c285.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 9.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 5.4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 21.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 177,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "584",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "31716155c0ecb7e87dca496722e5e4b8",
+    "title": "Стейк из лосося с картофельным пюре, спаржей и шпинатом",
+    "description": "Лосось по праву относят к деликатесным видам продукта, что обусловлено его великолепными вкусовыми качествами. Вкуснейшее блюдо с шикарным гарниром.",
+    "ingredients": "лосось атлантический (семга), картофель, сливки 22%, спаржа, шпинат свежемороженный, сливочный сыр, соль.",
+    "price": 360,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/76/94/7694fe2513914993.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 380,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 7.6,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 7.4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 115,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "437",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "20b3d23e95425d49a5491a7668100054",
+    "title": "Куриная грудка с птитимом и зеленой фасолью",
+    "description": "Куриная грудка в сочетании с нежным птитимом и зелёной фасолью - вкуснейшее блюдо для всей семьи.",
+    "ingredients": "птитим (мука из твердых сортов пшеницы, вода), куриное филе, фасоль стручковая зеленая, вода питьевая, кабачок, сельдерей стебель, масло оливковое, масло сливочное, специи для курицы (паприка, репчатый лук, декстроза, перец белый, куркума, сахар, кориандр, тмин, имбирь, пастернак, чеснок, мускатный орех, семена пажитника, розмарин, душистый перец, тимьян, базилик), соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/a4/e1/a4e185a851b27c34.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 360,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.4,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 10.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 140,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "504",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "7e100fbaca5b0c5445e587e53742da49",
+    "title": "Сэндвич с курицей и авокадо",
+    "description": "Сэндвич с курицей и авокадо - это отличный вариант для завтрака, обеда или для быстрого перекуса в течение дня.",
+    "ingredients": "мука пшеничная, закваска, дрожжи, вода, куриное филе, авокадо, сыр чеддер, оливковое масло, помидоры, сок лайма, соль.",
+    "price": 150,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/8c/df/8cdf533eeaae47a9.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 250,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 33.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 229,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "573",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "8deb89a244758eb7bffcc596976a6907",
+    "title": "Сэндвич с тунцом и соусом из свежего базилика",
+    "description": "Аппетитный сэндвич с тунцом, ароматным соусом из свежего базилика и сыром моцарелла. Вкусный и питательный перекус или полноценный обед.",
+    "ingredients": "мука пшеничная, закваска, дрожжи, вода, тунец консервированный, стебель сельдерея, перец болгарский, моцарелла, масло оливковое, базилик, кедровые орешки, соль.",
+    "price": 150,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/25/99/25999d46a360e8da.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 220,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 8.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 31.4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 241,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "530",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "7d5471079dfdd961ec74f303d94f5b10",
+    "title": "Бургер с курицей и соусом чеддер",
+    "description": "В этом бургере приготовленное на гриле сочное куриное филе встречается с хрустящими сочными овощами, цукини, сырным соусом и сыром чеддер на румяной булочке с кунжутом. Любители курочки оценят!",
+    "ingredients": "котлета из куриного филе, булочка бриошь с кунжутом, сырный соус, сыр чеддер, помидор, цукини, салат айсберг.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/83/7b/837b71bf8061e7a4.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 280,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 13.8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 4.1,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 11.4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 137,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "384",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "960032c6f75f8ed00af3723020c38b99",
+    "title": "Бургер с говядиной и соусом блю чиз",
+    "description": "Сочная котлета из отборной говядины на ароматной булочке с кунжутом, смазанной соусом блю чиз, с соленым огурчиком и листьями салата обязательно понравятся самым искушенным гурманам.",
+    "ingredients": "котлета из говядины, булочка бриошь с кунжутом, соус блю чиз, сыр чеддер, огурец маринованный, луковый мармелад ( лук, мед, перец болгарский, сахар, соль, гвоздика сухая), салат айсберг.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/88/3f/883fbab6cb97ebff.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 250,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 12.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 18.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 11.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 259,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "648",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "f702f53feb5095087005dc9ab7e4f134",
+    "title": "Равиоли с рикоттой и шпинатом",
+    "description": "Равиоли – классическое блюдо итальянской кухни. Равиоли с начинкой из рикотты и шпината очень нежные и вкусные. Они достаточно сытные, чтобы послужить вам полноценным обедом.",
+    "ingredients": "мука высший сорт, сыр рикотта, шпинат свежемороженный, меланж яичный, масло сливочное 82% (пастеризованные сливки), масло оливковое, шалфей, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/5e/c2/5ec2d73bda39143a.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 280,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 8.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 14.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 16.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 232,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "650",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "cfa8931b48dfe08c040c2dab207d480a",
+    "title": "Равиоли с лососем",
+    "description": "Равиоли — знаменитое и очень популярное блюдо итальянской кухни. Почувствовать неожиданную гармонию Вы можете попробовав равиоли с лососем.",
+    "ingredients": "мука высший сорт, филе лосося, сыр творожный, сыр моцарелла, меланж яичный, масло сливочное 82% (пастеризованные сливки), масло оливковое, кедровые орешки, чеснок, тимьян сушеный, базилик, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/34/79/3479e021753ad3f3.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 180,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 11.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 23.7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 21.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 345,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "621",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "a1e3f3019d6f9eb238f811714fc06771",
+    "title": "Каннеллони с курицей и грибным соусом",
+    "description": "Каннеллони с курицей и грибным соусом - это очень вкусное и сытное блюдо. Многие просто обожают их.",
+    "ingredients": "куриное филе, каннеллони (мука манитоба, мука семола, меланж яичный пастеризованный, масло оливковое, соль), шампиньоны, сливки 22%, томаты консервированные (томаты, соль, вода), масло сливочное 82,5% (пастеризованные сливки), оливковое масло, оливковое масло с ароматом трюфеля, чеснок, перец черный горошек, вода, соль.",
+    "price": 180,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/5a/9e/5a9ec66399ecdb77.jpeg",
+    "category": "main_dish",
+    "foodEnergy": {
+      "weight": {
+        "amount": 220,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 9.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 13.8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 2.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 175,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "385",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "a901f3f0c93e1e3755a31f2e93e23f31",
+    "title": "Клубничный смузи с персиком и грушей",
+    "description": "Клубничный смузи с персиком и грушей - это один из вариантов получить вкусовое наслаждение и напитать свое тело полезными компонентами. Он всегда кажется легким, некалорийным и удивительно свежим.",
+    "ingredients": "клубника свежемороженная, пюре из персиков, груша свежемороженная, апельсиновый сок свежеотжатый.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/24/f0/24f0f649c128dfab.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.6,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 10.4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 47,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "155",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "6ef0f6e1b236dd40fb5ae6e884e8c0fc",
+    "title": "Тропический смузи с манго и ананасом",
+    "description": "Смузи с манго и ананасом - это не только отличный вариант полезного завтрака, но и классный перекус, который зарядит вас энергией. Попробуйте этот бодрящий напиток. Он не оставит равнодушным ни детей, ни взрослых.",
+    "ingredients": "ананасовое пюре, манго, свежевыжатый апельсиновый сок, банан, кокосовое молоко.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/2f/63/2f63277cd4a23850.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 10.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 67,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "221",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "24212829858223585176071bc6ace070",
+    "title": "Сок апельсиновый прямого отжима",
+    "description": "Взбодритесь утром или утолите жажду в течение дня стаканом свежевыжатого апельсинового сока. В одной порции содержится суточная норма витамина С.",
+    "ingredients": "сок апельсиновый.",
+    "price": 100,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/24/58/24582548fb5b012c.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 300,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.9,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0.2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 8.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 38,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "114",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "09d70aa7f2b1e1dccc48bd32809a3d2a",
+    "title": "Напиток из имбиря и лимона",
+    "description": "Напиток из имбиря и лимона принимают не только чтобы согреться, но и с другой целью – укрепить иммунитет, почувствовать прилив бодрости, улучшить настроение и даже сбросить лишние килограммы.",
+    "ingredients": "лимон, имбирь, вода питьевая, сахар.",
+    "price": 50,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/f4/d4/f4d45f96c4831a7a.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 8.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 35,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "175",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "9f40aabb52d545fa46ba8b8d56ca7b8d",
+    "title": "Напиток ягодный из черной смородины",
+    "description": "Напиток из черной смородины - ароматный, насыщенный витаминами и антиоксидантами. Его любят как дети, так и взрослые.",
+    "ingredients": "ягоды черной смородины, вода питьевая, сахар.",
+    "price": 50,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/fc/f5/fcf5c9764ce8d00d.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 10.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 43,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "215",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "7c1e9c3b228a67f2db44e1d370df52b1",
+    "title": "Напиток ягодный из малины, клубники и клюквы",
+    "description": "Ароматный, нежный и натуральный напиток из малины, клубники и клюквы. Сочетание сладкой клубники, ароматной малины и пикантной клюквы создают незабываемое сочетание вкуса, от которого невозможно оторваться.",
+    "ingredients": "ягоды малины, ягоды клюквы, ягоды клубники, вода питьевая, сахар.",
+    "price": 50,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/64/31/6431e29968fe9062.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0.5,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 10.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 43,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "215",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "e7ac5d0433df90a72560aedf36d660aa",
+    "title": "Напиток ягодный из облепихи",
+    "description": "Идеальный напиток для зимы и лета. Превосходно освежает в летнюю жару и насыщает организм полезными веществами.",
+    "ingredients": "ягоды облепихи, вода питьевая, сахар.",
+    "price": 50,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/85/a8/85a838b2f861f2bd.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0.5,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 8.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 41,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "205",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "b9857c7fabe99d4c345f7e65b2c72e14",
+    "title": "Фруктовый глинтвейн",
+    "description": "Фруктовый глинтвейн просто незаменим в холодные зимние вечера. Он согревает, тонизирует, бодрит. Отличный вкус с ароматными специями.",
+    "ingredients": "виноградный сок пастеризованный, вода питьевая, апельсины, яблоки, черная смородина свежемороженная, вишня свежемороженная, мед, гвоздика специя, корица.",
+    "price": 50,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/38/27/382717ab22b1c101.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0.1,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 11.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 49,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "245",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "6c5f960916f5484860fa62c376354483",
+    "title": "Кисель из маракуйи",
+    "description": "Кисель из маракуйи — полезный напиток с ярко выраженным вкусом Он насыщает организм витаминами, укрепляет сосуды и сухожилия.",
+    "ingredients": "вода питьевая, пюре свежемороженное из маракуйи, сахар, крахмал кукурузный.",
+    "price": 50,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/06/27/0627051e6f6ba359.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.4,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0.1,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 12.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 52,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "172",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "668a5b0fa15b9597a54c65482145475d",
+    "title": "Вода чистая питьевая",
+    "description": "Вода чистая питьевая, негазированная, первой категории, очищенная кондиционированная. Метод обеззараживания: уф-обработка.",
+    "ingredients": "Содержание анионов и катионов: Кальций <80 мг/л, Магний <50 мг/л, Натрий+Калий <30 мг/л, Хлориды <150 мг/л, Гидрокарбонаты <150 мг/л, Сульфаты <80 мг/л. Общая жесткость: 1,5-5 мг/л. Общая минерализация: 100-500 мг/л.",
+    "price": 20,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/62/33/6233263200fcf5f7.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 0,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 0,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "0",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "8b5a281ede65c5cfe390cfe36d4b1091",
+    "title": "Панакота с вишневым соусом",
+    "description": "Панакота - один из любимых всеми десертов. Это невероятно нежный и воздушный десерт.",
+    "ingredients": "сливки 22%, сахар, желатин листовой, ванилин, вишня свежемороженная.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/db/0b/db0b9b690d1da254.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 160,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 3,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 13.7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 18.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 207,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "331",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "fd675387cdf158290ccf91d05b3f2dc2",
+    "title": "Десерт с семенами льна и кокосовым молоком",
+    "description": "Десерт с семенами льна и кокосовым молоком вкусный, полезный и питательный. А семена льна обладают по истине фантастической пользой. В их состав входит огромное количество витаминов, минералов и антиоксидантов.",
+    "ingredients": "молоко кокосовое, семена льна, глюкоза, карамель, ваниль, персик консервированный.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/cb/b3/cbb3f57f417a69a2.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 170,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 3.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 19.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 12.6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 233,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "396",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "60e6e3ee206e1ec5c5fafd0f331c8442",
+    "title": "Тирамису",
+    "description": "Квинтэссенция нежнейшего вкуса, изысканный десерт, восхитительно нежный торт с кофейным кремом из настоящего сыра маскарпоне и с сочным бисквитом создан, чтобы дарить вам удовольствие.",
+    "ingredients": "сыр маскарпоне, меланж яичный, сахарная пудра, сахар, какао порошок, мука пшеничная, кофе молотый, крахмал кукурузный.",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/14/4d/144d913b7754939f.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 120,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 7,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 19.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 28.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 318,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "382",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "3b44fd6c50044786723c7540bec21892",
+    "title": "Булочка с корицей и лимонно-сливочным кремом",
+    "description": "Ароматная и соблазнительно сладкая булочка с корицей с невероятно вкусным лимонно-сливочным кремом. Аппетитная и воздушная - просто невозможно удержаться.",
+    "ingredients": "Состав: мука пшеничная, сливки 22%, сахар, масло сливочное, сыр творожный (нормализованное молоко, соль пищевая, хлорид кальция, с использованием закваски и фермента микробного происхождения), меланж яичный, корица молотая, лимонный сок, дрожжи сухие, соль",
+    "price": 120,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/44/e6/44e61231a9bfdac9.jpeg",
+    "category": "drink",
+    "foodEnergy": {
+      "weight": {
+        "amount": 220,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 4.8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 17,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 50.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 372,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "818",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "6dece7d5924044db7180abd4e371310b",
+    "title": "Тыквенный хлеб 330 гр",
+    "description": "Тыквенный хлеб невероятно вкусный и очень полезный. Он может идеально дополнить любое блюдо или стать самостоятельным десертом.",
+    "ingredients": "мука пшеничная, тыква баттернат, семечки тыквенные, вода, сахар, масло оливковое, дрожжи сухие, соль.",
+    "price": 100,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/e8/4a/e84af71e73ca8107.jpeg",
+    "category": "bread",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 6.7,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 42.5,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 259,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "855",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "1c351b4daf0f1554b5efd1c5e97ddea7",
+    "title": "Шоколадный хлеб с клюквой, 330 гр",
+    "description": "Шоколадный хлеб с вялеными ягодами клюквы просто идеален к утреннему кофе. Он очень нежный и несомненно понравится всем за его насыщенный вкус и невероятный аромат.",
+    "ingredients": "мука пшеничная, клюква сушеная (клюква, сахар, растительное масло), темный шоколад, мед, вода, какао-порошок, дрожжи сухие, соль.",
+    "price": 150,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/f3/47/f3473fc5a146c358.jpeg",
+    "category": "bread",
+    "foodEnergy": {
+      "weight": {
+        "amount": 330,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 5.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 2.3,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 51.4,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 243,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "802",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "9e70a98c82ae6f6db9a4443a3cdc2e70",
+    "title": "Круассан классический",
+    "description": "Классический круассан — это нечто божественное и очень вкусное. Нежный и хрустящий круассан в воображении искушенного гурмана прочно ассоциируется с Францией.",
+    "ingredients": "мука манитоба, масло сливочное 82,5% (пастеризованные сливки), сливки 22%, вода, сахар, дрожжи сухие, соль.",
+    "price": 60,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/f6/ac/f6ac2ce1b14e5931.jpeg",
+    "category": "bread",
+    "foodEnergy": {
+      "weight": {
+        "amount": 70,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 5,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 26.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 34.2,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 394,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "276",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "0a8f56bf4bfed21313516815a54d86bf",
+    "title": "Круассан с шоколадом",
+    "description": "Нежный классический круассан дополнен начинкой из шоколадных палочек . Он обладает ярким и насыщенным вкусом и отличается мягкой текстурой.",
+    "ingredients": "мука манитоба, масло сливочное 82,5% (пастеризованные сливки), сливки 22%, вода, шоколад темный, сахар, дрожжи сухие, соль.",
+    "price": 80,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/9e/d7/9ed750481c0057b7.jpeg",
+    "category": "bread",
+    "foodEnergy": {
+      "weight": {
+        "amount": 70,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 5.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 27.2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 35.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 404,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "283",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "5c2a5ee869b689c603aefaa31370f85f",
+    "title": "Кешью сушеный 100 гр",
+    "description": "В орешках кешью — много белков и углеводов, необходимых организму для гармоничной работы. Чтобы перекусить с пользой, возьмите с собой кешью: буквально несколько орешков утолят голод и поднимут настроение.",
+    "ingredients": "ядра орехов кешью сушеные.",
+    "price": 110,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/02/50/02507dc68218b66c.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 19,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 49,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 23,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 610,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "610",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "01c04ae815f21738855d80ecec587afb",
+    "title": "Фундук сушеный 100 гр",
+    "description": "Фундук любят практически все. Хрустящие орешки с неповторимым ароматом часто добавляют в десерты.",
+    "ingredients": "ядра орехов фундука сушеные.",
+    "price": 110,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/18/40/1840b308b9efe2b9.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 14.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 63.5,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 6,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 650,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "650",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "980b9283c883673a15d99fbdcfdc70d6",
+    "title": "Миндаль сушеный 100 гр",
+    "description": "Миндаль — не только вкусный, но и очень питательный орех. Это источник растительного белка и просто отличный способ перекусить в дороге. Возьмите с собой миндаль, и всего несколько орешков позволят восполнить силы среди дня!",
+    "ingredients": "ядра орехов миндаля сушеные.",
+    "price": 110,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/9b/ef/9bef147d8a695f10.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 19,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 54,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 13,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 610,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "610",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "442f3837b759ff015d81caae055f25bc",
+    "title": "Грецкий орех сушеный 100 гр",
+    "description": "Грецкий орех любят за яркий вкус и приятную мягкую горчинку. Эти орешки, как и другие, простой способ перекусить с пользой для организма: всего несколько штук наполнят силами и энергией.",
+    "ingredients": "ядра грецкого ореха сушеные.",
+    "price": 110,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/cf/70/cf704d6cc81c974c.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 16,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 61,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 11,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 660,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "660",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "34a3968ec7c63ffcf3ca522c734192f8",
+    "title": "Фисташки жареные соленые 100 гр",
+    "description": "Соленые фисташки, пожалуй, одна из самых известных закусок! Фисташки отборные, в меру обжаренные орехи яркого зеленого цвета.",
+    "ingredients": "орехи фисташки жареные, соль.",
+    "price": 130,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/7d/c3/7dc300ff9e8e5225.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 21,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 54,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 17,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 640,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "640",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "b4b944ccedfdf1915aec7ae8ce0647a3",
+    "title": "Семена тыквы очищенные 100 гр",
+    "description": "Тыквенные семечки помогут не только перекусить с пользой для организма, но и приготовить множество интересных блюд!",
+    "ingredients": "ядра семян тыквы сушёные.",
+    "price": 70,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/ff/ae/ffaed590645cdb97.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 25,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 50,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 14,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 610,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "610",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "ac7fa5f64a46be95e9e12d01a89817f3",
+    "title": "Изюм кишмиш темный крупный, 100 гр",
+    "description": "",
+    "ingredients": "изюм кишмиш темный сушеный.",
+    "price": 60,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/59/f0/59f0330848e47aba.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 1.8,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 0.2,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 70.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 303,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "303",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "de7e8dbc11be041ce596165dbb3c911b",
+    "title": "Клюква сушеная 100 гр",
+    "description": "",
+    "ingredients": "клюква, сахар, подсолнечное масло.",
+    "price": 70,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/5d/50/5d50362df9a69ab8.jpeg",
+    "category": "snack",
+    "foodEnergy": {
+      "weight": {
+        "amount": 100,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 0.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 1.4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 76.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 320,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "320",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "263d9cac340783907d4454677782ae5f",
+    "title": "Свежая паста Папарделле 150 гр",
+    "description": "Паппарделле (pappardelle) – один из самых широких видов плоской яичной пасты. Название этой лапши происходит от глагола \"pappare\", что на тосканском диалекте означает \"есть с удовольствием и радостью\". Ширина свежих паппарделе может достигать 3 см, сухие – 1.3-1.5 см.",
+    "ingredients": "мука манитоба, мука семола, меланж яичный пастеризованный, масло оливковое, соль.",
+    "price": 90,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/5c/51/5c519cc69d96633a.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 150,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 10.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 46.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 284,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "426",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "30b6c64d472026d1d7328b6388c279ce",
+    "title": "Свежая паста Фетучини 150 гр",
+    "description": "Феттуччине (итал. fettuccine, от fettuccia — ленточка, тесьма) — один из популярных в Риме видов пасты.",
+    "ingredients": "мука манитоба, мука семола, меланж яичный пастеризованный, масло оливковое, соль.",
+    "price": 90,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/f2/70/f270de5bd3a0ed2b.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 150,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 10.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 6.6,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 46.8,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 284,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "426",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "f8a649fcd4247fc52bfcfdecedaf2e35",
+    "title": "Соус из свежих томатов с базиликом, 400 гр",
+    "description": "",
+    "ingredients": "томаты, масло оливковое, базилик, чеснок, сахар, соль.",
+    "price": 250,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/c1/ef/c1effcc1443afff2.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 400,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11.4,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 5.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 130,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "520",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "c99c2f7cdd190fd828cee2f41370171b",
+    "title": "Соус сырный со сливками",
+    "description": "",
+    "ingredients": "сливки 22%, сыр творожный (нормализованное пастеризованное коровье молоко, бактериальная закваска, молокосвертывающий фермент микробного происхождения, загуститель, стабилизатор, регулятор кислотности лимонная кислота, соль поваренная пищевая, вода питьевая), сыр пармезан (молоко нормализованное пастеризованное, бактериальная закваска мезофильных молочнокислых микроорганизмов, молокосвертывающий ферментный препарат микробного происхождения, соль поваренная пищевая, уплотнитель хлорид кальция), масло сливочное (пастеризованные сливки), мука пшеничная, вода, чеснок, паприка молотая, мускатный орех.",
+    "price": 250,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/b9/78/b978ae512f8363ce.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 350,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 3.1,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 16.9,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 4.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 184,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "644",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "012306eddde75946bddf15d21c2929cc",
+    "title": "Голень куриная в маринаде по-тайски, 600 гр",
+    "description": "",
+    "ingredients": "голень куриная, паста том ям (лемонграсс, соевое масло, сахар, лук-шалот, галантал, красный перец чили сушеный, чеснок, мякоть тамаринда, соль, регулятор кислотности лимонная кислота, усилитель вкуса и аромата глутамат натрия, рыбный соус (анчоус, соль, вода)), соль.",
+    "price": 150,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/55/3b/553b7bb3007f1926.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 600,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 20.5,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 1.1,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 185,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "1110",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "a6fb03b0b4bdf54cd791ef99863a7edd",
+    "title": "Голень куриная в маринаде карри, 600 гр",
+    "description": "",
+    "ingredients": "голень куриная, специи (куркума, кориандр, имбирь, лук, кумин, петрушка, мускатный орех, гвоздика, корица, перец душистый, шамбала, перец белый, перец чили), соль, имбирь.",
+    "price": 150,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/24/6e/246efbe2b9f2dcca.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 600,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 20.5,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 10.7,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 0.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 183,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "1098",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "deaf7fdaa0fcde890c0ed61b5b292945",
+    "title": "Куриные крылья в соусе барбекю, 500 гр",
+    "description": "",
+    "ingredients": "куриные крылышки, соус барбекю (вода, сахар, паста томатная, уксус натуральный, соль поваренная, загустители (крахмал кукурузный, камедь ксантановая), соус-маринад Терияки, (соевый соус (вода, соя, пшеница, соль), вино, сахар, вода, уксус натуральный, соль, экстракты специй, луковый порошок, чесночный порошок), красители (свекольный красный, карамельный), порошок чесночный, ароматизатор натуральный (содержит сельдерей), регулятор кислотности кислота молочная, ароматизатор, имбирь, гвоздика, паприка красная, перец черный), молотая паприка, соль.",
+    "price": 150,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/e6/c8/e6c84bcd2adcc924.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 17.5,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 11.1,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 2.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 180,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "900",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "15ad2c5dd09c03e70b4ccd96ca31f8af",
+    "title": "Шашлык из свиной вырезки классический, 500 гр",
+    "description": "",
+    "ingredients": "свиная вырезка, лук репчатый, соль, лимон, лайм, перец черный горошек.",
+    "price": 230,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/f9/a4/f9a46e5351b7e249.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 500,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 16,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 5.8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 1.7,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 124,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "620",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  },
+  {
+    "id": "ef33a7cd8d9affe3efb06aea5dd83a1c",
+    "title": "Говядина в маринаде толстый край, 550 гр",
+    "description": "",
+    "ingredients": "говядина (толстый край), лук репчатый, апельсин, лимон, лайм, перец черный горошек, соль, соус ворчестер (вода питьевая, уксус солодовый, сахар, уксус винный, соевый соус (вода, соевые бобы, пшеница, соль), соус чанти из манго (сахар, манго, приправы, соль, регулятор кислотности, уксусная кислота), соль, винные добавки, паста томатная, специи-пряности (сельдерей, горчица), смородиновый сироп (глюкозно-фруктозный сироп, экстракт смородины, сахар), краситель Е150, ром).",
+    "price": 350,
+    "currency": "RUB",
+    "image": "https://www.mealty.ru/upload/a1/3b/a13bfd10c4448b2b.jpeg",
+    "category": "almost_ready",
+    "foodEnergy": {
+      "weight": {
+        "amount": 550,
+        "measure": "г",
+        "description": "Вес порции"
+      },
+      "portion_proteins": {
+        "amount": 15.2,
+        "measure": "на 100 г",
+        "description": "Белки"
+      },
+      "portion_fats": {
+        "amount": 9.8,
+        "measure": "на 100 г",
+        "description": "Жиры"
+      },
+      "portion_carbs": {
+        "amount": 1.9,
+        "measure": "на 100 г",
+        "description": "Углеводы"
+      },
+      "portion_calorific": {
+        "amount": 156,
+        "measure": "на 100 г",
+        "description": "Калорийность"
+      },
+      "calorific": {
+        "amount": "858",
+        "measure": "ккал",
+        "description": "Общая калорийность"
+      }
+    }
+  }
+]

@@ -3,21 +3,108 @@ const cheerio = require("cheerio");
 const isEmpty = require("lodash/isEmpty");
 const md5 = require("md5");
 const fs = require("fs");
+const chalk = require("chalk");
+
+const logger = require("./_logger");
 
 const BASE_URL = "https://www.mealty.ru";
-const PARSE_URL = `${BASE_URL}/catalog/`;
+const CATALOG_PATH = `/catalog/`;
 const SAVE_PATH = `${__dirname}/_parseredData.json`;
 
-parse()
-    .then((dishes) => {
-        if (isEmpty(dishes)) {
-            error("Empty final dishes object");
-        }
-        saveDishesToJson(dishes);
-    })
-    .catch((e) => console.error(e));
+class ParsingController {
+    constructor() {
+        this.loader = new Loader({
+            baseUrl: BASE_URL,
+        });
 
-// *****
+        this.saveJsonPath = SAVE_PATH;
+    }
+
+    async parseDishes() {
+        const html = await this.loader.get(CATALOG_PATH);
+
+        if (!html) {
+            logger.error(`Cannot parse the page`);
+
+            return null;
+        }
+
+        const $ = cheerio.load(html);
+        const dishesNodes = $(".content-menu .catalog-item[data-product_id]");
+        const result = {
+            errors: 0,
+            skipped: 0,
+            parsed: 0,
+            dishes: [],
+        };
+
+        if (!dishesNodes.length) {
+            logger.error(`Cannot find any dishes on the page`);
+
+            return null;
+        }
+
+        dishesNodes.each(function (_, dishNode) {
+            const dish = new Dish($(dishNode));
+            const processedDish = dish.getData();
+
+            logger.info(`Processing dish "${dish.dishCodeName}"`);
+
+            if (isEmpty(processedDish)) {
+                logger.error(`Cannot build a dish "${dish.dishCodeName}"`);
+                result.errors++;
+                return;
+            }
+
+            if (processedDish.category === "novelty") {
+                logger.warn(
+                    `Skipping dish "${dish.dishCodeName}" from the "novelty" category`
+                );
+                result.skipped++;
+                return;
+            }
+
+            result.parsed++;
+            result.dishes.push(processedDish);
+        });
+
+        return result;
+    }
+
+    saveToJson(dishes) {
+        try {
+            fs.writeFileSync(
+                this.saveJsonPath,
+                JSON.stringify(dishes, null, "\t")
+            );
+        } catch (e) {
+            logger.error(e);
+        }
+    }
+}
+
+class Loader {
+    constructor({ baseUrl = null } = {}) {
+        if (!baseUrl) {
+            logger.error('You have to set "baseUrl" param in Loader');
+        }
+
+        this.baseUrl = baseUrl;
+    }
+
+    async get(path) {
+        const fullPath = `${this.baseUrl}${path}`;
+        const response = await axios.get(fullPath);
+
+        if (response.status !== 200) {
+            logger.error(`Got error status when loading ${fullPath}`);
+            return null;
+        }
+
+        return response.data;
+    }
+}
+
 class Dish {
     constructor(dish) {
         this.$dish = dish;
@@ -42,6 +129,10 @@ class Dish {
                 calorific: this.calorific,
             },
         };
+    }
+
+    get dishCodeName() {
+        return `[${this.id}] ${this.title}`;
     }
 
     get id() {
@@ -168,45 +259,26 @@ class Dish {
     }
 }
 
-async function loadData() {
-    const response = await axios.get(PARSE_URL);
+const parser = new ParsingController();
 
-    if (response.status !== 200) {
-        error(`Page returned unhandled status code ${response.status}`);
+parser.parseDishes().then((result) => {
+    if (isEmpty(result.dishes)) {
+        logger.error("Got empty dishes list");
+    } else {
+        parser.saveToJson(result.dishes);
     }
 
-    return response.data;
-}
+    console.log(
+        [
+            "=================",
+            chalk.green(`Parsed successfully: ${result.parsed}`),
+            chalk.yellow(`Skipped: ${result.skipped}`),
+            chalk.red(`Parsed with errors: ${result.errors}`),
+        ].join("\n")
+    );
+});
 
-async function parse() {
-    const html = await loadData();
-    const $ = cheerio.load(html);
-    const dishesItems = $(".content-menu .catalog-item[data-product_id]");
-    const dishes = [];
-
-    if (!dishesItems.length) {
-        error(`Cannot find any dishes on the page`);
-    }
-
-    dishesItems.each(function (_, dishNode) {
-        const dish = new Dish($(dishNode));
-        const processedDish = dish.getData();
-
-        if (!isEmpty(processedDish) && processedDish.category !== "novelty") {
-            dishes.push(dish.getData());
-        }
-    });
-
-    return dishes;
-}
-
-function saveDishesToJson(dishes) {
-    try {
-        fs.writeFileSync(SAVE_PATH, JSON.stringify(dishes, null, "\t"));
-    } catch (e) {
-        error(e);
-    }
-}
+// *****
 
 function normalizeText(text = "") {
     return text.trim().replace(/\s{2,}/g, " ");
@@ -214,8 +286,4 @@ function normalizeText(text = "") {
 
 function normalizeNumber(numberAsText = "") {
     return Number(numberAsText.trim().replace(/,/g, "."));
-}
-
-function error(msg) {
-    throw new Error(msg);
 }
