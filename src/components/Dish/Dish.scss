@@ -44,10 +44,6 @@
         line-height: 1.57;
     }
 
-    &__compound-list + &__ingredients-wrapper {
-        padding-left: 2rem;
-    }
-
     @include breakpoint(desktop) {
         flex-direction: row;
 

@@ -31,12 +31,12 @@ const CompoundListItem = ({ key, itemData }) => {
     return (
         <React.Fragment key={key}>
             <li className={"compound-list__row"}>
-                <div className={"compound-list__measure"}>
-                    {itemData.amount}
-                </div>
                 <div className={"compound-list__description"}>
                     {itemData.description}&nbsp;
                     <span>({itemData.measure})</span>
+                </div>
+                <div className={"compound-list__measure"}>
+                    {itemData.amount}
                 </div>
             </li>
         </React.Fragment>

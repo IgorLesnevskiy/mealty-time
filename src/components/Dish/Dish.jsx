@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import isEmpty from "lodash/isEmpty";
 
-import "./styles.scss";
+import "./Dish.scss";
 import CompoundList from "../CompoundList";
 import DishCard from "../DishCard";
 import { utils } from "../../tools";
