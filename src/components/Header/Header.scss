@@ -7,6 +7,7 @@
 
     &__title {
         font-size: 2.8rem;
+        margin-bottom: 2rem;
         color: var(--primary-color);
         font-weight: bold;
         text-transform: uppercase;
@@ -24,6 +25,10 @@
 
         &__search {
             max-width: 25.5rem;
+        }
+
+        &__title {
+            margin-bottom: 0;
         }
     }
 }
