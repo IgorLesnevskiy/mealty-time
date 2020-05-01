@@ -12,8 +12,8 @@ import {
 const mapStateToProps = (state) => {
     return {
         dishes: getProcessedDishesList(state),
-        loading: state.dishesReducer.loading,
-        error: state.dishesReducer.error,
+        loading: state.dishes.loading,
+        error: state.dishes.error,
     };
 };
 
@@ -26,14 +26,16 @@ export default connect(mapStateToProps, mapDispatchToProps)(DishesList);
 const SEARCH_FIELDS = ["title", "description", "ingredients"];
 const MINIMAL_SYMBOLS_FOR_SEARCH = 3;
 
-const getSearchQueryString = (state) => state.dishesReducer.searchQueryString;
-const getDishes = (state) => state.dishesReducer.dishes;
-const getFilters = (state) => state.dishesReducer.filters;
-const getSorters = (state) => state.dishesReducer.sorters;
+const getDishes = (state) => {
+    return state.dishes;
+};
+const getSearchQueryString = (state) => state.dishes.searchQueryString;
+const getSorters = (state) => state.sorters;
+const getFilters = (state) => state.filters;
 
 const getProcessedDishesList = createSelector(
-    [getSearchQueryString, getFilters, getSorters, getDishes],
-    (queryString, filters, sorters, dishes) => {
+    [getDishes, getSearchQueryString, getSorters, getFilters],
+    (dishes, queryString, sorters, filters) => {
         let resultDishesIds = dishes.ids;
 
         {

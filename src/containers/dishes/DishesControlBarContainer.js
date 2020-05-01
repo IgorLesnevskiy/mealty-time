@@ -1,15 +1,16 @@
 import { connect } from "react-redux";
 import ControlBar from "../../components/ControlBar";
+import { filtersActions, sortersActions } from "../../actions";
 
 const POSSIBLE_TYPES = ["filters", "sorters"];
 
-const getEntitiesIds = (data, type) => {
+const getFetchDataFunction = (type = "") => {
     if (type === "filters") {
-        return data.filters.ids;
+        return filtersActions.filtersFetch;
     } else if (type === "sorters") {
-        return data.sorters.ids;
+        return sortersActions.sortersFetch;
     } else {
-        return [];
+        return Function.prototype;
     }
 };
 
@@ -22,11 +23,24 @@ const mapStateToProps = (state, ownProps) => {
     }
 
     return {
-        entitiesIds: getEntitiesIds(state.dishesReducer, type),
+        entitiesIds: state[type].ids,
         type,
-        loading: state.dishesReducer.loading,
-        error: state.dishesReducer.error,
+        loading: state[type].loading,
+        error: state[type].error,
     };
 };
 
-export default connect(mapStateToProps, null)(ControlBar);
+const mapDispatchToProps = (dispatch, ownProps) => {
+    const { type = "" } = ownProps;
+
+    if (!POSSIBLE_TYPES.includes(type)) {
+        console.error(`Unknown container type ${type}`);
+        return {};
+    }
+
+    return {
+        fetchData: () => dispatch(getFetchDataFunction(type)()),
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ControlBar);

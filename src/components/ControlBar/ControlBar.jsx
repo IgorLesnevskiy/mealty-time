@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 
 import "./ControlBar.scss";
@@ -12,8 +12,15 @@ const ControlBar = (props) => {
         type = "",
         loading = true,
         error = null,
+        fetchData = Function.prototype,
         title,
     } = props;
+
+    useEffect(() => {
+        fetchData();
+
+        return () => {};
+    }, [fetchData]);
 
     if (loading) {
         return <MockControlBar />;

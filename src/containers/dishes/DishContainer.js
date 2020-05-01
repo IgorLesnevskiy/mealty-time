@@ -5,7 +5,7 @@ import Dish from "../../components/Dish";
 const mapStateToProps = (state, ownProps) => {
     return {
         dish: {
-            ...state.dishesReducer.dishes.entities[ownProps.dishId],
+            ...state.dishes.entities[ownProps.dishId],
         },
     };
 };
