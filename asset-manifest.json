@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/mealty-time/static/css/main.bc74cd44.chunk.css",
-    "main.js": "/mealty-time/static/js/main.1eda23e2.chunk.js",
-    "main.js.map": "/mealty-time/static/js/main.1eda23e2.chunk.js.map",
+    "main.js": "/mealty-time/static/js/main.ff15189c.chunk.js",
+    "main.js.map": "/mealty-time/static/js/main.ff15189c.chunk.js.map",
     "runtime-main.js": "/mealty-time/static/js/runtime-main.65e12b3b.js",
     "runtime-main.js.map": "/mealty-time/static/js/runtime-main.65e12b3b.js.map",
     "static/css/2.6766ff5c.chunk.css": "/mealty-time/static/css/2.6766ff5c.chunk.css",
-    "static/js/2.6a6561d4.chunk.js": "/mealty-time/static/js/2.6a6561d4.chunk.js",
-    "static/js/2.6a6561d4.chunk.js.map": "/mealty-time/static/js/2.6a6561d4.chunk.js.map",
+    "static/js/2.9d0a523f.chunk.js": "/mealty-time/static/js/2.9d0a523f.chunk.js",
+    "static/js/2.9d0a523f.chunk.js.map": "/mealty-time/static/js/2.9d0a523f.chunk.js.map",
     "index.html": "/mealty-time/index.html",
-    "precache-manifest.7a9bca9853e5f0a04c91aff97eb4a99d.js": "/mealty-time/precache-manifest.7a9bca9853e5f0a04c91aff97eb4a99d.js",
+    "precache-manifest.a708833b5b0198b7694b1efdb7d8effb.js": "/mealty-time/precache-manifest.a708833b5b0198b7694b1efdb7d8effb.js",
     "service-worker.js": "/mealty-time/service-worker.js",
     "static/css/2.6766ff5c.chunk.css.map": "/mealty-time/static/css/2.6766ff5c.chunk.css.map",
     "static/css/main.bc74cd44.chunk.css.map": "/mealty-time/static/css/main.bc74cd44.chunk.css.map",
-    "static/js/2.6a6561d4.chunk.js.LICENSE.txt": "/mealty-time/static/js/2.6a6561d4.chunk.js.LICENSE.txt"
+    "static/js/2.9d0a523f.chunk.js.LICENSE.txt": "/mealty-time/static/js/2.9d0a523f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.65e12b3b.js",
     "static/css/2.6766ff5c.chunk.css",
-    "static/js/2.6a6561d4.chunk.js",
+    "static/js/2.9d0a523f.chunk.js",
     "static/css/main.bc74cd44.chunk.css",
-    "static/js/main.1eda23e2.chunk.js"
+    "static/js/main.ff15189c.chunk.js"
   ]
 }
