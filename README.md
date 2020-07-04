@@ -1,4 +1,4 @@
-## A simple dishes aggregator
+## Simple dishes aggregator
 
 Made just for me and my friends convenience.
 
