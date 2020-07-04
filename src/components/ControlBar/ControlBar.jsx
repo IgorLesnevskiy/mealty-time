@@ -48,7 +48,7 @@ const ControlBar = (props) => {
 };
 
 const MockControlBar = () => {
-    const data = Array.from({ length: 3 });
+    const data = Array(3).fill();
 
     return (
         <div className={"control-bar"}>

@@ -44,7 +44,7 @@ const CompoundListItem = ({ key, itemData }) => {
 };
 
 const MockCompoundList = () => {
-    const data = Array.from({ length: 3 });
+    const data = Array(3).fill();
 
     return (
         <ul className={"compound-list"}>

@@ -7,8 +7,8 @@
     --buttonHieght: 4.2em;
     --iconSize: 1.6em;
 
-    --button-background-color: var(--secondary-color);
-    --button-icon-color: var(--primary-text-color);
+    --button-background-color: var(--secondary-color, black);
+    --button-icon-color: var(--primary-text-color, white);
 
     position: fixed;
     display: inline-flex;

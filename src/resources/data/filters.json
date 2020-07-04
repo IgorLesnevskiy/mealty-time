@@ -10,7 +10,8 @@
       "category_drink",
       "category_bread",
       "category_snack",
-      "category_almost_ready"
+      "category_almost_ready",
+      "category_food"
     ],
     "title": "Завтраки",
     "fields": ["category"]
@@ -26,7 +27,8 @@
       "category_drink",
       "category_bread",
       "category_snack",
-      "category_almost_ready"
+      "category_almost_ready",
+      "category_food"
     ],
     "title": "Салаты",
     "fields": ["category"]
@@ -42,7 +44,8 @@
       "category_drink",
       "category_bread",
       "category_snack",
-      "category_almost_ready"
+      "category_almost_ready",
+      "category_food"
     ],
     "title": "Супы",
     "fields": ["category"]
@@ -58,7 +61,8 @@
       "category_drink",
       "category_bread",
       "category_snack",
-      "category_almost_ready"
+      "category_almost_ready",
+      "category_food"
     ],
     "title": "Вторые блюда",
     "fields": ["category"]
@@ -77,9 +81,10 @@
       "category_main_dish",
       "category_bread",
       "category_snack",
-      "category_almost_ready"
+      "category_almost_ready",
+      "category_food"
     ],
-    "title": "Напитки",
+    "title": "Напитки/десерты",
     "fields": ["category"]
   },
   {
@@ -93,7 +98,8 @@
       "category_main_dish",
       "category_drink",
       "category_snack",
-      "category_almost_ready"
+      "category_almost_ready",
+      "category_food"
     ],
     "title": "Хлеб",
     "fields": ["category"]
@@ -109,7 +115,8 @@
       "category_main_dish",
       "category_drink",
       "category_bread",
-      "category_almost_ready"
+      "category_almost_ready",
+      "category_food"
     ],
     "title": "Перекусы",
     "fields": ["category"]
@@ -125,9 +132,27 @@
       "category_main_dish",
       "category_drink",
       "category_bread",
-      "category_snack"
+      "category_snack",
+      "category_food"
     ],
     "title": "Почти готово",
+    "fields": ["category"]
+  },
+  {
+    "id": "category_food",
+    "filterType": "include",
+    "filterExpression": "food",
+    "exclude": [
+      "category_breakfast",
+      "category_salad",
+      "category_soup",
+      "category_main_dish",
+      "category_drink",
+      "category_bread",
+      "category_snack",
+      "category_almost_ready"
+    ],
+    "title": "Продукты",
     "fields": ["category"]
   },
   {

@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Skeleton from "react-loading-skeleton";
 import cn from "classnames";
 
-import { utils } from "../../tools/";
 
 import "./LabelButton.scss";
+import {utils} from "../../tools";
 
 const LabelButton = (props) => {
     const {

@@ -26,9 +26,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(DishesList);
 const SEARCH_FIELDS = ["title", "description", "ingredients"];
 const MINIMAL_SYMBOLS_FOR_SEARCH = 3;
 
-const getDishes = (state) => {
-    return state.dishes;
-};
+const getDishes = (state) => state.dishes;
 const getSearchQueryString = (state) => state.dishes.searchQueryString;
 const getSorters = (state) => state.sorters;
 const getFilters = (state) => state.filters;

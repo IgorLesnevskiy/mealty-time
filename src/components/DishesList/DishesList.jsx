@@ -47,7 +47,7 @@ const DishesList = (props) => {
 };
 
 const MockDishList = () => {
-    const data = Array.from({ length: 3 });
+    const data = Array(3).fill();
 
     return (
         <div className={"dishes"}>
