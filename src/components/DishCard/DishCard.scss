@@ -3,13 +3,17 @@
 .dish-card {
     &__price-line {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         margin-bottom: 1.6rem;
 
         &.is-mock {
             display: block;
         }
+    }
+
+    &__controls {
+        margin-left: auto;
+        display: flex;
     }
 
     &__title {

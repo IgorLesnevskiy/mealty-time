@@ -1,5 +1,5 @@
 import { dishesActions } from "../actions";
-import { constants } from "../tools";
+import { constants } from "../../tools";
 
 import remove from "lodash/remove";
 

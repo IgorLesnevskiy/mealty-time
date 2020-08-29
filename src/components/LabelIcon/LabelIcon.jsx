@@ -18,22 +18,20 @@ const LabelIcon = (props) => {
     const [uniqId] = useState(id || utils.getUniqueId());
 
     return (
-        <div>
-            <label className={"label-icon"} htmlFor={uniqId}>
-                <input
-                    id={uniqId}
-                    className={"label-icon__control"}
-                    type={type}
-                    name={name}
-                    checked={isChecked}
-                    value={value}
-                    onChange={onChange}
-                />
-                <span className={"label-icon__content"}>
-                    <FontAwesomeIcon icon={["fas", icon]} />
-                </span>
-            </label>
-        </div>
+        <label className={"label-icon"} htmlFor={uniqId}>
+            <input
+                id={uniqId}
+                className={"label-icon__control"}
+                type={type}
+                name={name}
+                checked={isChecked}
+                value={value}
+                onChange={onChange}
+            />
+            <span className={"label-icon__content"}>
+                <FontAwesomeIcon icon={["fas", icon]} />
+            </span>
+        </label>
     );
 };
 

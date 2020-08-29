@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import ControlBar from "../../components/ControlBar";
-import { filtersActions, sortersActions } from "../../actions";
+import { filtersActions, sortersActions } from "../../store/actions";
 
 const POSSIBLE_TYPES = ["filters", "sorters"];
 

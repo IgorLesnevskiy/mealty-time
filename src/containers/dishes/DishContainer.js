@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { dishesActions } from "../../actions";
+import { dishesActions } from "../../store/actions";
 import Dish from "../../components/Dish";
 
 const mapStateToProps = (state, ownProps) => {

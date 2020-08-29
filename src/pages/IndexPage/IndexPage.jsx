@@ -9,14 +9,17 @@ import DishesControlBarContainer from "../../containers/dishes/DishesControlBarC
 const IndexPage = () => {
     return (
         <React.Fragment>
-            <Floor
-                offsetTop={"medium"}
-                offsetBottom={"medium"}
-                disableBottomBorder={true}
-            >
-                <Header />
-            </Floor>
-
+            <div className={"sticky-container"}>
+                <div class={"sticky-container__inner"}>
+                    <Floor
+                        offsetTop={"medium"}
+                        offsetBottom={"medium"}
+                        disableBottomBorder={true}
+                    >
+                        <Header />
+                    </Floor>
+                </div>
+            </div>
             <Floor
                 offsetTop={"small"}
                 offsetBottom={"small"}

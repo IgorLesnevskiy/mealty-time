@@ -1,7 +1,11 @@
 import remove from "lodash/remove";
 
-import sortersData from "../resources/data/sorters.json";
-import { constants, sortersNormalizer, userStorageController } from "../tools/";
+import sortersData from "../../resources/data/sorters.json";
+import {
+    constants,
+    sortersNormalizer,
+    userStorageController,
+} from "../../tools/";
 
 export const SORTERS_APPLY_SORTER = "SORTERS_APPLY_SORTER";
 

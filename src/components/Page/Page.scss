@@ -2,9 +2,5 @@
 
 .page {
     &__inner {
-        max-width: var(--site-max-width);
-        min-width: var(--site-min-width);
-        margin: auto;
-        padding: 0 var(--gutters);
     }
 }

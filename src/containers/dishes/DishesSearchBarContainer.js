@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { dishesActions } from "../../actions";
+import { dishesActions } from "../../store/actions";
 import SearchBar from "../../components/SearchBar";
 
 const mapDispatchToProps = {

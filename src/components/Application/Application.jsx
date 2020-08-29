@@ -3,6 +3,8 @@ import { Router } from "@reach/router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
+import * as customIconsPack from "../../resources/icons";
+
 import "./Application.scss";
 
 //layouts
@@ -12,6 +14,7 @@ import MainLayout from "../../layouts/MainLayout";
 import IndexPage from "../../pages/IndexPage";
 
 library.add(fas);
+library.add(customIconsPack);
 
 const IndexPageWithLayout = () => (
     <MainLayout>

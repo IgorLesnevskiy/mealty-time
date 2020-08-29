@@ -1,7 +1,11 @@
 import remove from "lodash/remove";
 
-import dishesData from "../resources/data/dishes.json";
-import { constants, dishesNormalizer, userStorageController } from "../tools/";
+import dishesData from "../../resources/data/dishes.json";
+import {
+    constants,
+    dishesNormalizer,
+    userStorageController,
+} from "../../tools/";
 
 export const DISHES_FETCH_BEGIN = "DISHES_FETCH_BEGIN";
 export const DISHES_FETCH_SUCCEED = "DISHES_FETCH_SUCCEED";

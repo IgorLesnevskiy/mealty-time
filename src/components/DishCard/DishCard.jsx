@@ -1,8 +1,8 @@
 import React, { useCallback } from "react";
 import Skeleton from "react-loading-skeleton";
+import { Tooltip, withTooltip } from "react-tippy";
 
 import "./DishCard.scss";
-import TipIcon from "../TipIcon";
 import LabelIcon from "../LabelIcon";
 import Image from "../Image";
 import Price from "../Price";
@@ -20,7 +20,7 @@ const DishCard = (props) => {
         price,
         title,
         image = IMAGE_MODEL,
-        tip,
+        tip = {},
         favorite = false,
         onFavoriteCallback = Function.prototype,
     } = props;
@@ -50,26 +50,34 @@ const DishCard = (props) => {
                     </div>
                 )}
 
-                {tip && tip.content && (
-                    <div className={"dish-card__tip"}>
-                        <TipIcon
-                            content={tip.content}
-                            position={tip.position}
-                            trigger={tip.trigger}
+                <div className={"dish-card__controls"}>
+                    <Tooltip
+                        title={"Добавить в Lunch Box!"}
+                        position={"left"}
+                        theme={"primary"}
+                        hideOnClick={false}
+                        arrow={true}
+                    >
+                        <LabelIcon
+                            id={`dish-pack-${id}`}
+                            type={"checkbox"}
+                            name={`dish-pack-${id}`}
+                            icon={"food-bank"}
+                            value={`dish-pack-${id}`}
                         />
-                    </div>
-                )}
+                    </Tooltip>
+                </div>
             </div>
             <div className={"dish-card__title"}>
                 <h3>{title}</h3>
             </div>
             <div className={"dish-card__image"}>
                 <LabelIcon
-                    id={`dish-${id}`}
+                    id={`dish-favorite-${id}`}
                     type={"checkbox"}
-                    name={`dish-${id}`}
+                    name={`dish-favorite-${id}`}
                     icon={"heart"}
-                    value={id}
+                    value={`dish-favorite-${id}`}
                     isChecked={favorite}
                     onChange={onFavoriteButtonChangeHandler}
                 />
