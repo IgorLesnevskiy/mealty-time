@@ -49,38 +49,52 @@ const DishCard = (props) => {
                         <Price value={price.value} />
                     </div>
                 )}
-
-                <div className={"dish-card__controls"}>
-                    <Tooltip
-                        title={"Добавить в Lunch Box!"}
-                        position={"left"}
-                        theme={"primary"}
-                        hideOnClick={false}
-                        arrow={true}
-                    >
-                        <LabelIcon
-                            id={`dish-pack-${id}`}
-                            type={"checkbox"}
-                            name={`dish-pack-${id}`}
-                            icon={"food-bank"}
-                            value={`dish-pack-${id}`}
-                        />
-                    </Tooltip>
-                </div>
             </div>
             <div className={"dish-card__title"}>
                 <h3>{title}</h3>
             </div>
             <div className={"dish-card__image"}>
-                <LabelIcon
-                    id={`dish-favorite-${id}`}
-                    type={"checkbox"}
-                    name={`dish-favorite-${id}`}
-                    icon={"heart"}
-                    value={`dish-favorite-${id}`}
-                    isChecked={favorite}
-                    onChange={onFavoriteButtonChangeHandler}
-                />
+                <div className={"dish-card__controls"}>
+                    <div className={"dish-card__control-item"}>
+                        <Tooltip
+                            title={"Добавить в Избранное!"}
+                            position={"left"}
+                            theme={"primary"}
+                            hideOnClick={false}
+                            arrow={true}
+                            style={{ display: "flex" }}
+                        >
+                            <LabelIcon
+                                id={`dish-favorite-${id}`}
+                                type={"checkbox"}
+                                name={`dish-favorite-${id}`}
+                                icon={"heart"}
+                                value={`dish-favorite-${id}`}
+                                isChecked={favorite}
+                                onChange={onFavoriteButtonChangeHandler}
+                            />
+                        </Tooltip>
+                    </div>
+                    <div className={"dish-card__control-item"}>
+                        <Tooltip
+                            title={"Добавить в Lunch Box!"}
+                            position={"left"}
+                            theme={"primary"}
+                            hideOnClick={false}
+                            arrow={true}
+                            style={{ display: "flex" }}
+                        >
+                            <LabelIcon
+                                id={`dish-pack-${id}`}
+                                type={"checkbox"}
+                                name={`dish-pack-${id}`}
+                                icon={"food-bank"}
+                                value={`dish-pack-${id}`}
+                            />
+                        </Tooltip>
+                    </div>
+                </div>
+
                 {image && (
                     <Image
                         src={image.src}
