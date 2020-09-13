@@ -7,13 +7,14 @@ import CompoundList from "../CompoundList";
 import DishCard from "../DishCard";
 import { utils } from "../../tools";
 
-const Dish = ({ dish = {}, isMock, onFavoriteCallback }) => {
+const Dish = ({ dish = {}, isMock, onFavoriteCallback, onLunchBoxCallback }) => {
     const {
         price,
         id = null,
         tip,
         title,
         favorite = false,
+        inLunchBox = false,
         image,
         description,
         ingredients,
@@ -28,8 +29,10 @@ const Dish = ({ dish = {}, isMock, onFavoriteCallback }) => {
         tip,
         title,
         favorite,
+        inLunchBox,
         image,
         onFavoriteCallback,
+        onLunchBoxCallback
     };
 
     const compoundListParams = {

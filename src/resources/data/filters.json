@@ -1,5 +1,12 @@
 [
   {
+    "id": "novelty",
+    "filterType": "include",
+    "filterExpression": true,
+    "title": "Новинки",
+    "fields": ["novelty"]
+  },
+  {
     "id": "category_breakfast",
     "filterType": "include",
     "filterExpression": "breakfast",

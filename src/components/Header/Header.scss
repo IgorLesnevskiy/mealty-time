@@ -17,6 +17,7 @@
         flex-grow: 1;
         flex-shrink: 1;
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     @include breakpoint(desktop) {
@@ -28,6 +29,10 @@
         }
 
         &__title {
+            margin-bottom: 0;
+        }
+
+        &__search {
             margin-bottom: 0;
         }
     }

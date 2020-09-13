@@ -12,6 +12,7 @@ export const DISHES_FETCH_SUCCEED = "DISHES_FETCH_SUCCEED";
 export const DISHES_FETCH_FAILURE = "DISHES_FETCH_FAILURE";
 export const DISHES_SEARCH_QUERY = "DISHES_SEARCH_QUERY";
 export const DISHES_UPDATE_FAVORITES = "DISHES_UPDATE_FAVORITES";
+export const DISHES_UPDATE_LUNCH_BOX = "DISHES_UPDATE_LUNCH_BOX";
 
 export const dishesFetch = () => async (dispatch) => {
     dispatch(dishesFetchBegin());
@@ -24,6 +25,7 @@ export const dishesFetch = () => async (dispatch) => {
                 entities: normalizedDishes.entities.dishes,
                 ids: normalizedDishes.result,
                 favoriteIds: getFavoriteIds(normalizedDishes.entities.dishes),
+                lunchBoxIds: getLunchBoxIds(normalizedDishes.entities.dishes),
             })
         );
     } catch (error) {
@@ -98,8 +100,41 @@ export const dishesToggleFavorite = (params = {}) => {
     };
 };
 
+export const dishesToggleLunchBox = (params = {}) => {
+    const { id = null, isChecked } = params;
+
+    return (dispatch, getStore) => {
+        const dishes = getStore().dishes;
+        const newLunchBoxIds = [...dishes.lunchBoxIds];
+
+        if (isChecked) {
+            newLunchBoxIds.push(id);
+        } else {
+            remove(newLunchBoxIds, (i) => i === id);
+        }
+
+        return userStorageController
+            .setItem(constants.storage.LUNCH_BOX_DISHES, newLunchBoxIds)
+            .then((lunchBoxIds) => {
+                dispatch({
+                    type: DISHES_UPDATE_LUNCH_BOX,
+                    payload: {
+                        id,
+                        lunchBoxIds,
+                    },
+                });
+            });
+    };
+};
+
 const getFavoriteIds = (dishes = []) => {
     return Object.keys(dishes).filter((id) => {
         return dishes[id].favorite;
+    });
+};
+
+const getLunchBoxIds = (dishes = []) => {
+    return Object.keys(dishes).filter((id) => {
+        return dishes[id].inLunchBox;
     });
 };

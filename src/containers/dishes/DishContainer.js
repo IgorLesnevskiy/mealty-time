@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = {
     onFavoriteCallback: dishesActions.dishesToggleFavorite,
+    onLunchBoxCallback: dishesActions.dishesToggleLunchBox,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dish);

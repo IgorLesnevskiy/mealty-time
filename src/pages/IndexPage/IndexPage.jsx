@@ -10,7 +10,7 @@ const IndexPage = () => {
     return (
         <React.Fragment>
             <div className={"sticky-container"}>
-                <div class={"sticky-container__inner"}>
+                <div className={"sticky-container__inner"}>
                     <Floor
                         offsetTop={"medium"}
                         offsetBottom={"medium"}

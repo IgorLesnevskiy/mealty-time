@@ -1,0 +1,44 @@
+@import "../../resources/styles/base";
+
+.small-lunch-box-basket {
+    $this: &;
+
+    --icon-size: 2rem;
+    --icon-counter-font-size: 0.65em;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__description {
+        margin-right: .8rem;
+        font-weight: bold;
+    }
+
+    &__counter {
+        font-size: var(--icon-size);
+        position: relative;
+    }
+
+    &__counter-icon {
+
+    }
+
+    &__counter-amount {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: var(--icon-counter-font-size);
+        font-weight: bold;
+
+    }
+
+    &.is-active {
+        color: var(--primary-color);
+
+        #{$this}__counter-amount {
+            color: #fff;
+        }
+    }
+}

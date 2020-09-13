@@ -2,11 +2,13 @@ import { dishesActions } from "../actions";
 import { constants } from "../../tools";
 
 import remove from "lodash/remove";
+import {DISHES_UPDATE_LUNCH_BOX} from "../actions/dishes";
 
 const initialState = {
     entities: {},
     ids: [],
     favoriteIds: [],
+    lunchBoxIds: [],
     searchQueryString: "",
     loading: true,
     error: null,
@@ -58,7 +60,7 @@ export default function dishes(dishesState = initialState, action) {
     }
 
     /**
-     * Удалить блюдо из Избранного
+     * Обновить Избранное
      */
     if (action.type === dishesActions.DISHES_UPDATE_FAVORITES) {
         const favoriteIds = action.payload.favoriteIds;
@@ -69,6 +71,25 @@ export default function dishes(dishesState = initialState, action) {
         }
 
         dishes.favoriteIds = favoriteIds;
+
+        return {
+            ...dishesState,
+            ...dishes,
+        };
+    }
+
+    /**
+     * Обновить Lunch Box
+     */
+    if (action.type === dishesActions.DISHES_UPDATE_LUNCH_BOX) {
+        const lunchBoxIds = action.payload.lunchBoxIds;
+        const dishes = { ...dishesState };
+
+        for (let dishId of dishes.ids) {
+            dishes.entities[dishId].inLunchBox = lunchBoxIds.includes(dishId);
+        }
+
+        dishes.lunchBoxIds = lunchBoxIds;
 
         return {
             ...dishesState,

@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import { Tooltip, withTooltip } from "react-tippy";
 
@@ -22,8 +22,12 @@ const DishCard = (props) => {
         image = IMAGE_MODEL,
         tip = {},
         favorite = false,
+        inLunchBox = false,
         onFavoriteCallback = Function.prototype,
+        onLunchBoxCallback = Function.prototype,
     } = props;
+
+    const [isImageLoaded, setImageLoadedStatus] = useState(false);
 
     const onFavoriteButtonChangeHandler = useCallback(
         (e) => {
@@ -36,6 +40,22 @@ const DishCard = (props) => {
         },
         [onFavoriteCallback, id]
     );
+
+    const onLunchBoxButtonChangeHandler = useCallback(
+        (e) => {
+            const isChecked = e.target.checked;
+
+            onLunchBoxCallback({
+                id,
+                isChecked,
+            });
+        },
+        [onLunchBoxCallback, id]
+    );
+
+    const onAfterImageLoadHandler = useCallback(() => {
+        setImageLoadedStatus(true);
+    }, [setImageLoadedStatus])
 
     if (isMock) {
         return <MockDishCard />;
@@ -54,10 +74,10 @@ const DishCard = (props) => {
                 <h3>{title}</h3>
             </div>
             <div className={"dish-card__image"}>
-                <div className={"dish-card__controls"}>
+                {isImageLoaded && (<div className={"dish-card__controls"}>
                     <div className={"dish-card__control-item"}>
                         <Tooltip
-                            title={"Добавить в Избранное!"}
+                            title={favorite ? "Убрать из Избранного!" : "Добавить в Избранное!"}
                             position={"left"}
                             theme={"primary"}
                             hideOnClick={false}
@@ -77,7 +97,7 @@ const DishCard = (props) => {
                     </div>
                     <div className={"dish-card__control-item"}>
                         <Tooltip
-                            title={"Добавить в Lunch Box!"}
+                            title={inLunchBox ? "Убрать из Lunch Box!" : "Добавить в Lunch Box!"}
                             position={"left"}
                             theme={"primary"}
                             hideOnClick={false}
@@ -90,16 +110,19 @@ const DishCard = (props) => {
                                 name={`dish-pack-${id}`}
                                 icon={"food-bank"}
                                 value={`dish-pack-${id}`}
+                                isChecked={inLunchBox}
+                                onChange={onLunchBoxButtonChangeHandler}
                             />
                         </Tooltip>
                     </div>
-                </div>
+                </div>)}
 
                 {image && (
                     <Image
                         src={image.src}
                         alt={image.alt}
                         title={image.title}
+                        onAfterLoad={onAfterImageLoadHandler}
                     />
                 )}
             </div>
