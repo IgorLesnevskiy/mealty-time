@@ -2,9 +2,7 @@ import React from "react";
 
 import "./Header.scss";
 import SearchBarContainer from "../../containers/dishes/DishesSearchBarContainer";
-import SmallLunchPackBasket from "../SmallLunchPackBasket";
-import LabelIcon from "../LabelIcon";
-import SmallLunchPackBasketContainer from "../../containers/lunchPack/SmallLunchPackBasketContainer";
+import SmallBasketContainer from "../../containers/basket/SmallBasketContainer";
 
 const searchBarParams = {
     name: "search",
@@ -21,7 +19,7 @@ const Header = (props) => {
                 <SearchBarContainer {...searchBarParams} />
             </div>
             <div className="header__lunch-pack">
-                <SmallLunchPackBasketContainer />
+                <SmallBasketContainer />
             </div>
         </header>
     );

@@ -2,11 +2,7 @@ import remove from "lodash/remove";
 import isEmpty from "lodash/isEmpty";
 
 import filtersData from "../../resources/data/filters.json";
-import {
-    constants,
-    filtersNormalizer,
-    userStorageController,
-} from "../../tools/";
+import { constants, filtersNormalizer, userStorageController } from "../../tools/";
 import { SORTERS_APPLY_SORTER } from "./dishesSorters";
 
 export const FILTERS_APPLY_FILTER = "FILTERS_APPLY_FILTER";
@@ -74,25 +70,21 @@ export const applyFilter = (params = {}) => {
             newActiveIds.push(id);
 
             if (!isEmpty(filter.exclude)) {
-                filter.exclude.forEach((excludeId) =>
-                    remove(newActiveIds, (i) => i === excludeId)
-                );
+                filter.exclude.forEach((excludeId) => remove(newActiveIds, (i) => i === excludeId));
             }
         } else {
             remove(newActiveIds, (i) => i === id);
         }
 
-        return userStorageController
-            .setItem(constants.storage.LAST_FILTERS_IDS, newActiveIds)
-            .then((activeIds) => {
-                dispatch({
-                    type: FILTERS_APPLY_FILTER,
-                    payload: {
-                        id,
-                        activeIds,
-                    },
-                });
+        return userStorageController.setItem(constants.storage.LAST_FILTERS_IDS, newActiveIds).then((activeIds) => {
+            dispatch({
+                type: FILTERS_APPLY_FILTER,
+                payload: {
+                    id,
+                    activeIds,
+                },
             });
+        });
     };
 };
 

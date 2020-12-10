@@ -3,7 +3,7 @@
 .compound-list {
     line-height: 1.375;
 
-    &__row {
+    &__item {
         display: flex;
         align-items: flex-end;
 
@@ -11,9 +11,10 @@
             margin-bottom: 1rem;
         }
     }
-
+}
+.compound-list-item {
     &__measure {
-        width: 5rem;
+        //width: 5rem;
         flex-shrink: 0;
         font-weight: 600;
         font-size: 1.6rem;

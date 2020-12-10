@@ -15,12 +15,12 @@ const LabelIcon = (props) => {
         icon,
     } = props;
 
-    const [uniqId] = useState(id || utils.getUniqueId());
+    const [uniqueId] = useState(id || utils.getUniqueId());
 
     return (
-        <label className={"label-icon"} htmlFor={uniqId}>
+        <label className={"label-icon"} htmlFor={uniqueId}>
             <input
-                id={uniqId}
+                id={uniqueId}
                 className={"label-icon__control"}
                 type={type}
                 name={name}

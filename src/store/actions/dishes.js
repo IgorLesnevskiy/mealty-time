@@ -1,11 +1,7 @@
 import remove from "lodash/remove";
 
 import dishesData from "../../resources/data/dishes.json";
-import {
-    constants,
-    dishesNormalizer,
-    userStorageController,
-} from "../../tools/";
+import { constants, dishesNormalizer, userStorageController } from "../../tools/";
 
 export const DISHES_FETCH_BEGIN = "DISHES_FETCH_BEGIN";
 export const DISHES_FETCH_SUCCEED = "DISHES_FETCH_SUCCEED";
@@ -86,17 +82,15 @@ export const dishesToggleFavorite = (params = {}) => {
             remove(newFavoriteIds, (i) => i === id);
         }
 
-        return userStorageController
-            .setItem(constants.storage.FAVORITE_DISHES, newFavoriteIds)
-            .then((favoriteIds) => {
-                dispatch({
-                    type: DISHES_UPDATE_FAVORITES,
-                    payload: {
-                        id,
-                        favoriteIds,
-                    },
-                });
+        return userStorageController.setItem(constants.storage.FAVORITE_DISHES, newFavoriteIds).then((favoriteIds) => {
+            dispatch({
+                type: DISHES_UPDATE_FAVORITES,
+                payload: {
+                    id,
+                    favoriteIds,
+                },
             });
+        });
     };
 };
 
@@ -113,17 +107,15 @@ export const dishesToggleLunchBox = (params = {}) => {
             remove(newLunchBoxIds, (i) => i === id);
         }
 
-        return userStorageController
-            .setItem(constants.storage.LUNCH_BOX_DISHES, newLunchBoxIds)
-            .then((lunchBoxIds) => {
-                dispatch({
-                    type: DISHES_UPDATE_LUNCH_BOX,
-                    payload: {
-                        id,
-                        lunchBoxIds,
-                    },
-                });
+        return userStorageController.setItem(constants.storage.LUNCH_BOX_DISHES, newLunchBoxIds).then((lunchBoxIds) => {
+            dispatch({
+                type: DISHES_UPDATE_LUNCH_BOX,
+                payload: {
+                    id,
+                    lunchBoxIds,
+                },
             });
+        });
     };
 };
 

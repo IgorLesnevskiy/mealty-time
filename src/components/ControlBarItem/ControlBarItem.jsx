@@ -1,14 +1,11 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useContext } from "react";
 import isEmpty from "lodash/isEmpty";
 
 import "./ControlBarItem.scss";
 import LabelButton from "../LabelButton";
+import { MockContext } from "../ControlBar";
 
-const ControlBarItem = ({
-    item = {},
-    applyCallback = Function.prototype,
-    isMock = false,
-}) => {
+const ControlBarItem = ({ item = {}, applyCallback = Function.prototype }) => {
     const onChangeHandler = useCallback(
         (e) => {
             applyCallback({
@@ -18,6 +15,8 @@ const ControlBarItem = ({
         },
         [applyCallback]
     );
+
+    const isMock = useContext(MockContext);
 
     if (isMock) {
         return <MockFilterBarItem />;
