@@ -6,15 +6,10 @@ import "./ControlBar.scss";
 import ControlBarItem from "../ControlBarItem";
 import DishesControlBarItemContainer from "../../containers/dishes/DishesControlBarItemContainer";
 
+import { MockContext } from "../../contexts";
+
 const ControlBar = (props) => {
-    const {
-        entitiesIds = [],
-        type = "",
-        loading = true,
-        error = null,
-        fetchData = Function.prototype,
-        title,
-    } = props;
+    const { entitiesIds = [], type = "", loading = true, error = null, fetchData = Function.prototype, title } = props;
 
     useEffect(() => {
         fetchData();
@@ -23,7 +18,11 @@ const ControlBar = (props) => {
     }, [fetchData]);
 
     if (loading) {
-        return <MockControlBar />;
+        return (
+            <MockContext.Provider value={true}>
+                <MockControlBar />
+            </MockContext.Provider>
+        );
     }
 
     if (error) {
@@ -31,19 +30,18 @@ const ControlBar = (props) => {
     }
 
     return (
-        <div className={"control-bar"}>
-            {title && <div className={"control-bar__title"}>{title}</div>}
-            <div className={"control-bar__items"}>
-                {entitiesIds.map((entityItemId) => (
-                    <div className={"control-bar__item"} key={entityItemId}>
-                        <DishesControlBarItemContainer
-                            entityItemId={entityItemId}
-                            type={type}
-                        />
-                    </div>
-                ))}
+        <MockContext.Provider value={false}>
+            <div className={"control-bar"}>
+                {title && <div className={"control-bar__title"}>{title}</div>}
+                <div className={"control-bar__items"}>
+                    {entitiesIds.map((entityItemId) => (
+                        <div className={"control-bar__item"} key={entityItemId}>
+                            <DishesControlBarItemContainer entityItemId={entityItemId} type={type} />
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </MockContext.Provider>
     );
 };
 
@@ -57,16 +55,15 @@ const MockControlBar = () => {
             </div>
             <div className={"control-bar__items"}>
                 {data.map((_, key) => (
-                    <div
-                        className={"control-bar__item"}
-                        key={`mock-control-bar-item-${key}`}
-                    >
-                        <ControlBarItem isMock={true} />
+                    <div className={"control-bar__item"} key={`mock-control-bar-item-${key}`}>
+                        <ControlBarItem />
                     </div>
                 ))}
             </div>
         </div>
     );
 };
+
+export { MockContext };
 
 export default ControlBar;

@@ -51,7 +51,7 @@ class ParsingController {
             logger.info(`Processing dish "${dish.dishCodeName}"`);
 
             if (isEmpty(processedDish)) {
-                logger.error(`Cannot build a dish "${dish.dishCodeName}"`);
+                logger.error(`Cannot build the dish "${dish.dishCodeName}"`);
                 result.errors++;
                 return;
             }
@@ -64,6 +64,7 @@ class ParsingController {
                 return;
             }
 
+            //TODO добавть флаг новинки к блюдам и показывать на блюдах
             result.parsed++;
             result.dishes.push(processedDish);
         });
@@ -86,7 +87,7 @@ class ParsingController {
 class Loader {
     constructor({ baseUrl = null } = {}) {
         if (!baseUrl) {
-            logger.error('You have to set "baseUrl" param in Loader');
+            logger.error('You must set the "baseUrl" param in Loader');
         }
 
         this.baseUrl = baseUrl;
@@ -96,7 +97,7 @@ class Loader {
         const fullPath = `${this.baseUrl}${path}`;
         const response = await axios.get(fullPath);
 
-        if (response.status !== 200) {
+        if (response.ok) {
             logger.error(`Got error status when loading ${fullPath}`);
             return null;
         }

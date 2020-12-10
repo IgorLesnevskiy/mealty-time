@@ -1,8 +1,8 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import Skeleton from "react-loading-skeleton";
+import { Tooltip, withTooltip } from "react-tippy";
 
 import "./DishCard.scss";
-import TipIcon from "../TipIcon";
 import LabelIcon from "../LabelIcon";
 import Image from "../Image";
 import Price from "../Price";
@@ -13,6 +13,14 @@ const IMAGE_MODEL = {
     src: "",
 };
 
+const TOOLTIP_DEFAULT_PARAMS = {
+    position: "left",
+    theme: "primary",
+    hideOnClick: false,
+    arrow: true,
+    style: { display: "flex" },
+};
+
 const DishCard = (props) => {
     const {
         isMock = false,
@@ -20,22 +28,42 @@ const DishCard = (props) => {
         price,
         title,
         image = IMAGE_MODEL,
-        tip,
+        tip = {},
         favorite = false,
-        onFavoriteCallback = Function.prototype,
+        inLunchBox = false,
+        handleFavoriteCallback = Function.prototype,
+        handleLunchBoxCallback = Function.prototype,
     } = props;
 
-    const onFavoriteButtonChangeHandler = useCallback(
+    const [isImageLoaded, setImageLoadedStatus] = useState(false);
+
+    const handleFavoriteButtonChange = useCallback(
         (e) => {
             const isChecked = e.target.checked;
 
-            onFavoriteCallback({
+            handleFavoriteCallback({
                 id,
                 isChecked,
             });
         },
-        [onFavoriteCallback, id]
+        [handleFavoriteCallback, id]
     );
+
+    const handleLunchBoxButtonChange = useCallback(
+        (e) => {
+            const isChecked = e.target.checked;
+
+            handleLunchBoxCallback({
+                id,
+                isChecked,
+            });
+        },
+        [handleLunchBoxCallback, id]
+    );
+
+    const handleAfterImageLoad = useCallback(() => {
+        setImageLoadedStatus(true);
+    }, [setImageLoadedStatus]);
 
     if (isMock) {
         return <MockDishCard />;
@@ -49,36 +77,48 @@ const DishCard = (props) => {
                         <Price value={price.value} />
                     </div>
                 )}
-
-                {tip && tip.content && (
-                    <div className={"dish-card__tip"}>
-                        <TipIcon
-                            content={tip.content}
-                            position={tip.position}
-                            trigger={tip.trigger}
-                        />
-                    </div>
-                )}
             </div>
             <div className={"dish-card__title"}>
                 <h3>{title}</h3>
             </div>
             <div className={"dish-card__image"}>
-                <LabelIcon
-                    id={`dish-${id}`}
-                    type={"checkbox"}
-                    name={`dish-${id}`}
-                    icon={"heart"}
-                    value={id}
-                    isChecked={favorite}
-                    onChange={onFavoriteButtonChangeHandler}
-                />
+                {isImageLoaded && (
+                    <div className={"dish-card__controls"}>
+                        <div className={"dish-card__control-item"}>
+                            <Tooltip
+                                {...TOOLTIP_DEFAULT_PARAMS}
+                                title={favorite ? "Убрать из Избранного" : "Добавить в Избранное"}>
+                                <LabelIcon
+                                    id={`dish-favorite-${id}`}
+                                    type={"checkbox"}
+                                    name={`dish-favorite-${id}`}
+                                    icon={"heart"}
+                                    value={`dish-favorite-${id}`}
+                                    isChecked={favorite}
+                                    onChange={handleFavoriteButtonChange}
+                                />
+                            </Tooltip>
+                        </div>
+                        <div className={"dish-card__control-item"}>
+                            <Tooltip
+                                {...TOOLTIP_DEFAULT_PARAMS}
+                                title={inLunchBox ? "Убрать из Lunch Box" : "Добавить в Lunch Box"}>
+                                <LabelIcon
+                                    id={`dish-pack-${id}`}
+                                    type={"checkbox"}
+                                    name={`dish-pack-${id}`}
+                                    icon={"food-bank"}
+                                    value={`dish-pack-${id}`}
+                                    isChecked={inLunchBox}
+                                    onChange={handleLunchBoxButtonChange}
+                                />
+                            </Tooltip>
+                        </div>
+                    </div>
+                )}
+
                 {image && (
-                    <Image
-                        src={image.src}
-                        alt={image.alt}
-                        title={image.title}
-                    />
+                    <Image src={image.src} alt={image.alt} title={image.title} onAfterLoad={handleAfterImageLoad} />
                 )}
             </div>
         </div>

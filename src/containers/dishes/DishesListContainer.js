@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { createSelector } from "reselect";
 import isEmpty from "lodash/isEmpty";
 
-import { dishesActions } from "../../actions";
+import { dishesActions } from "../../store/actions";
 import DishesList from "../../components/DishesList";
 import {
     applyFiltersToDishesList,

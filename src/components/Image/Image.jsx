@@ -22,6 +22,7 @@ function Image(props) {
             //     "image/jpeg",
             // ],
         ],
+        onAfterLoad = Function.prototype
     } = props;
 
     const [imageStatus, setImageStatus] = useState("is-loading");
@@ -32,7 +33,9 @@ function Image(props) {
 
     const onLoadHandler = useCallback(() => {
         setImageStatus("is-loaded");
-    }, []);
+
+        onAfterLoad();
+    }, [onAfterLoad]);
 
     const sourcesMarkup = ImageSources({ sources });
 

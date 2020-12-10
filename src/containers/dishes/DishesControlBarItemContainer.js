@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { filtersActions, sortersActions } from "../../actions";
+import { filtersActions, sortersActions } from "../../store/actions";
 import { bindActionCreators } from "redux";
 import ControlBarItem from "../../components/ControlBarItem";
 

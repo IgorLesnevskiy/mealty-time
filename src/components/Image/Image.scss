@@ -2,6 +2,7 @@
 
 .image {
     position: relative;
+    user-select: none;
 
     &[data-object-ratio="1x1"]:before {
         padding-top: 1 / 1 * 100%;

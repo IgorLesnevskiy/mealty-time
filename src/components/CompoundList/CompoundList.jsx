@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Skeleton from "react-loading-skeleton";
 import isEmpty from "lodash/isEmpty";
 
 import "./CompoundList.scss";
+import { MockContext } from "../../contexts";
 
 const CompoundList = (props) => {
-    const { data = {}, dishId, isMock = false } = props;
+    const { data = {} } = props;
+
+    const isMock = useContext(MockContext);
 
     if (isMock) {
         return <MockCompoundList />;
@@ -19,7 +22,7 @@ const CompoundList = (props) => {
         <ul className={"compound-list"}>
             {Object.keys(data).map((itemDataKey) => {
                 return CompoundListItem({
-                    key: `${dishId}-compound-item-${itemDataKey}`,
+                    key: `compound-item-${itemDataKey}`,
                     itemData: data[itemDataKey],
                 });
             })}
@@ -30,14 +33,12 @@ const CompoundList = (props) => {
 const CompoundListItem = ({ key, itemData }) => {
     return (
         <React.Fragment key={key}>
-            <li className={"compound-list__row"}>
-                <div className={"compound-list__description"}>
+            <li className={"compound-list__item compound-list-item"}>
+                <div className={"compound-list-item__description"}>
                     {itemData.description}&nbsp;
                     <span>({itemData.measure})</span>
                 </div>
-                <div className={"compound-list__measure"}>
-                    {itemData.amount}
-                </div>
+                <div className={"compound-list-item__measure"}>{itemData.amount}</div>
             </li>
         </React.Fragment>
     );

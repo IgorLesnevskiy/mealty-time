@@ -1,0 +1,36 @@
+.basket-list {
+    &__item {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 1.2rem;
+    }
+}
+
+.basket-list-item {
+    display: flex;
+    font-size: 1.4rem;
+
+    &__actions {
+        display: flex;
+        flex-grow: 0;
+        margin-right: 1.2rem;
+    }
+
+    &__action {
+        color: var(--primary-text-color);
+        display: flex;
+        font-size: 1.42em;
+    }
+
+    &__title {
+        font-weight: 600;
+        flex-grow: 1;
+        margin-top: 0.15em;
+    }
+
+    &.is-mock {
+        display: block;
+    }
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Skeleton from "react-loading-skeleton";
 import isEmpty from "lodash/isEmpty";
 
@@ -7,20 +7,26 @@ import CompoundList from "../CompoundList";
 import DishCard from "../DishCard";
 import { utils } from "../../tools";
 
-const Dish = ({ dish = {}, isMock, onFavoriteCallback }) => {
+import { MockContext } from "../../contexts";
+
+const Dish = ({
+    dish = {},
+    // isMock,
+    handleFavoriteCallback,
+    handleLunchBoxCallback,
+}) => {
     const {
         price,
         id = null,
         tip,
         title,
         favorite = false,
+        inLunchBox = false,
         image,
         description,
         ingredients,
         foodEnergy,
     } = dish;
-
-    const [uniqId] = useState(id || utils.getUniqueId());
 
     const dishCardParams = {
         id,
@@ -28,14 +34,17 @@ const Dish = ({ dish = {}, isMock, onFavoriteCallback }) => {
         tip,
         title,
         favorite,
+        inLunchBox,
         image,
-        onFavoriteCallback,
+        handleFavoriteCallback,
+        handleLunchBoxCallback,
     };
 
     const compoundListParams = {
         data: foodEnergy,
-        dishId: uniqId,
     };
+
+    const isMock = useContext(MockContext);
 
     if (isMock) {
         return <MockDish />;
@@ -48,9 +57,7 @@ const Dish = ({ dish = {}, isMock, onFavoriteCallback }) => {
             </div>
 
             <div className={"dish__info"}>
-                {description && (
-                    <div className={"dish__description"}>{description}</div>
-                )}
+                {description && <div className={"dish__description"}>{description}</div>}
 
                 <div className={"dish__compound-line"}>
                     {!isEmpty(foodEnergy) && (
@@ -60,12 +67,8 @@ const Dish = ({ dish = {}, isMock, onFavoriteCallback }) => {
                     )}
                     {ingredients && (
                         <div className={"dish__ingredients-wrapper"}>
-                            <div className={"dish__ingredients-title"}>
-                                Состав:
-                            </div>
-                            <div className={"dish__ingredients"}>
-                                {ingredients}
-                            </div>
+                            <div className={"dish__ingredients-title"}>Состав:</div>
+                            <div className={"dish__ingredients"}>{ingredients}</div>
                         </div>
                     )}
                 </div>
@@ -88,7 +91,7 @@ const MockDish = (props) => {
 
                 <div className={"dish__compound-line"}>
                     <div className={"dish__compound-list"}>
-                        <CompoundList isMock={true} />
+                        <CompoundList />
                     </div>
                     <div className={"dish__ingredients-wrapper"}>
                         <div className={"dish__ingredients-title"}>
