@@ -1,4 +1,4 @@
-import { sortersActions } from "../actions";
+import { filtersActions, sortersActions } from "../actions";
 
 const initialState = {
     entities: {},
@@ -55,6 +55,24 @@ export default function sorters(sortersState = initialState, action) {
         }
 
         sorters.activeIds = activeIds;
+
+        return {
+            ...sortersState,
+            ...sorters,
+        };
+    }
+
+    /**
+     * Сбросить все сортировки
+     */
+    if (action.type === sortersActions.SORTERS_RESET_SORTERS) {
+        const sorters = { ...sortersState };
+
+        for (let sorterId of sorters.ids) {
+            sorters.entities[sorterId].isChecked = false;
+        }
+
+        sorters.activeIds = [];
 
         return {
             ...sortersState,

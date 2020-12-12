@@ -14,6 +14,16 @@ const getFetchDataFunction = (type = "") => {
     }
 };
 
+const getResetFunction = (type = "") => {
+    if (type === "filters") {
+        return filtersActions.resetFilters;
+    } else if (type === "sorters") {
+        return sortersActions.resetSorters;
+    } else {
+        return Function.prototype;
+    }
+};
+
 const mapStateToProps = (state, ownProps) => {
     const { type = "" } = ownProps;
 
@@ -27,6 +37,7 @@ const mapStateToProps = (state, ownProps) => {
         type,
         loading: state[type].loading,
         error: state[type].error,
+        displayResetTrigger: !!state[type].activeIds.length,
     };
 };
 
@@ -40,6 +51,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
     return {
         fetchData: () => dispatch(getFetchDataFunction(type)()),
+        onResetClick: () => dispatch(getResetFunction(type)()),
     };
 };
 

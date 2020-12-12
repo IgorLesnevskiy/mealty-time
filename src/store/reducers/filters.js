@@ -62,5 +62,23 @@ export default function filters(filtersState = initialState, action) {
         };
     }
 
+    /**
+     * Сбросить все фильтры
+     */
+    if (action.type === filtersActions.FILTERS_RESET_FILTERS) {
+        const filters = { ...filtersState };
+
+        for (let filterId of filters.ids) {
+            filters.entities[filterId].isChecked = false;
+        }
+
+        filters.activeIds = [];
+
+        return {
+            ...filtersState,
+            ...filters,
+        };
+    }
+
     return filtersState;
 }

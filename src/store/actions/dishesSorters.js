@@ -1,13 +1,10 @@
 import remove from "lodash/remove";
 
 import sortersData from "../../resources/data/sorters.json";
-import {
-    constants,
-    sortersNormalizer,
-    userStorageController,
-} from "../../tools/";
+import { constants, sortersNormalizer, userStorageController } from "../../tools/";
 
 export const SORTERS_APPLY_SORTER = "SORTERS_APPLY_SORTER";
+export const SORTERS_RESET_SORTERS = "SORTERS_RESET_SORTERS";
 
 export const SORTERS_FETCH_BEGIN = "SORTERS_FETCH_BEGIN";
 export const SORTERS_FETCH_SUCCEED = "SORTERS_FETCH_SUCCEED";
@@ -75,17 +72,26 @@ export const applySorter = (params = {}) => {
             }
         });
 
-        return userStorageController
-            .setItem(constants.storage.LAST_SORTERS_IDS, newActiveIds)
-            .then((activeIds) => {
-                dispatch({
-                    type: SORTERS_APPLY_SORTER,
-                    payload: {
-                        id,
-                        activeIds,
-                    },
-                });
+        return userStorageController.setItem(constants.storage.LAST_SORTERS_IDS, newActiveIds).then((activeIds) => {
+            dispatch({
+                type: SORTERS_APPLY_SORTER,
+                payload: {
+                    id,
+                    activeIds,
+                },
             });
+        });
+    };
+};
+
+export const resetSorters = (params = {}) => {
+    return (dispatch, getState) => {
+        return userStorageController.setItem(constants.storage.LAST_SORTERS_IDS, []).then((activeIds) => {
+            dispatch({
+                type: SORTERS_RESET_SORTERS,
+                payload: {},
+            });
+        });
     };
 };
 

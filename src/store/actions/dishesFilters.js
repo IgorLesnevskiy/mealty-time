@@ -3,9 +3,9 @@ import isEmpty from "lodash/isEmpty";
 
 import filtersData from "../../resources/data/filters.json";
 import { constants, filtersNormalizer, userStorageController } from "../../tools/";
-import { SORTERS_APPLY_SORTER } from "./dishesSorters";
 
 export const FILTERS_APPLY_FILTER = "FILTERS_APPLY_FILTER";
+export const FILTERS_RESET_FILTERS = "FILTERS_RESET_FILTERS";
 
 export const FILTERS_FETCH_BEGIN = "FILTERS_FETCH_BEGIN";
 export const FILTERS_FETCH_SUCCEED = "FILTERS_FETCH_SUCCEED";
@@ -83,6 +83,17 @@ export const applyFilter = (params = {}) => {
                     id,
                     activeIds,
                 },
+            });
+        });
+    };
+};
+
+export const resetFilters = (params = {}) => {
+    return (dispatch, getState) => {
+        return userStorageController.setItem(constants.storage.LAST_FILTERS_IDS, []).then((activeIds) => {
+            dispatch({
+                type: FILTERS_RESET_FILTERS,
+                payload: {},
             });
         });
     };

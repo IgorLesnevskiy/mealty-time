@@ -9,11 +9,8 @@ function applySorters(dishes = [], sorters = []) {
     const sorter = sorters[0];
     let sortedDishes = [...dishes];
 
-    if (!isEmpty(sorter.fields)) {
-        sortedDishes = SORTING_STRATEGIES[sorter.sorterType](
-            sortedDishes,
-            sorter
-        );
+    if (sorter && !isEmpty(sorter.fields)) {
+        sortedDishes = SORTING_STRATEGIES[sorter.sorterType](sortedDishes, sorter);
     }
 
     return sortedDishes.map(getIds);

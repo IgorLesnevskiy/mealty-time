@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import Skeleton from "react-loading-skeleton";
 
 import "./ControlBar.scss";
@@ -9,13 +9,29 @@ import DishesControlBarItemContainer from "../../containers/dishes/DishesControl
 import { MockContext } from "../../contexts";
 
 const ControlBar = (props) => {
-    const { entitiesIds = [], type = "", loading = true, error = null, fetchData = Function.prototype, title } = props;
+    const {
+        fetchData = Function.prototype,
+        onResetClick = Function.prototype,
+        entitiesIds = [],
+        type = "",
+        loading = true,
+        error = null,
+        title,
+        displayResetTrigger = false,
+    } = props;
 
     useEffect(() => {
         fetchData();
 
         return () => {};
     }, [fetchData]);
+
+    const handleResetClick = useCallback(
+        (e) => {
+            onResetClick();
+        },
+        [onResetClick]
+    );
 
     if (loading) {
         return (
@@ -32,7 +48,14 @@ const ControlBar = (props) => {
     return (
         <MockContext.Provider value={false}>
             <div className={"control-bar"}>
-                {title && <div className={"control-bar__title"}>{title}</div>}
+                <div className={"control-bar__title-panel"}>
+                    {title && <div className={"control-bar__title"}>{title}</div>}
+                    {displayResetTrigger && (
+                        <a href={"#"} className={"control-bar__reset-trigger"} onClick={handleResetClick}>
+                            Сбросить
+                        </a>
+                    )}
+                </div>
                 <div className={"control-bar__items"}>
                     {entitiesIds.map((entityItemId) => (
                         <div className={"control-bar__item"} key={entityItemId}>
