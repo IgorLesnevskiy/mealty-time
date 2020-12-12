@@ -8,12 +8,10 @@ import DishesControlBarContainer from "../../containers/dishes/DishesControlBarC
 import StickyContainer from "../../components/StickyContainer";
 
 const IndexPage = () => {
-    // TODO должен ли я перебрасывать себя на верх страница, когда что-то нашел, но я скролю?
-    // TODO должен ли я использовать position:sticky? появляется проблема с выделением границы шапки
     return (
         <React.Fragment>
-            <StickyContainer zIndex={9999}>
-                <Floor offsetTop={"medium"} offsetBottom={"medium"}>
+            <StickyContainer zIndex={9999} extraStyles={{ boxShadow: "0px -5px 10px #000" }}>
+                <Floor offsetTop={"medium"} offsetBottom={"medium"} disableBottomBorder={true}>
                     <Header />
                 </Floor>
             </StickyContainer>

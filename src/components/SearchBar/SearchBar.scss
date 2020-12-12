@@ -4,8 +4,7 @@
     display: flex;
     align-items: center;
     height: 3.2rem;
-    border: 1px solid var(--color-gray3);
-    border-radius: 0.4rem;
+    border-bottom: 1px solid var(--primary-text-color);
     padding: 0.8rem 1rem;
 
     &__input {
@@ -25,7 +24,7 @@
     }
 
     &__icon {
-        color: var(--color-gray4);
+        color: var(--primary-text-color);
         font-size: 1.2rem;
         flex-shrink: 0;
     }
