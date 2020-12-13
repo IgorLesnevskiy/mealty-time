@@ -4,15 +4,9 @@ import constants from "../_constants";
 import userStorageController from "../_userStorageController";
 
 export default async function dishesNormalizer(originalData) {
-    const FAVORITE_DISHES =
-        (await userStorageController.getItem(
-            constants.storage.FAVORITE_DISHES
-        )) || [];
+    const FAVORITE_DISHES = (await userStorageController.getItem(constants.storage.FAVORITE_DISHES)) || [];
 
-    const LUNCH_BOX_DISHES =
-        (await userStorageController.getItem(
-            constants.storage.LUNCH_BOX_DISHES
-        )) || [];
+    const LUNCH_BOX_DISHES = (await userStorageController.getItem(constants.storage.LUNCH_BOX_DISHES)) || [];
 
     return normalize(originalData, [
         new schema.Entity(
