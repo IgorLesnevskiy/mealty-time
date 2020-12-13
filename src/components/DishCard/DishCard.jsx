@@ -27,6 +27,7 @@ const DishCard = (props) => {
         id,
         price,
         title,
+        isNovice = false,
         image = IMAGE_MODEL,
         tip = {},
         favorite = false,
@@ -119,6 +120,12 @@ const DishCard = (props) => {
 
                 {image && (
                     <Image src={image.src} alt={image.alt} title={image.title} onAfterLoad={handleAfterImageLoad} />
+                )}
+
+                {isNovice && (
+                    <div className={"dish-card__label is-novice"}>
+                        <div className={"dish-card__label-text"}>NEW</div>
+                    </div>
                 )}
             </div>
         </div>
