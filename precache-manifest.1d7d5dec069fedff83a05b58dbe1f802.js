@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e40110b715de895b664a613c578047ba",
+    "revision": "8de03c72867eb2e6e98db00711884de7",
     "url": "/mealty-time/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mealty-time/static/css/2.f1b84f05.chunk.css"
   },
   {
-    "revision": "d51cef0bcdcb73aecf6e",
-    "url": "/mealty-time/static/css/main.0f8dffce.chunk.css"
+    "revision": "efafe94cd618c362e992",
+    "url": "/mealty-time/static/css/main.7d304c3b.chunk.css"
   },
   {
     "revision": "212af55634ebb74ceb7d",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mealty-time/static/js/2.83d7ff6b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d51cef0bcdcb73aecf6e",
+    "revision": "efafe94cd618c362e992",
     "url": "/mealty-time/static/js/main.08702732.chunk.js"
   },
   {
