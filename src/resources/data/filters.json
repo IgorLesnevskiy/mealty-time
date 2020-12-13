@@ -1,196 +1,196 @@
 [
-  {
-    "id": "novelty",
-    "filterType": "include",
-    "filterExpression": true,
-    "title": "Новинки",
-    "fields": ["novelty"]
-  },
-  {
-    "id": "category_breakfast",
-    "filterType": "include",
-    "filterExpression": "breakfast",
-    "exclude": [
-      "category_salad",
-      "category_soup",
-      "category_main_dish",
-      "category_drink",
-      "category_bread",
-      "category_snack",
-      "category_almost_ready",
-      "category_food"
-    ],
-    "title": "Завтраки",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_salad",
-    "filterType": "include",
-    "filterExpression": "salad",
-    "exclude": [
-      "category_breakfast",
-      "category_soup",
-      "category_main_dish",
-      "category_drink",
-      "category_bread",
-      "category_snack",
-      "category_almost_ready",
-      "category_food"
-    ],
-    "title": "Салаты",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_soup",
-    "filterType": "include",
-    "filterExpression": "soup",
-    "exclude": [
-      "category_breakfast",
-      "category_salad",
-      "category_main_dish",
-      "category_drink",
-      "category_bread",
-      "category_snack",
-      "category_almost_ready",
-      "category_food"
-    ],
-    "title": "Супы",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_main_dish",
-    "filterType": "include",
-    "filterExpression": "main_dish",
-    "exclude": [
-      "category_breakfast",
-      "category_salad",
-      "category_soup",
-      "category_drink",
-      "category_bread",
-      "category_snack",
-      "category_almost_ready",
-      "category_food"
-    ],
-    "title": "Вторые блюда",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_drink",
-    "filterType": "include",
-    "filterExpression": "drink",
-    "exclude": [
-      "with-beef",
-      "with-chicken",
-      "no-onion",
-      "category_breakfast",
-      "category_salad",
-      "category_soup",
-      "category_main_dish",
-      "category_bread",
-      "category_snack",
-      "category_almost_ready",
-      "category_food"
-    ],
-    "title": "Напитки/десерты",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_bread",
-    "filterType": "include",
-    "filterExpression": "bread",
-    "exclude": [
-      "category_breakfast",
-      "category_salad",
-      "category_soup",
-      "category_main_dish",
-      "category_drink",
-      "category_snack",
-      "category_almost_ready",
-      "category_food"
-    ],
-    "title": "Выпечка",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_snack",
-    "filterType": "include",
-    "filterExpression": "snack",
-    "exclude": [
-      "category_breakfast",
-      "category_salad",
-      "category_soup",
-      "category_main_dish",
-      "category_drink",
-      "category_bread",
-      "category_almost_ready",
-      "category_food"
-    ],
-    "title": "Перекусы",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_almost_ready",
-    "filterType": "include",
-    "filterExpression": "almost_ready",
-    "exclude": [
-      "category_breakfast",
-      "category_salad",
-      "category_soup",
-      "category_main_dish",
-      "category_drink",
-      "category_bread",
-      "category_snack",
-      "category_food"
-    ],
-    "title": "Почти готово",
-    "fields": ["category"]
-  },
-  {
-    "id": "category_food",
-    "filterType": "include",
-    "filterExpression": "food",
-    "exclude": [
-      "category_breakfast",
-      "category_salad",
-      "category_soup",
-      "category_main_dish",
-      "category_drink",
-      "category_bread",
-      "category_snack",
-      "category_almost_ready"
-    ],
-    "title": "Продукты",
-    "fields": ["category"]
-  },
-  {
-    "id": "with-beef",
-    "filterType": "include",
-    "filterExpression": "говядина|говядиной|говядину|говядины",
-    "exclude": ["with-chicken", "category_drink"],
-    "title": "С говядиной",
-    "fields": ["title", "description", "ingredients"]
-  },
-  {
-    "id": "with-chicken",
-    "filterType": "include",
-    "filterExpression": "курица|курицы|курицей|курицу|куриное|куриным",
-    "exclude": ["with-beef", "category_drink"],
-    "title": "С курочкой",
-    "fields": ["title", "description", "ingredients"]
-  },
-  {
-    "id": "no-onion",
-    "filterType": "exclude",
-    "filterExpression": "лук",
-    "exclude": ["category_drink"],
-    "title": "Без лука",
-    "fields": ["title", "description", "ingredients"]
-  },
-  {
-    "id": "in-favorites",
-    "filterType": "include",
-    "filterExpression": true,
-    "title": "В избранном",
-    "fields": ["favorite"]
-  }
+    {
+        "id": "novelty",
+        "filterType": "include",
+        "filterExpression": true,
+        "title": "Новинки",
+        "fields": ["isNovice"]
+    },
+    {
+        "id": "category_breakfast",
+        "filterType": "include",
+        "filterExpression": "breakfast",
+        "exclude": [
+            "category_salad",
+            "category_soup",
+            "category_main_dish",
+            "category_drink",
+            "category_bread",
+            "category_snack",
+            "category_almost_ready",
+            "category_food"
+        ],
+        "title": "Завтраки",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_salad",
+        "filterType": "include",
+        "filterExpression": "salad",
+        "exclude": [
+            "category_breakfast",
+            "category_soup",
+            "category_main_dish",
+            "category_drink",
+            "category_bread",
+            "category_snack",
+            "category_almost_ready",
+            "category_food"
+        ],
+        "title": "Салаты",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_soup",
+        "filterType": "include",
+        "filterExpression": "soup",
+        "exclude": [
+            "category_breakfast",
+            "category_salad",
+            "category_main_dish",
+            "category_drink",
+            "category_bread",
+            "category_snack",
+            "category_almost_ready",
+            "category_food"
+        ],
+        "title": "Супы",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_main_dish",
+        "filterType": "include",
+        "filterExpression": "main_dish",
+        "exclude": [
+            "category_breakfast",
+            "category_salad",
+            "category_soup",
+            "category_drink",
+            "category_bread",
+            "category_snack",
+            "category_almost_ready",
+            "category_food"
+        ],
+        "title": "Вторые блюда",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_drink",
+        "filterType": "include",
+        "filterExpression": "drink",
+        "exclude": [
+            "with-beef",
+            "with-chicken",
+            "no-onion",
+            "category_breakfast",
+            "category_salad",
+            "category_soup",
+            "category_main_dish",
+            "category_bread",
+            "category_snack",
+            "category_almost_ready",
+            "category_food"
+        ],
+        "title": "Напитки/десерты",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_bread",
+        "filterType": "include",
+        "filterExpression": "bread",
+        "exclude": [
+            "category_breakfast",
+            "category_salad",
+            "category_soup",
+            "category_main_dish",
+            "category_drink",
+            "category_snack",
+            "category_almost_ready",
+            "category_food"
+        ],
+        "title": "Выпечка",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_snack",
+        "filterType": "include",
+        "filterExpression": "snack",
+        "exclude": [
+            "category_breakfast",
+            "category_salad",
+            "category_soup",
+            "category_main_dish",
+            "category_drink",
+            "category_bread",
+            "category_almost_ready",
+            "category_food"
+        ],
+        "title": "Перекусы",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_almost_ready",
+        "filterType": "include",
+        "filterExpression": "almost_ready",
+        "exclude": [
+            "category_breakfast",
+            "category_salad",
+            "category_soup",
+            "category_main_dish",
+            "category_drink",
+            "category_bread",
+            "category_snack",
+            "category_food"
+        ],
+        "title": "Почти готово",
+        "fields": ["category"]
+    },
+    {
+        "id": "category_food",
+        "filterType": "include",
+        "filterExpression": "food",
+        "exclude": [
+            "category_breakfast",
+            "category_salad",
+            "category_soup",
+            "category_main_dish",
+            "category_drink",
+            "category_bread",
+            "category_snack",
+            "category_almost_ready"
+        ],
+        "title": "Продукты",
+        "fields": ["category"]
+    },
+    {
+        "id": "with-beef",
+        "filterType": "include",
+        "filterExpression": "говядина|говядиной|говядину|говядины",
+        "exclude": ["with-chicken", "category_drink"],
+        "title": "С говядиной",
+        "fields": ["title", "description", "ingredients"]
+    },
+    {
+        "id": "with-chicken",
+        "filterType": "include",
+        "filterExpression": "курица|курицы|курицей|курицу|куриное|куриным",
+        "exclude": ["with-beef", "category_drink"],
+        "title": "С курочкой",
+        "fields": ["title", "description", "ingredients"]
+    },
+    {
+        "id": "no-onion",
+        "filterType": "exclude",
+        "filterExpression": "лук",
+        "exclude": ["category_drink"],
+        "title": "Без лука",
+        "fields": ["title", "description", "ingredients"]
+    },
+    {
+        "id": "in-favorites",
+        "filterType": "include",
+        "filterExpression": true,
+        "title": "В избранном",
+        "fields": ["favorite"]
+    }
 ]
