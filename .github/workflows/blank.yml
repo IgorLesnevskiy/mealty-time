@@ -16,9 +16,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup
-        run: git config --global user.email "lesnevskii.igor@gmail.com"
-            | && git config --global user.name "Igor Lesnevskiy"
-            | && yarn
+        run: git config --global user.email "lesnevskii.igor@gmail.com" \
+          git config --global user.name "Igor Lesnevskiy" \
+          yarn
 
       - name: Deploy on GithubPages
         run:  CI=false && yarn deploy
