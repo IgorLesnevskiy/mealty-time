@@ -35,8 +35,9 @@ class ParsingController {
             errors: 0,
             skipped: 0,
             parsed: 0,
-            dishes: [],
+            dishes: {},
         };
+        const newDishesIds = [];
 
         if (!dishesNodes.length) {
             logger.error(`Cannot find any dishes on the page`);
@@ -56,28 +57,38 @@ class ParsingController {
                 return;
             }
 
-            if (processedDish.category === "novelty") {
-                logger.warn(
-                    `Skipping dish "${dish.dishCodeName}" from the "novelty" category`
-                );
-                result.skipped++;
+            if (processedDish.isNovice) {
+                newDishesIds.push(processedDish.id);
+
                 return;
             }
 
-            //TODO добавть флаг новинки к блюдам и показывать на блюдах
+            if (result.dishes[processedDish.id]) {
+                result.skipped++;
+
+                logger.error(`The item with codeName "${dish.dishCodeName}" was already added`);
+
+                return;
+            }
+
             result.parsed++;
-            result.dishes.push(processedDish);
+            result.dishes[processedDish.id] = processedDish;
         });
+
+        for (let newDishId of newDishesIds) {
+            if (isEmpty(result.dishes[newDishId])) {
+                continue;
+            }
+
+            result.dishes[newDishId].isNovice = true;
+        }
 
         return result;
     }
 
     saveToJson(dishes) {
         try {
-            fs.writeFileSync(
-                this.saveJsonPath,
-                JSON.stringify(dishes, null, "\t")
-            );
+            fs.writeFileSync(this.saveJsonPath, JSON.stringify(dishes, null, "\t"));
         } catch (e) {
             logger.error(e);
         }
@@ -115,12 +126,14 @@ class Dish {
         return {
             id: this.id,
             title: this.title,
+            created: Number(new Date()),
             description: this.description,
             ingredients: this.ingredients,
             price: this.price,
             currency: "RUB",
             image: this.image,
             category: this.category,
+            isNovice: this.isNovice,
             foodEnergy: {
                 weight: this.weight,
                 portion_proteins: this.proteinsForPortion,
@@ -152,16 +165,10 @@ class Dish {
         return normalizeText(this.$dish.find(".meal-card__products").text());
     }
     get price() {
-        return Number(
-            this.$dish
-                .find(".meal-card__price .basket__footer-total-count")
-                .text()
-        );
+        return Number(this.$dish.find(".meal-card__price .basket__footer-total-count").text());
     }
     get image() {
-        const imageUrl = this.$dish
-            .find(".meal-card__photo img")
-            .attr("data-fancybox-src");
+        const imageUrl = this.$dish.find(".meal-card__photo img").attr("data-fancybox-src");
 
         if (imageUrl) {
             return `${BASE_URL}${imageUrl}`;
@@ -182,6 +189,10 @@ class Dish {
             measure: "г",
             description: "Вес порции",
         };
+    }
+
+    get isNovice() {
+        return this.category === "novelty";
     }
 
     get proteinsForPortion() {
@@ -244,9 +255,7 @@ class Dish {
             return null;
         }
 
-        const amount = Number(
-            (weight.amount / 100) * calorificForPortion.amount
-        ).toFixed(0);
+        const amount = Number((weight.amount / 100) * calorificForPortion.amount).toFixed(0);
 
         return {
             amount: amount,
@@ -266,7 +275,7 @@ parser.parseDishes().then((result) => {
     if (isEmpty(result.dishes)) {
         logger.error("Got empty dishes list");
     } else {
-        parser.saveToJson(result.dishes);
+        parser.saveToJson(Object.values(result.dishes));
     }
 
     console.log(
