@@ -170,11 +170,11 @@ class Dish {
     get image() {
         const imageUrl = this.$dish.find(".meal-card__photo img").attr("data-fancybox-src");
 
-        if (imageUrl) {
-            return `${BASE_URL}${imageUrl}`;
-        } else {
+        if (!imageUrl) {
             return null;
         }
+
+        return `${BASE_URL}${imageUrl}`;
     }
 
     get weight() {

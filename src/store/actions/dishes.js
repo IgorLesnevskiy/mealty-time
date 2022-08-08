@@ -15,7 +15,6 @@ export const dishesFetch = () => async (dispatch) => {
 
     try {
         const normalizedDishes = await dishesNormalizer(dishesData);
-
         dispatch(
             dishesFetchSucceed({
                 entities: normalizedDishes.entities.dishes,
